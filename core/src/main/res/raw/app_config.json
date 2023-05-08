@@ -1,0 +1,24 @@
+{
+  "appConfigResponses": [
+    {
+      "parameterKey": "login.count",
+      "parameterValue": "5",
+      "isSecured": false
+    },
+    {
+      "parameterKey": "device.transition.time",
+      "parameterValue": "3000",
+      "isSecured": false
+    },
+    {
+      "parameterKey": "otp.resend.interval",
+      "parameterValue": "60",
+      "isSecured": false
+    },
+    {
+      "parameterKey": "rsa.public.key",
+      "parameterValue": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkclHj0FpIPiB+XQL0P/mJVUdYbRXYS9vjSbVllzVteZgVDhK/srybDmAM2PSn8ZlakUa9bkBAGmiozaccDRJx5DJ/C80hIUcQneDKqWuY6rgnT3zKhjt3MHZK0I2VX5t7QgWHdh5Dni/D08JWwTkbnH+qhz8Wb4xlV0HokQB05YB00deuO09fr5Qw3GjgSSK8HA+euoajgijMbRPuReA4nkmBLhyTMryX/1h9vi8Wz9reGeiFdLZLECrcMmbLRF3d8iC/HISqBYdqdyjvGhXzGu19Gog1Qt8/qNh4fPmB0Le3EpfjRkcWrLqi22N7cGRAvagCJJAzqQVKe5S2fTVRwIDAQAB",
+      "isSecured": true
+    }
+  ]
+}
