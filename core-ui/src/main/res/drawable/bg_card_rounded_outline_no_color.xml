@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/white" />
+    <stroke
+        android:color="@color/colorWhite"
+        android:width="@dimen/width_line_unselected_card_transaction"/>
+    <corners android:radius="@dimen/radius_bg_item_change_debit_card_transaction"/>
+</shape>

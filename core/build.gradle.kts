@@ -174,9 +174,4 @@ dependencies {
     implementation(Jetpack.cameraXCore)
     implementation(Jetpack.cameraXView)
     implementation(Jetpack.cameraXLifecycle)
-
-    // Implement project
-    implementation(customModulePath(CoreModules.coreUi))
-    implementation(customModulePath(CoreModules.coreEntity))
-    implementation(customModulePath(UtilitiesModules.utilitiesCurrency))
 }

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_otp_authorization"
+    app:startDestination="@id/fragment_otp_authorization">
+
+    <fragment
+        android:id="@+id/fragment_otp_authorization"
+        android:name="com.based.kotlin.feature.authentication.otp.presentation.ui.OtpAuthorizationFragment"
+        android:label="OtpAuthorizationFragment"
+        tools:layout="@layout/fragment_otp_authorization">
+        <deepLink
+            android:autoVerify="true"
+            app:uri="based.kotlin.id://learn/authentication_otp_navigate" />
+    </fragment>
+</navigation>

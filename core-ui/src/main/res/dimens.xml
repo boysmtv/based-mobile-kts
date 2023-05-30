@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~
+  ~ Copyright © 2022 PT Bank Mandiri (Persero) Tbk.
+  ~
+  ~ Unauthorized copying, publishing of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  -->
+
+<resources>
+    <!--region fragment customer verification-->
+    <dimen name="customer_information_customer_verification_banker_verify_button_margin_start">20dp</dimen>
+    <dimen name="customer_information_customer_verification_banker_verify_button_padding_end">20dp</dimen>
+    <dimen name="customer_information_customer_verification_banker_verify_button_padding_start">20dp</dimen>
+    <dimen name="customer_information_customer_verification_birthday_field_resource_padding">2dp</dimen>
+    <dimen name="customer_information_customer_verification_birthday_field_margin_top">4dp</dimen>
+    <dimen name="customer_information_customer_verification_bottom_line_height">1dp</dimen>
+    <dimen name="customer_information_customer_verification_bottom_line_margin_bottom">12dp</dimen>
+    <dimen name="customer_information_customer_verification_choose_supervisor_button_margin_start">20dp</dimen>
+    <dimen name="customer_information_customer_verification_cancel_button_margin_end">10dp</dimen>
+    <dimen name="customer_information_customer_verification_dukcapil_verify_field_resource_padding">6dp</dimen>
+    <dimen name="customer_information_customer_verification_dukcapil_verify_field_margin_top">4dp</dimen>
+    <dimen name="customer_information_customer_verification_dukcapil_verify_field_padding_bottom">2dp</dimen>
+    <dimen name="customer_information_customer_verification_dukcapil_verify_field_padding_end">6dp</dimen>
+    <dimen name="customer_information_customer_verification_dukcapil_verify_field_padding_start">6dp</dimen>
+    <dimen name="customer_information_customer_verification_dukcapil_verify_field_padding_top">2dp</dimen>
+    <dimen name="customer_information_customer_verification_dukcapil_verify_field_text_size">14sp</dimen>
+    <dimen name="customer_information_customer_verification_dukcapil_verify_label_margin_top">4dp</dimen>
+    <dimen name="customer_information_customer_verification_dotted_line_height">5dp</dimen>
+    <dimen name="customer_information_customer_verification_dotted_first_line_margin_top">16dp</dimen>
+    <dimen name="customer_information_customer_verification_dotted_first_line_margin_end">24dp</dimen>
+    <dimen name="customer_information_customer_verification_dotted_first_line_margin_bottom">4dp</dimen>
+    <dimen name="customer_information_customer_verification_dukcapil_button_margin_end">20dp</dimen>
+    <dimen name="customer_information_customer_verification_ektp_photo_button_margin_top">13dp</dimen>
+    <dimen name="customer_information_customer_verification_ektp_photo_button_margin_end">16dp</dimen>
+    <dimen name="customer_information_customer_verification_item_detail_card_elevation">0dp</dimen>
+    <dimen name="customer_information_customer_verification_item_detail_card_corner_radius">12dp</dimen>
+    <dimen name="customer_information_customer_verification_item_detail_card_line_segmentation_width">1dp</dimen>
+    <dimen name="customer_information_customer_verification_item_detail_card_line_segmentation_margin_top">8dp</dimen>
+    <dimen name="customer_information_customer_verification_item_detail_card_line_segmentation_margin_bottom">8dp
+    </dimen>
+    <dimen name="customer_information_customer_verification_item_detail_card_text_size">12sp</dimen>
+    <dimen name="customer_information_customer_verification_item_detail_card_text_margin_top">8dp</dimen>
+    <dimen name="customer_information_customer_verification_item_detail_card_text_margin_start">8dp</dimen>
+    <dimen name="customer_information_customer_verification_label_text_size">12sp</dimen>
+    <dimen name="customer_information_customer_verification_old_bds_tnc_margin_start">20dp</dimen>
+    <dimen name="customer_information_customer_verification_photo_height">200dp</dimen>
+    <dimen name="customer_information_customer_verification_photo_margin_top">16dp</dimen>
+    <dimen name="customer_information_customer_verification_photo_margin_end">24dp</dimen>
+    <dimen name="customer_information_customer_verification_see_detail_button_margin_top">13dp</dimen>
+    <dimen name="customer_information_customer_verification_see_detail_button_margin_end">16dp</dimen>
+    <dimen name="customer_information_customer_verification_service_button_margin_end">16dp</dimen>
+    <dimen name="customer_information_customer_verification_service_button_margin_top">13dp</dimen>
+    <dimen name="customer_information_customer_verification_service_time_line_height">1dp</dimen>
+    <dimen name="customer_information_customer_verification_service_time_line_margin_bottom">20dp</dimen>
+    <dimen name="customer_information_customer_verification_service_time_margin_horizontal">16dp</dimen>
+    <dimen name="customer_information_customer_verification_title_margin_start">20dp</dimen>
+    <dimen name="customer_information_customer_verification_title_margin_top">12dp</dimen>
+    <dimen name="customer_information_customer_verification_verify_instruction_margin_top">4dp</dimen>
+    <dimen name="customer_information_customer_verification_verify_instruction_text_size">10sp</dimen>
+    <dimen name="customer_information_customer_verification_verify_instruction_width">290dp</dimen>
+    <dimen name="customer_information_verification_container_margin">40dp</dimen>
+    <dimen name="customer_information_verification_content_margin_start">24dp</dimen>
+    <dimen name="customer_information_verification_content_margin_top">16dp</dimen>
+    <dimen name="customer_information_verification_content_dukcapil_label_margin_top">6dp</dimen>
+    <dimen name="customer_information_verification_content_customer_info_margin_top">4dp</dimen>
+    <dimen name="customer_information_verification_item_label_padding_horizontal">8dp</dimen>
+    <dimen name="customer_information_verification_item_label_padding_vertical">4dp</dimen>
+    <dimen name="customer_information_verification_checkbox_margin_bottom">12dp</dimen>
+    <dimen name="customer_information_verification_supervisor_button_margin_bottom">16dp</dimen>
+    <dimen name="customer_information_verification_cancel_button_margin_bottom">12dp</dimen>
+    <dimen name="customer_information_verification_button_margin_bottom">12dp</dimen>
+    <dimen name="customer_information_verification_button_margin_end">24dp</dimen>
+    <dimen name="customer_information_customer_verification_cancel_button_width">300dp</dimen>
+    <dimen name="customer_information_customer_verification_choose_spv_button_width">300dp</dimen>
+    <dimen name="customer_information_verification_card_height">80dp</dimen>
+    <dimen name="customer_information_verification_card_margin_top">16dp</dimen>
+    <dimen name="customer_information_verification_card_margin_end">24dp</dimen>
+    <dimen name="customer_information_verification_full_name_margin_start">24dp</dimen>
+    <dimen name="customer_information_verification_button_min_width">300dp</dimen>
+    <dimen name="customer_information_verification_company_representative_line_margin_top">10dp</dimen>
+    <dimen name="customer_information_verification_company_representative_label_margin_top">16dp</dimen>
+    <dimen name="customer_information_verification_company_representative_text_margin_end">6dp</dimen>
+    <dimen name="customer_information_verification_company_representative_content_margin_top">2dp</dimen>
+    <dimen name="customer_information_verification_company_representative_content_margin_bottom">20dp</dimen>
+    <!--endregion-->
+
+    <!--region dialog view photo ktp-->
+    <dimen name="customer_information_dialog_view_photo_ktp_attention_box_container_margin">5dp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_attention_text_width">0dp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_attention_text_margin">5dp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_attention_text_size">10sp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_background_area_height">125dp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_background_margin_top">4dp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_close_button_width">200dp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_close_button_height">50dp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_close_button_margin_end">8dp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_recapture_button_margin_start">8dp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_recapture_button_width">200dp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_recapture_button_height">50dp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_bottom_line_height">2dp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_bottom_line_margin_top">24dp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_card_corner_radius">10dp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_card_height">600dp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_card_width">750dp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_container_height">300dp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_container_margin_end">20dp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_container_margin_start">20dp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_container_width">325dp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_customer_name_margin_top">15dp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_customer_name_margin_start">15dp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_customer_name_text_size">20sp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_customer_reservation_code_margin_start">5dp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_customer_reservation_code_margin_top">10dp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_customer_reservation_code_margin_horizontal">5dp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_customer_queue_label_width">150dp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_customer_channel_label_width">150dp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_customer_reservation_code_text_size">20sp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_exclamation_image_margin_horizontal">10dp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_number_margin_bottom">5dp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_number_label_margin_top">5dp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_number_label_text_size">10sp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_photo_container_height">300dp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_photo_container_margin_top">29dp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_photo_container_width">325dp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_photo_margin">4dp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_photo_height">0dp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_reservation_source_margin_start">5dp</dimen>
+    <dimen name="customer_information_dialog_view_photo_ktp_reservation_source_margin_top">10dp</dimen>
+    <!--endregion-->
+
+    <!--region title transaction item-->
+    <dimen name="item_title_transaction_container_content_margin">7dp</dimen>
+    <dimen name="item_title_transaction_title_font_size">14sp</dimen>
+    <dimen name="item_title_transaction_title_margin_vertical">10dp</dimen>
+    <dimen name="item_title_transaction_title_height">40dp</dimen>
+    <dimen name="item_title_transaction_container_content_width">100dp</dimen>
+    <!--endregion-->
+
+    <!--region detail financial transaction item-->
+    <dimen name="item_detail_financial_transaction_header_width">0dp</dimen>
+    <dimen name="item_detail_financial_transaction_top_divider_width">0dp</dimen>
+    <dimen name="item_detail_financial_transaction_top_divider_height">2dp</dimen>
+    <dimen name="item_detail_financial_transaction_date_label_margin_start">14dp</dimen>
+    <dimen name="item_detail_financial_transaction_date_label_margin_top">16.5dp</dimen>
+    <dimen name="item_detail_financial_transaction_date_label_margin_bottom">16.5dp</dimen>
+    <dimen name="item_detail_financial_transaction_date_label_text_size">14sp</dimen>
+    <dimen name="item_detail_financial_transaction_transaction_label_text_size">14sp</dimen>
+    <dimen name="item_detail_financial_transaction_transaction_label_margin_start">150dp</dimen>
+    <dimen name="item_detail_financial_transaction_id_teller_label_margin_start">708dp</dimen>
+    <dimen name="item_detail_financial_transaction_id_teller_label_text_size">14sp</dimen>
+    <dimen name="item_detail_financial_transaction_credit_label_margin_start">572dp</dimen>
+    <dimen name="item_detail_financial_transaction_credit_label_text_size">14sp</dimen>
+    <dimen name="item_detail_financial_transaction_bottom_divider_width">0dp</dimen>
+    <dimen name="item_detail_financial_transaction_bottom_divider_height">2dp</dimen>
+    <dimen name="item_detail_financial_transaction_container_content_width">0dp</dimen>
+    <dimen name="item_detail_financial_transaction_container_content_height">52dp</dimen>
+    <dimen name="item_detail_financial_transaction_date_text_size">14sp</dimen>
+    <dimen name="item_detail_financial_transaction_date_margin_start">14dp</dimen>
+    <dimen name="item_detail_financial_transaction_transaction_text_size">12sp</dimen>
+    <dimen name="item_detail_financial_transaction_transaction_margin_start">140dp</dimen>
+    <dimen name="item_detail_financial_transaction_credit_text_size">14sp</dimen>
+    <dimen name="item_detail_financial_transaction_credit_margin_start">572dp</dimen>
+    <dimen name="item_detail_financial_transaction_id_teller_text_size">14sp</dimen>
+    <dimen name="item_detail_financial_transaction_id_teller_margin_start">708dp</dimen>
+    <dimen name="item_detail_financial_transaction_date_width">100dp</dimen>
+    <dimen name="item_detail_financial_transaction_transaction_width">400dp</dimen>
+    <dimen name="item_detail_financial_transaction_credit_width">110dp</dimen>
+    <dimen name="item_detail_financial_transaction_id_teller_width">110dp</dimen>
+    <!--endregion-->
+
+    <!--region card detail customer item-->
+    <dimen name="item_sub_credit_card_detail_customer_desc_margin_start">16dp</dimen>
+    <dimen name="item_sub_credit_card_detail_customer_horizontal_divider_height">1dp</dimen>
+    <dimen name="item_sub_credit_card_detail_customer_horizontal_divider_margin_end">15dp</dimen>
+    <dimen name="item_sub_credit_card_detail_customer_vertical_divider_width">5dp</dimen>
+    <dimen name="item_sub_credit_card_detail_customer_v_vertical_layout_height">50dp</dimen>
+    <dimen name="item_sub_credit_card_detail_customer_vertical_divider_margin_start">24dp</dimen>
+    <dimen name="item_sub_credit_card_detail_customer_icon_width">35dp</dimen>
+    <dimen name="item_sub_credit_card_detail_customer_icon_height">35dp</dimen>
+    <dimen name="item_sub_credit_card_detail_customer_icon_margin_start">30dp</dimen>
+    <dimen name="item_sub_credit_card_detail_customer_icon_margin_top">10dp</dimen>
+    <dimen name="item_sub_credit_card_detail_customer_icon_margin_bottom">7dp</dimen>
+    <dimen name="item_sub_credit_card_detail_customer_desc_margin_bottom">5dp</dimen>
+    <!--endregion-->
+
+    <!--region detail customer item-->
+    <dimen name="item_detail_customer_content_card_margin_vertical">10dp</dimen>
+    <dimen name="item_detail_customer_header_card_width">260dp</dimen>
+    <dimen name="item_detail_customer_header_card_margin_horizontal">8dp</dimen>
+    <dimen name="item_detail_customer_header_card_corner_radius">8dp</dimen>
+    <dimen name="item_detail_customer_header_width">0dp</dimen>
+    <dimen name="item_detail_customer_header_margin">1dp</dimen>
+    <dimen name="item_detail_customer_header_image_width">40dp</dimen>
+    <dimen name="item_detail_customer_header_image_height">40dp</dimen>
+    <dimen name="item_detail_customer_header_image_margin_start">8dp</dimen>
+    <dimen name="item_detail_customer_header_image_margin_bottom">7dp</dimen>
+    <dimen name="item_detail_customer_title_margin_start">16dp</dimen>
+    <dimen name="item_detail_customer_title_margin_top">10dp</dimen>
+    <dimen name="item_detail_customer_title_text_size">14sp</dimen>
+    <dimen name="item_detail_customer_description_margin_bottom">10dp</dimen>
+    <dimen name="item_detail_customer_drop_down_margin_end">8dp</dimen>
+    <dimen name="item_detail_customer_content_list_width">260dp</dimen>
+    <dimen name="item_detail_customer_content_list_margin_horizontal">8dp</dimen>
+    <dimen name="item_detail_customer_content_list_margin_top">-4dp</dimen>
+    <!--endregion-->
+
+    <!--region Fragment Detail Customer-->
+    <dimen name="customer_information_detail_customer_amount_container_height">36dp</dimen>
+    <dimen name="customer_information_detail_customer_amount_container_margin_end">1dp</dimen>
+    <dimen name="customer_information_detail_customer_amount_container_width">0dp</dimen>
+    <dimen name="customer_information_detail_customer_amount_label_margin_end">16dp</dimen>
+    <dimen name="customer_information_detail_customer_amount_label_text_size">12sp</dimen>
+    <dimen name="customer_information_detail_customer_amount_margin_end">16dp</dimen>
+    <dimen name="customer_information_detail_customer_amount_text_size">14sp</dimen>
+    <dimen name="customer_information_detail_customer_back_button_margin_end">32dp</dimen>
+    <dimen name="customer_information_detail_customer_birth_date_label_margin_top">4dp</dimen>
+    <dimen name="customer_information_detail_customer_birth_date_label_text_size">12sp</dimen>
+    <dimen name="customer_information_detail_customer_birth_date_text_size">12sp</dimen>
+    <dimen name="customer_information_detail_customer_birth_place_label_text_size">12sp</dimen>
+    <dimen name="customer_information_detail_customer_birth_place_text_size">12sp</dimen>
+    <dimen name="customer_information_detail_customer_body_height">0dp</dimen>
+    <dimen name="customer_information_detail_customer_body_width">0dp</dimen>
+    <dimen name="customer_information_detail_customer_card_height">0dp</dimen>
+    <dimen name="customer_information_detail_customer_card_number_container_height">0dp</dimen>
+    <dimen name="customer_information_detail_customer_card_number_container_width">290dp</dimen>
+    <dimen name="customer_information_detail_customer_card_number_end_line_height">0dp</dimen>
+    <dimen name="customer_information_detail_customer_card_number_end_line_width">1dp</dimen>
+    <dimen name="customer_information_detail_customer_card_number_list_height">0dp</dimen>
+    <dimen name="customer_information_detail_customer_card_number_list_width">0dp</dimen>
+    <dimen name="customer_information_detail_customer_card_width">0dp</dimen>
+    <dimen name="customer_information_detail_customer_cif_number_label_margin_start">220dp</dimen>
+    <dimen name="customer_information_detail_customer_cif_number_label_text_size">12sp</dimen>
+    <dimen name="customer_information_detail_customer_cif_number_margin_start">38dp</dimen>
+    <dimen name="customer_information_detail_customer_cif_number_text_size">12sp</dimen>
+    <dimen name="customer_information_detail_customer_content_margin">24dp</dimen>
+    <dimen name="customer_information_detail_customer_cooming_soon_height">0dp</dimen>
+    <dimen name="customer_information_detail_customer_cooming_soon_margin_end">1dp</dimen>
+    <dimen name="customer_information_detail_customer_cooming_soon_width">0dp</dimen>
+    <dimen name="customer_information_detail_customer_email_label_text_size">12sp</dimen>
+    <dimen name="customer_information_detail_customer_email_text_size">12sp</dimen>
+    <dimen name="customer_information_detail_customer_empty_information_transaction_desc_title_text_size">14sp</dimen>
+    <dimen name="customer_information_detail_customer_empty_information_transaction_title_margin_top">22.5dp</dimen>
+    <dimen name="customer_information_detail_customer_empty_information_transaction_title_text_size">14sp</dimen>
+    <dimen name="customer_information_detail_customer_finish_button_height">157dp</dimen>
+    <dimen name="customer_information_detail_customer_footer_container_height">80dp</dimen>
+    <dimen name="customer_information_detail_customer_footer_container_width">0dp</dimen>
+    <dimen name="customer_information_detail_customer_footer_line_height">1dp</dimen>
+    <dimen name="customer_information_detail_customer_identity_number_label_margin_top">8dp</dimen>
+    <dimen name="customer_information_detail_customer_identity_number_label_text_size">12sp</dimen>
+    <dimen name="customer_information_detail_customer_identity_number_margin_start">16dp</dimen>
+    <dimen name="customer_information_detail_customer_identity_number_text_size">12sp</dimen>
+    <dimen name="customer_information_detail_customer_information_transaction_card_corner_radius">10dp</dimen>
+    <dimen name="customer_information_detail_customer_information_transaction_card_height">0dp</dimen>
+    <dimen name="customer_information_detail_customer_information_transaction_card_margin_bottom">16dp</dimen>
+    <dimen name="customer_information_detail_customer_information_transaction_card_margin_end">24dp</dimen>
+    <dimen name="customer_information_detail_customer_information_transaction_card_margin_start">24dp</dimen>
+    <dimen name="customer_information_detail_customer_information_transaction_card_margin_top">8dp</dimen>
+    <dimen name="customer_information_detail_customer_information_transaction_card_width">0dp</dimen>
+    <dimen name="customer_information_detail_customer_information_transaction_label_margin_start">24dp</dimen>
+    <dimen name="customer_information_detail_customer_information_transaction_label_margin_top">3dp</dimen>
+    <dimen name="customer_information_detail_customer_information_transaction_label_text_size">16sp</dimen>
+    <dimen name="customer_information_detail_customer_join_date_label_text_size">12sp</dimen>
+    <dimen name="customer_information_detail_customer_join_date_text_size">12sp</dimen>
+    <dimen name="customer_information_detail_customer_mother_maiden_name_label_margin_start">220dp</dimen>
+    <dimen name="customer_information_detail_customer_mother_maiden_name_label_text_size">12sp</dimen>
+    <dimen name="customer_information_detail_customer_mother_maiden_name_margin_start">10dp</dimen>
+    <dimen name="customer_information_detail_customer_mother_maiden_name_text_size">12sp</dimen>
+    <dimen name="customer_information_detail_customer_name_margin_start">25dp</dimen>
+    <dimen name="customer_information_detail_customer_name_margin_top">31dp</dimen>
+    <dimen name="customer_information_detail_customer_name_text_size">18sp</dimen>
+    <dimen name="customer_information_detail_customer_occupation_label_text_size">12sp</dimen>
+    <dimen name="customer_information_detail_customer_occupation_text_size">12sp</dimen>
+    <dimen name="customer_information_detail_customer_phone_number_label_text_size">12sp</dimen>
+    <dimen name="customer_information_detail_customer_phone_number_text_size">12sp</dimen>
+    <dimen name="customer_information_detail_customer_profile_image_height">160dp</dimen>
+    <dimen name="customer_information_detail_customer_profile_image_margin_start">24dp</dimen>
+    <dimen name="customer_information_detail_customer_profile_image_margin_top">16dp</dimen>
+    <dimen name="customer_information_detail_customer_profile_image_width">160dp</dimen>
+    <dimen name="customer_information_detail_customer_profile_title_height">24dp</dimen>
+    <dimen name="customer_information_detail_customer_profile_title_margin_top">16dp</dimen>
+    <dimen name="customer_information_detail_customer_profile_title_text_size">16sp</dimen>
+    <dimen name="customer_information_detail_customer_transaction_detail_list_height">0dp</dimen>
+    <dimen name="customer_information_detail_customer_transaction_detail_list_width">0dp</dimen>
+    <dimen name="customer_information_detail_customer_transaction_title_bottom_line_height">2dp</dimen>
+    <dimen name="customer_information_detail_customer_transaction_title_bottom_line_width">0dp</dimen>
+    <dimen name="customer_information_detail_customer_transaction_title_height">48dp</dimen>
+    <dimen name="customer_information_detail_customer_transaction_title_margin_top">2dp</dimen>
+    <dimen name="customer_information_detail_customer_transaction_title_width">0dp</dimen>
+    <!--endregion-->
+
+    <!--region Fragment Detail Customer-->
+    <dimen name="fragment_detail_customer_tv_title_comming_soon_text_size">14sp</dimen>
+    <dimen name="fragment_detail_customer_tv_one_text_size">12sp</dimen>
+    <dimen name="fragment_detail_customer_tv_label_five_margin_top">4dp</dimen>
+    <dimen name="fragment_detail_customer_tv_label_six_margin_top">3dp</dimen>
+    <dimen name="fragment_detail_customer_tv_label_nine_margin_top">3dp</dimen>
+    <dimen name="fragment_detail_customer_iv_layout_image_width">110dp</dimen>
+    <dimen name="fragment_detail_customer_iv_layout_image_height">110dp</dimen>
+    <dimen name="fragment_detail_customer_iv_comming_soon_detail_customer_height">110dp</dimen>
+    <dimen name="fragment_detail_customer_tv_desc_comming_soon_detail_customer_width">190dp</dimen>
+    <dimen name="fragment_detail_customer_tv_desc_comming_soon_margin_top">8dp</dimen>
+    <!--endregion-->
+
+    <!--region customer information verification-->
+    <dimen name="customer_information_verification_detail_customer_customer_identity_number_text_size">14sp</dimen>
+    <dimen name="customer_information_verification_detail_customer_customer_name_margin_start">16dp</dimen>
+    <dimen name="customer_information_verification_detail_customer_customer_name_text_size">24sp</dimen>
+    <dimen name="customer_information_verification_detail_customer_customer_photo_margin_bottom">16dp</dimen>
+    <dimen name="customer_information_verification_detail_customer_customer_photo_margin_start">16dp</dimen>
+    <dimen name="customer_information_verification_detail_customer_customer_photo_size">62dp</dimen>
+    <dimen name="customer_information_verification_detail_customer_portfolio_margin_bottom">16dp</dimen>
+    <dimen name="customer_information_verification_detail_customer_portfolio_margin_horizontal">16dp</dimen>
+    <dimen name="customer_information_verification_detail_customer_profile_content_margin_start">16dp</dimen>
+    <dimen name="customer_information_verification_detail_customer_profile_content_padding_top">16dp</dimen>
+    <dimen name="customer_information_verification_detail_customer_profile_content_padding_vertical">16dp</dimen>
+    <dimen name="customer_information_verification_detail_customer_profile_content_width">300dp</dimen>
+    <dimen name="customer_information_verification_detail_layout_padding_horizontal">56dp</dimen>
+    <dimen name="customer_information_verification_detail_layout_padding_top">40dp</dimen>
+    <dimen name="customer_information_verification_detail_profile_content_item_margin_start">16dp</dimen>
+    <dimen name="customer_information_verification_detail_profile_content_item_margin_top">12dp</dimen>
+    <dimen name="customer_information_verification_detail_see_detail_button_margin_vertical">12dp</dimen>
+    <dimen name="customer_information_verification_detail_footer_detail_height">64dp</dimen>
+    <dimen name="customer_information_verification_detail_see_detail_button_padding_horizontal">12dp</dimen>
+    <dimen name="customer_information_verification_detail_see_detail_button_padding_vertical">8dp</dimen>
+    <dimen name="customer_information_verification_detail_separator_height">1dp</dimen>
+    <dimen name="customer_information_verification_detail_separator_margin_top">16dp</dimen>
+    <dimen name="customer_information_verification_detail_timer_padding_horizontal">16dp</dimen>
+    <dimen name="customer_information_verification_detail_title_margin_start">16dp</dimen>
+    <dimen name="customer_information_verification_detail_title_margin_top">16dp</dimen>
+    <dimen name="customer_information_verification_detail_title_text_size">20sp</dimen>
+    <dimen name="customer_information_verification_detail_header_padding_bottom">10dp</dimen>
+    <dimen name="customer_information_verification_detail_phone_number_radius">8dp</dimen>
+    <dimen name="customer_information_verification_detail_phone_number_corner_width">1dp</dimen>
+    <dimen name="customer_information_verification_detail_phone_number_drawable_padding">4dp</dimen>
+    <dimen name="customer_information_verification_detail_phone_number_padding_horizontal">10dp</dimen>
+    <dimen name="customer_information_verification_detail_phone_number_padding_vertical">4dp</dimen>
+    <!--endregion-->
+
+    <!--region content customer portfolio customer information-->
+    <dimen name="content_customer_portfolio_layout_margin_end">24dp</dimen>
+    <dimen name="content_customer_portfolio_tab_layout_padding_horizontal">8dp</dimen>
+    <dimen name="content_customer_portfolio_tab_layout_padding_top">8dp</dimen>
+    <dimen name="content_customer_portfolio_tab_min_width">163dp</dimen>
+    <dimen name="content_customer_portfolio_loan_card_outline_width">1dp</dimen>
+    <dimen name="content_customer_portfolio_card_radius">16dp</dimen>
+    <dimen name="content_customer_portfolio_loan_padding">16dp</dimen>
+    <!--endregion-->
+
+    <!--region item portfolio detail customer information-->
+    <dimen name="item_portfolio_detail_layout_padding_horizontal">16dp</dimen>
+    <dimen name="item_portfolio_detail_layout_padding_vertical">12dp</dimen>
+    <!--endregion-->
+
+    <!--region item portfolio customer information-->
+    <dimen name="item_portfolio_layout_margin_bottom">16dp</dimen>
+    <dimen name="item_portfolio_layout_margin_top">16dp</dimen>
+    <dimen name="item_portfolio_balance_margin_end">16dp</dimen>
+    <dimen name="item_portfolio_balance_margin_vertical">12dp</dimen>
+    <dimen name="item_portfolio_category_margin_start">8dp</dimen>
+    <dimen name="item_portfolio_category_text_size">16sp</dimen>
+    <dimen name="item_portfolio_header_padding_horizontal">16dp</dimen>
+    <dimen name="item_portfolio_header_padding_vertical">8dp</dimen>
+    <dimen name="item_portfolio_limit_margin_vertical">12dp</dimen>
+    <dimen name="item_portfolio_product_margin_start">16dp</dimen>
+    <dimen name="item_portfolio_product_margin_vertical">12dp</dimen>
+    <dimen name="item_portfolio_product_separator_margin_top">12dp</dimen>
+    <dimen name="item_portfolio_see_detail_button_margin_end">16dp</dimen>
+    <dimen name="item_portfolio_see_detail_button_margin_vertical">10dp</dimen>
+    <dimen name="item_portfolio_see_detail_button_padding_horizontal">16dp</dimen>
+    <dimen name="item_portfolio_see_detail_button_padding_vertical">10dp</dimen>
+    <dimen name="item_portfolio_separator_height">2dp</dimen>
+    <dimen name="item_portfolio_total_balance_margin_end">10dp</dimen>
+    <dimen name="item_portfolio_total_balance_text_size">16sp</dimen>
+    <dimen name="item_portfolio_shimmer_size">48dp</dimen>
+    <!--endregion-->
+
+    <!--region dialog see detail transaction -->
+    <dimen name="dialog_see_detail_button_close_margin_bottom">10dp</dimen>
+    <dimen name="dialog_see_detail_button_close_margin_top">10dp</dimen>
+    <dimen name="dialog_see_detail_button_close_margin_vertical">10dp</dimen>
+    <dimen name="dialog_see_detail_button_close_width">160dp</dimen>
+    <dimen name="dialog_see_detail_content_title_margin_start">16dp</dimen>
+    <dimen name="dialog_see_detail_content_title_margin_top">16dp</dimen>
+    <dimen name="dialog_see_detail_content_title_text_size">24sp</dimen>
+    <dimen name="dialog_see_detail_corner_radius">16dp</dimen>
+    <dimen name="dialog_see_detail_header_height">105dp</dimen>
+    <dimen name="dialog_see_detail_header_icon_margin_bottom">31dp</dimen>
+    <dimen name="dialog_see_detail_header_icon_margin_start">16dp</dimen>
+    <dimen name="dialog_see_detail_header_icon_margin_top">24dp</dimen>
+    <dimen name="dialog_see_detail_header_product_name_margin_start">24dp</dimen>
+    <dimen name="dialog_see_detail_header_product_name_margin_top">16dp</dimen>
+    <dimen name="dialog_see_detail_header_product_name_text_size">32sp</dimen>
+    <dimen name="dialog_see_detail_item_text_size">16sp</dimen>
+    <dimen name="dialog_see_detail_transaction_amount_margin_end">8dp</dimen>
+    <dimen name="dialog_see_detail_transaction_amount_margin_top">16dp</dimen>
+    <dimen name="dialog_see_detail_transaction_currency_margin_end">16dp</dimen>
+    <dimen name="dialog_see_detail_transaction_currency_margin_start">8dp</dimen>
+    <dimen name="dialog_see_detail_transaction_date_margin_end">8dp</dimen>
+    <dimen name="dialog_see_detail_transaction_date_margin_top">16dp</dimen>
+    <dimen name="dialog_see_detail_transaction_header_account_number_margin_top">5dp</dimen>
+    <dimen name="dialog_see_detail_transaction_header_account_number_text_size">16sp</dimen>
+    <dimen name="dialog_see_detail_transaction_height">619dp</dimen>
+    <dimen name="dialog_see_detail_transaction_note_margin_end">16dp</dimen>
+    <dimen name="dialog_see_detail_transaction_note_margin_start">8dp</dimen>
+    <dimen name="dialog_see_detail_transaction_reference_number_margin_end">8dp</dimen>
+    <dimen name="dialog_see_detail_transaction_reference_number_margin_top">16dp</dimen>
+    <dimen name="dialog_see_detail_transaction_source_margin_end">8dp</dimen>
+    <dimen name="dialog_see_detail_transaction_source_margin_top">8dp</dimen>
+    <dimen name="dialog_see_detail_transaction_time_margin_end">16dp</dimen>
+    <dimen name="dialog_see_detail_transaction_time_margin_start">8dp</dimen>
+    <dimen name="dialog_see_detail_transaction_type_margin_end">16dp</dimen>
+    <dimen name="dialog_see_detail_transaction_type_margin_start">8dp</dimen>
+    <dimen name="dialog_see_detail_transaction_type_margin_top">8dp</dimen>
+    <dimen name="dialog_see_detail_transaction_width">800dp</dimen>
+    <!--endregion-->
+
+    <!--region see detail portfolio-->
+    <dimen name="dialog_see_detail_portfolio_buying_price_margin_end">16dp</dimen>
+    <dimen name="dialog_see_detail_portfolio_buying_price_margin_start">16dp</dimen>
+    <dimen name="dialog_see_detail_portfolio_current_price_margin_start">16dp</dimen>
+    <dimen name="dialog_see_detail_portfolio_date_margin_top">5dp</dimen>
+    <dimen name="dialog_see_detail_portfolio_height">423dp</dimen>
+    <dimen name="dialog_see_detail_portfolio_investment_manager_margin_top">8dp</dimen>
+    <dimen name="dialog_see_detail_portfolio_investment_manager_width">350dp</dimen>
+    <dimen name="dialog_see_detail_portfolio_owned_unit_margin_start">16dp</dimen>
+    <dimen name="dialog_see_detail_portfolio_profit_loss_amount_margin_end">16dp</dimen>
+    <dimen name="dialog_see_detail_portfolio_profit_loss_container_margin_end">16dp</dimen>
+    <dimen name="dialog_see_detail_portfolio_profit_loss_container_margin_start">16dp</dimen>
+    <dimen name="dialog_see_detail_portfolio_profit_loss_container_padding_start">16dp</dimen>
+    <dimen name="dialog_see_detail_portfolio_profit_loss_container_padding_vertical">16dp</dimen>
+    <dimen name="dialog_see_detail_portfolio_profit_loss_percentage_margin_top">10dp</dimen>
+    <dimen name="dialog_see_detail_portfolio_unit_price_margin_top">16dp</dimen>
+    <dimen name="dialog_see_detail_portfolio_width">701dp</dimen>
+    <!--endregion-->
+
+    <!--region see detail loan-->
+    <dimen name="dialog_see_detail_loan_amount_margin_end">8dp</dimen>
+    <dimen name="dialog_see_detail_loan_amount_margin_top">10dp</dimen>
+    <dimen name="dialog_see_detail_loan_collectability_margin_horizontal">16dp</dimen>
+    <dimen name="dialog_see_detail_loan_detail_margin_top">16dp</dimen>
+    <dimen name="dialog_see_detail_loan_disbursement_date_margin_start">8dp</dimen>
+    <dimen name="dialog_see_detail_loan_due_date_margin_end">16dp</dimen>
+    <dimen name="dialog_see_detail_loan_due_date_margin_start">16dp</dimen>
+    <dimen name="dialog_see_detail_loan_height">589dp</dimen>
+    <dimen name="dialog_see_detail_loan_interest_margin_end">8dp</dimen>
+    <dimen name="dialog_see_detail_loan_interest_margin_start">16dp</dimen>
+    <dimen name="dialog_see_detail_loan_next_installment_due_date_margin_end">16dp</dimen>
+    <dimen name="dialog_see_detail_loan_next_installment_due_date_margin_start">8dp</dimen>
+    <dimen name="dialog_see_detail_loan_next_installment_margin_top">16dp</dimen>
+    <dimen name="dialog_see_detail_loan_remaining_limit_margin_end">8dp</dimen>
+    <dimen name="dialog_see_detail_loan_remaining_limit_margin_top">8dp</dimen>
+    <dimen name="dialog_see_detail_loan_remaining_limit_width">390dp</dimen>
+    <dimen name="dialog_see_detail_loan_total_margin_end">8dp</dimen>
+    <dimen name="dialog_see_detail_loan_total_margin_top">10dp</dimen>
+    <dimen name="dialog_see_detail_loan_type_margin_top">5dp</dimen>
+    <dimen name="dialog_see_detail_loan_width">768dp</dimen>
+    <!--endregion-->
+
+    <!--region see detail ori-->
+    <dimen name="dialog_see_detail_ori_account_number_margin_end">8dp</dimen>
+    <dimen name="dialog_see_detail_ori_account_number_margin_top">16dp</dimen>
+    <dimen name="dialog_see_detail_ori_amount_per_unit_margin_end">8dp</dimen>
+    <dimen name="dialog_see_detail_ori_amount_per_unit_margin_top">16dp</dimen>
+    <dimen name="dialog_see_detail_ori_code_margin_horizontal">8dp</dimen>
+    <dimen name="dialog_see_detail_ori_coupon_margin_end">8dp</dimen>
+    <dimen name="dialog_see_detail_ori_coupon_margin_top">16dp</dimen>
+    <dimen name="dialog_see_detail_ori_customer_name_margin_end">8dp</dimen>
+    <dimen name="dialog_see_detail_ori_customer_name_margin_top">8dp</dimen>
+    <dimen name="dialog_see_detail_ori_due_date_margin_end">16dp</dimen>
+    <dimen name="dialog_see_detail_ori_due_date_margin_start">8dp</dimen>
+    <dimen name="dialog_see_detail_ori_height">619dp</dimen>
+    <dimen name="dialog_see_detail_ori_investment_manager_margin_end">16dp</dimen>
+    <dimen name="dialog_see_detail_ori_investment_manager_margin_start">8dp</dimen>
+    <dimen name="dialog_see_detail_ori_investment_manager_margin_top">8dp</dimen>
+    <dimen name="dialog_see_detail_ori_name_margin_end">16dp</dimen>
+    <dimen name="dialog_see_detail_ori_name_margin_start">8dp</dimen>
+    <dimen name="dialog_see_detail_ori_product_code_margin_top">5dp</dimen>
+    <dimen name="dialog_see_detail_ori_registered_date_margin_horizontal">8dp</dimen>
+    <dimen name="dialog_see_detail_ori_total_amount_margin_end">16dp</dimen>
+    <dimen name="dialog_see_detail_ori_total_amount_margin_start">8dp</dimen>
+    <dimen name="dialog_see_detail_ori_total_margin_horizontal">8dp</dimen>
+    <dimen name="dialog_see_detail_ori_width">964dp</dimen>
+    <!--endregion-->
+
+    <!--region see detail fund-->
+    <dimen name="dialog_see_detail_fund_account_number_margin_top">5dp</dimen>
+    <dimen name="dialog_see_detail_fund_balance_margin_start">8dp</dimen>
+    <dimen name="dialog_see_detail_fund_blocked_amount_container_item_margin_end">16dp</dimen>
+    <dimen name="dialog_see_detail_fund_blocked_amount_container_item_margin_top">10dp</dimen>
+    <dimen name="dialog_see_detail_fund_blocked_amount_container_margin_end">16dp</dimen>
+    <dimen name="dialog_see_detail_fund_blocked_amount_container_margin_start">8dp</dimen>
+    <dimen name="dialog_see_detail_fund_blocked_amount_container_padding_start">16dp</dimen>
+    <dimen name="dialog_see_detail_fund_blocked_amount_container_padding_vertical">16dp</dimen>
+    <dimen name="dialog_see_detail_fund_branch_margin_start">16dp</dimen>
+    <dimen name="dialog_see_detail_fund_branch_margin_top">8dp</dimen>
+    <dimen name="dialog_see_detail_fund_card_expire_date_margin_start">8dp</dimen>
+    <dimen name="dialog_see_detail_fund_card_expire_date_width">190dp</dimen>
+    <dimen name="dialog_see_detail_fund_card_name_margin_top">8dp</dimen>
+    <dimen name="dialog_see_detail_fund_card_name_width">185dp</dimen>
+    <dimen name="dialog_see_detail_fund_card_number_margin_start">8dp</dimen>
+    <dimen name="dialog_see_detail_fund_card_number_width">210dp</dimen>
+    <dimen name="dialog_see_detail_fund_card_status_margin_end">16dp</dimen>
+    <dimen name="dialog_see_detail_fund_card_status_margin_start">8dp</dimen>
+    <dimen name="dialog_see_detail_fund_card_status_width">160dp</dimen>
+    <dimen name="dialog_see_detail_fund_currency_margin_end">16dp</dimen>
+    <dimen name="dialog_see_detail_fund_currency_margin_start">8dp</dimen>
+    <dimen name="dialog_see_detail_fund_debit_card_title_margin_top">16dp</dimen>
+    <dimen name="dialog_see_detail_fund_debit_card_title_text_size">24sp</dimen>
+    <dimen name="dialog_see_detail_fund_height">557dp</dimen>
+    <dimen name="dialog_see_detail_fund_name_margin_start">8dp</dimen>
+    <dimen name="dialog_see_detail_fund_product_name_margin_top">16dp</dimen>
+    <dimen name="dialog_see_detail_fund_width">800dp</dimen>
+    <!--endregion-->
+
+    <!--region see detail credit card-->
+    <dimen name="dialog_see_detail_credit_card_collectability_margin_start">8dp</dimen>
+    <dimen name="dialog_see_detail_credit_card_current_bill_margin_top">16dp</dimen>
+    <dimen name="dialog_see_detail_credit_card_due_date_margin_horizontal">16dp</dimen>
+    <dimen name="dialog_see_detail_credit_card_height">579dp</dimen>
+    <dimen name="dialog_see_detail_credit_card_limit_container_margin_end">16dp</dimen>
+    <dimen name="dialog_see_detail_credit_card_limit_container_margin_top">16dp</dimen>
+    <dimen name="dialog_see_detail_credit_card_limit_container_padding_start">16dp</dimen>
+    <dimen name="dialog_see_detail_credit_card_limit_container_padding_vertical">16dp</dimen>
+    <dimen name="dialog_see_detail_credit_card_limit_margin_end">16dp</dimen>
+    <dimen name="dialog_see_detail_credit_card_limit_separator_height">2dp</dimen>
+    <dimen name="dialog_see_detail_credit_card_limit_separator_margin_top">10dp</dimen>
+    <dimen name="dialog_see_detail_credit_card_minimum_payment_margin_start">16dp</dimen>
+    <dimen name="dialog_see_detail_credit_card_minimum_payment_width">258dp</dimen>
+    <dimen name="dialog_see_detail_credit_card_name_margin_top">5dp</dimen>
+    <dimen name="dialog_see_detail_credit_card_number_margin_top">16dp</dimen>
+    <dimen name="dialog_see_detail_credit_card_product_name_margin_end">8dp</dimen>
+    <dimen name="dialog_see_detail_credit_card_product_name_margin_start">16dp</dimen>
+    <dimen name="dialog_see_detail_credit_card_product_name_margin_top">8dp</dimen>
+    <dimen name="dialog_see_detail_credit_card_progress_bar_margin_end">16dp</dimen>
+    <dimen name="dialog_see_detail_credit_card_progress_bar_margin_top">10dp</dimen>
+    <dimen name="dialog_see_detail_credit_card_remaining_limit_margin_end">16dp</dimen>
+    <dimen name="dialog_see_detail_credit_card_type_margin_end">16dp</dimen>
+    <dimen name="dialog_see_detail_credit_card_type_margin_start">16dp</dimen>
+    <dimen name="dialog_see_detail_credit_card_width">684dp</dimen>
+    <!--endregion-->
+
+    <!--region see detail deposit-->
+    <dimen name="dialog_see_detail_deposit_disbursement_container_item_margin_end">16dp</dimen>
+    <dimen name="dialog_see_detail_deposit_disbursement_container_item_margin_top">10dp</dimen>
+    <dimen name="dialog_see_detail_deposit_disbursement_container_margin_end">8dp</dimen>
+    <dimen name="dialog_see_detail_deposit_disbursement_container_margin_top">16dp</dimen>
+    <dimen name="dialog_see_detail_deposit_disbursement_container_padding_start">16dp</dimen>
+    <dimen name="dialog_see_detail_deposit_disbursement_container_padding_vertical">16dp</dimen>
+    <dimen name="dialog_see_detail_deposit_due_date_label_text_size">16sp</dimen>
+    <dimen name="dialog_see_detail_deposit_due_date_margin_end">32dp</dimen>
+    <dimen name="dialog_see_detail_deposit_due_date_text_size">16sp</dimen>
+    <dimen name="dialog_see_detail_deposit_estimated_interest_margin_end">8dp</dimen>
+    <dimen name="dialog_see_detail_deposit_header_account_number_margin_top">5dp</dimen>
+    <dimen name="dialog_see_detail_deposit_header_account_number_text_size">16sp</dimen>
+    <dimen name="dialog_see_detail_deposit_height">551dp</dimen>
+    <dimen name="dialog_see_detail_deposit_initial_deposit_margin_end">8dp</dimen>
+    <dimen name="dialog_see_detail_deposit_initial_deposit_margin_top">8dp</dimen>
+    <dimen name="dialog_see_detail_deposit_interest_margin_end">8dp</dimen>
+    <dimen name="dialog_see_detail_deposit_interest_margin_top">16dp</dimen>
+    <dimen name="dialog_see_detail_deposit_interest_width">170dp</dimen>
+    <dimen name="dialog_see_detail_deposit_note_container_item_margin_top">10dp</dimen>
+    <dimen name="dialog_see_detail_deposit_note_container_margin_end">16dp</dimen>
+    <dimen name="dialog_see_detail_deposit_note_container_margin_top">16dp</dimen>
+    <dimen name="dialog_see_detail_deposit_note_container_padding_horizontal">16dp</dimen>
+    <dimen name="dialog_see_detail_deposit_note_container_padding_vertical">16dp</dimen>
+    <dimen name="dialog_see_detail_deposit_note_drawable_padding">6dp</dimen>
+    <dimen name="dialog_see_detail_deposit_note_text_size">12sp</dimen>
+    <dimen name="dialog_see_detail_deposit_opening_date_margin_end">8dp</dimen>
+    <dimen name="dialog_see_detail_deposit_opening_date_margin_start">8dp</dimen>
+    <dimen name="dialog_see_detail_deposit_opening_date_margin_top">8dp</dimen>
+    <dimen name="dialog_see_detail_deposit_opening_date_width">190dp</dimen>
+    <dimen name="dialog_see_detail_deposit_status_margin_end">16dp</dimen>
+    <dimen name="dialog_see_detail_deposit_status_margin_start">8dp</dimen>
+    <dimen name="dialog_see_detail_deposit_status_margin_top">16dp</dimen>
+    <dimen name="dialog_see_detail_deposit_time_period_margin_end">16dp</dimen>
+    <dimen name="dialog_see_detail_deposit_time_period_margin_start">8dp</dimen>
+    <dimen name="dialog_see_detail_deposit_time_period_width">190dp</dimen>
+    <dimen name="dialog_see_detail_deposit_width">800dp</dimen>
+    <!--endregion-->
+
+    <!--region customer information customer details-->
+    <dimen name="customer_information_customer_detail_layout_padding_horizontal">56dp</dimen>
+    <dimen name="customer_information_customer_detail_layout_padding_top">40dp</dimen>
+    <dimen name="customer_information_customer_detail_layout_padding_bottom">56dp</dimen>
+    <dimen name="customer_information_customer_detail_separator_height">1dp</dimen>
+    <dimen name="customer_information_customer_detail_timer_padding_horizontal">16dp</dimen>
+    <dimen name="customer_information_customer_detail_title_margin">16dp</dimen>
+    <dimen name="customer_information_customer_detail_title_text_size">18sp</dimen>
+    <dimen name="customer_information_customer_detail_sub_title_text_size">16sp</dimen>
+    <dimen name="customer_information_customer_detail_list_menu_margin_top">16dp</dimen>
+    <dimen name="customer_information_customer_detail_update_button_margin_end">12dp</dimen>
+    <dimen name="customer_information_customer_detail_update_button_margin_vertical">8dp</dimen>
+    <!--endregion-->
+
+    <!--region customer information personal information-->
+    <dimen name="customer_information_personal_information_content_padding_horizontal">16dp</dimen>
+    <dimen name="customer_information_personal_information_full_name_margin_top">16dp</dimen>
+    <dimen name="customer_information_personal_information_name_margin_end">8dp</dimen>
+    <dimen name="customer_information_personal_information_name_margin_start">8dp</dimen>
+    <dimen name="customer_information_personal_information_content_item_margin_top">12dp</dimen>
+    <dimen name="customer_information_personal_information_content_item_margin_bottom">16dp</dimen>
+    <!--endregion-->
+
+    <!--region customer information personal address-->
+    <dimen name="customer_information_personal_address_content_padding_horizontal">16dp</dimen>
+    <dimen name="customer_information_personal_address_content_padding_vertical">16dp</dimen>
+    <dimen name="customer_information_personal_address_title_text_size">14sp</dimen>
+    <dimen name="customer_information_personal_address_field_margin_top">16dp</dimen>
+    <dimen name="customer_information_personal_address_line_decoration_height">1dp</dimen>
+    <dimen name="customer_information_personal_address_line_decoration_margin_start">10dp</dimen>
+    <dimen name="customer_information_personal_address_content_item_margin_top">12dp</dimen>
+    <dimen name="customer_information_personal_address_neighbourhood_margin_end">8dp</dimen>
+    <dimen name="customer_information_personal_address_hamlet_margin_start">8dp</dimen>
+    <dimen name="customer_information_personal_address_sub_title_margin_top">8dp</dimen>
+    <!--endregion-->
+
+    <!--region customer information job address-->
+    <dimen name="customer_information_job_address_content_padding_horizontal">16dp</dimen>
+    <dimen name="customer_information_job_address_content_padding_vertical">16dp</dimen>
+    <dimen name="customer_information_job_address_content_item_margin_top">12dp</dimen>
+    <dimen name="customer_information_job_address_neighbourhood_margin_end">8dp</dimen>
+    <dimen name="customer_information_job_address_hamlet_margin_start">8dp</dimen>
+    <!--endregion-->
+
+    <!--region customer information job information-->
+    <dimen name="customer_information_job_information_content_padding_horizontal">16dp</dimen>
+    <dimen name="customer_information_job_information_content_padding_vertical">16dp</dimen>
+    <dimen name="customer_information_job_information_content_item_margin_top">12dp</dimen>
+    <!--endregion-->
+
+    <!--region customer information personal address-->
+    <dimen name="customer_information_electronic_address_line_decoration_height">1dp</dimen>
+    <dimen name="customer_information_electronic_address_line_decoration_margin_start">10dp</dimen>
+    <dimen name="customer_information_electronic_address_content_item_margin_top">12dp</dimen>
+    <dimen name="customer_information_electronic_address_status_border_radius">20dp</dimen>
+    <dimen name="customer_information_electronic_address_status_padding_horizontal">10dp</dimen>
+    <dimen name="customer_information_electronic_address_status_padding_vertical">2dp</dimen>
+    <dimen name="customer_information_electronic_address_status_margin_start">10dp</dimen>
+    <dimen name="customer_information_electronic_address_main_container_corner_radius">12dp</dimen>
+    <dimen name="customer_information_electronic_address_main_container_margin_horizontal">1dp</dimen>
+    <!--endregion-->
+
+    <!--region dialog show phone number-->
+    <dimen name="dialog_show_phone_number_layout_radius">16dp</dimen>
+    <dimen name="dialog_show_phone_number_layout_width">600dp</dimen>
+    <dimen name="dialog_show_phone_number_layout_height">474dp</dimen>
+    <dimen name="dialog_show_phone_number_layout_padding_horizontal">24dp</dimen>
+    <dimen name="dialog_show_phone_number_layout_padding_vertical">16dp</dimen>
+    <dimen name="dialog_show_phone_number_title_margin_start">4dp</dimen>
+    <dimen name="dialog_show_phone_number_title_text_size">20sp</dimen>
+    <dimen name="dialog_show_phone_number_list_phone_number_margin_top">20dp</dimen>
+    <dimen name="dialog_show_phone_number_list_phone_number_padding_horizontal">16dp</dimen>
+    <dimen name="dialog_show_phone_number_list_phone_number_padding_vertical">10dp</dimen>
+    <dimen name="dialog_show_phone_number_list_home_phone_number_margin_top">10dp</dimen>
+    <dimen name="dialog_show_phone_number_close_button_width">160dp</dimen>
+    <dimen name="dialog_show_phone_number_close_button_margin_top">16dp</dimen>
+    <!--endregion-->
+
+    <!--region dialog show phone number-->
+    <dimen name="item_show_phone_number_padding_horizontal">16dp</dimen>
+    <dimen name="item_show_phone_number_padding_vertical">10dp</dimen>
+    <dimen name="item_show_phone_number_margin_bottom">10dp</dimen>
+    <dimen name="item_show_phone_number_label_margin_start">16dp</dimen>
+    <dimen name="item_show_phone_number_label_text_size">12sp</dimen>
+    <!--endregion-->
+
+    <!--region dialog show phone number label-->
+    <dimen name="item_show_phone_number_label_padding">4dp</dimen>
+    <dimen name="item_show_phone_number_status_padding_horizontal">10dp</dimen>
+    <dimen name="item_show_phone_number_status_padding_vertical">4dp</dimen>
+    <dimen name="item_show_phone_number_status_text_size">12sp</dimen>
+    <!--endregion-->
+
+    <!--region item portfolio transaction history-->
+    <dimen name="item_portfolio_transaction_history_padding_horizontal">16dp</dimen>
+    <dimen name="item_portfolio_transaction_history_padding_vertical">11dp</dimen>
+    <!--endregion-->
+
+    <!--region item portfolio tab-->
+    <dimen name="item_portfolio_tab_margin_horizontal">16dp</dimen>
+    <dimen name="item_portfolio_tab_margin_top">16dp</dimen>
+    <dimen name="item_portfolio_tab_selected_radius">8dp</dimen>
+    <dimen name="item_portfolio_tab_border_width">1dp</dimen>
+    <!--endregion-->
+
+    <!--region customer information portfolio detail-->
+    <dimen name="customer_information_portfolio_detail_content_batik_pattern_height">100dp</dimen>
+    <dimen name="customer_information_portfolio_detail_content_detail_padding_vertical">8dp</dimen>
+    <dimen name="customer_information_portfolio_detail_content_margin_bottom">16dp</dimen>
+    <dimen name="customer_information_portfolio_detail_content_margin_horizontal">16dp</dimen>
+    <dimen name="customer_information_portfolio_detail_current_bill_margin_end">16dp</dimen>
+    <dimen name="customer_information_portfolio_detail_date_margin_start">16dp</dimen>
+    <dimen name="customer_information_portfolio_detail_date_margin_top">16dp</dimen>
+    <dimen name="customer_information_portfolio_detail_end_date_margin_start">10dp</dimen>
+    <dimen name="customer_information_portfolio_detail_end_date_padding_horizontal">16dp</dimen>
+    <dimen name="customer_information_portfolio_detail_end_date_padding_vertical">8dp</dimen>
+    <dimen name="customer_information_portfolio_detail_filter_button_margin_horizontal">8dp</dimen>
+    <dimen name="customer_information_portfolio_detail_filter_button_margin_start">10dp</dimen>
+    <dimen name="customer_information_portfolio_detail_filter_button_padding_horizontal">12dp</dimen>
+    <dimen name="customer_information_portfolio_detail_filter_button_padding_vertical">7dp</dimen>
+    <dimen name="customer_information_portfolio_detail_filter_button_text_size">14sp</dimen>
+    <dimen name="customer_information_portfolio_detail_filter_button_width">95dp</dimen>
+    <dimen name="customer_information_portfolio_detail_filter_drawable_padding">8dp</dimen>
+    <dimen name="customer_information_portfolio_detail_filter_item_radius">6dp</dimen>
+    <dimen name="customer_information_portfolio_detail_filter_padding_horizontal">12dp</dimen>
+    <dimen name="customer_information_portfolio_detail_filter_top_separator_margin_top">10dp</dimen>
+    <dimen name="customer_information_portfolio_detail_hold_amount_container_elevation">4dp</dimen>
+    <dimen name="customer_information_portfolio_detail_hold_amount_container_margin_start">16dp</dimen>
+    <dimen name="customer_information_portfolio_detail_hold_amount_container_margin_top">4dp</dimen>
+    <dimen name="customer_information_portfolio_detail_hold_amount_container_padding_vertical">4dp</dimen>
+    <dimen name="customer_information_portfolio_detail_hold_amount_container_width">400dp</dimen>
+    <dimen name="customer_information_portfolio_detail_hold_amount_margin_end">16dp</dimen>
+    <dimen name="customer_information_portfolio_detail_hold_amount_margin_horizontal">16dp</dimen>
+    <dimen name="customer_information_portfolio_detail_hold_amount_radius">4dp</dimen>
+    <dimen name="customer_information_portfolio_detail_investment_current_value_margin_top">18dp</dimen>
+    <dimen name="customer_information_portfolio_detail_investment_dotted_separator_height">2dp</dimen>
+    <dimen name="customer_information_portfolio_detail_investment_dotted_separator_margin_top">100dp</dimen>
+    <dimen name="customer_information_portfolio_detail_investment_dotted_up_separator_margin_top">58dp</dimen>
+    <dimen name="customer_information_portfolio_detail_investment_item_margin_start">8dp</dimen>
+    <dimen name="customer_information_portfolio_detail_investment_padding_horizontal">16dp</dimen>
+    <dimen name="customer_information_portfolio_detail_investment_padding_vertical">16dp</dimen>
+    <dimen name="customer_information_portfolio_detail_investment_sbsn_name_margin_top">50dp</dimen>
+    <dimen name="customer_information_portfolio_detail_item_width">190dp</dimen>
+    <dimen name="customer_information_portfolio_detail_label_text_size">12sp</dimen>
+    <dimen name="customer_information_portfolio_detail_list_margin_horizontal">2dp</dimen>
+    <dimen name="customer_information_portfolio_detail_mutation_margin_end">16dp</dimen>
+    <dimen name="customer_information_portfolio_detail_padding_bottom">56dp</dimen>
+    <dimen name="customer_information_portfolio_detail_padding_horizontal">56dp</dimen>
+    <dimen name="customer_information_portfolio_detail_padding_top">40dp</dimen>
+    <dimen name="customer_information_portfolio_detail_separator_height">1dp</dimen>
+    <dimen name="customer_information_portfolio_detail_separator_margin_top">8dp</dimen>
+    <dimen name="customer_information_portfolio_detail_separator_width">1dp</dimen>
+    <dimen name="customer_information_portfolio_detail_start_date_margin_bottom">16dp</dimen>
+    <dimen name="customer_information_portfolio_detail_start_date_margin_top">16dp</dimen>
+    <dimen name="customer_information_portfolio_detail_start_date_padding_horizontal">16dp</dimen>
+    <dimen name="customer_information_portfolio_detail_start_date_padding_vertical">8dp</dimen>
+    <dimen name="customer_information_portfolio_detail_start_margin_start">16dp</dimen>
+    <dimen name="customer_information_portfolio_detail_tab_container_margin_horizontal">16dp</dimen>
+    <dimen name="customer_information_portfolio_detail_tab_container_margin_top">16dp</dimen>
+    <dimen name="customer_information_portfolio_detail_tab_layout_margin_horizontal">8dp</dimen>
+    <dimen name="customer_information_portfolio_detail_tab_layout_min_width">163dp</dimen>
+    <dimen name="customer_information_portfolio_detail_timer_padding_horizontal">16dp</dimen>
+    <dimen name="customer_information_portfolio_detail_title_margin_start">16dp</dimen>
+    <dimen name="customer_information_portfolio_detail_title_margin_vertical">16dp</dimen>
+    <dimen name="customer_information_portfolio_detail_title_text_size">20sp</dimen>
+    <dimen name="customer_information_portfolio_detail_transaction_type_margin_start">10dp</dimen>
+    <dimen name="customer_information_portfolio_detail_transaction_type_padding_horizontal">16dp</dimen>
+    <dimen name="customer_information_portfolio_detail_transaction_type_padding_vertical">8dp</dimen>
+    <dimen name="customer_information_portfolio_detail_transaction_type_width">200dp</dimen>
+    <dimen name="customer_information_portfolio_detail_value_text_size">16sp</dimen>
+    <dimen name="customer_information_portfolio_detail_recycler_view_padding_bottom">16dp</dimen>
+    <!--endregion-->
+
+    <!--region item portfolio tab-->
+    <dimen name="tab_indicator_top_layer_radius">18dp</dimen>
+    <dimen name="tab_indicator_bottom_layer_radius">16dp</dimen>
+    <dimen name="tab_indicator_bottom_size">5dp</dimen>
+    <!--endregion-->
+
+    <!--region dialog see detail hold amount-->
+    <dimen name="dialog_see_detail_hold_amount_max_height">650dp</dimen>
+    <dimen name="dialog_see_detail_hold_amount_width">894dp</dimen>
+    <dimen name="dialog_see_detail_hold_amount_detail_margin_horizontal">16dp</dimen>
+    <dimen name="dialog_see_detail_hold_amount_detail_margin_top">8dp</dimen>
+    <dimen name="dialog_see_detail_hold_amount_detail_padding">16dp</dimen>
+    <dimen name="dialog_see_detail_hold_amount_label_width">180dp</dimen>
+    <dimen name="dialog_see_detail_hold_amount_code_label_width">100dp</dimen>
+    <dimen name="dialog_see_detail_hold_amount_reason_label_width">250dp</dimen>
+    <!--endregion-->
+
+    <!--region item hold amount-->
+    <dimen name="item_hold_amount_label_width">180dp</dimen>
+    <dimen name="item_hold_amount_label_margin_top">10dp</dimen>
+    <dimen name="item_hold_amount_code_label_width">100dp</dimen>
+    <dimen name="item_hold_amount_reason_label_width">250dp</dimen>
+    <!--endregion-->
+
+    <!--region item loan portfolio-->
+    <dimen name="item_loan_detail">16dp</dimen>
+    <!--endregion-->
+
+    <!--region fragment customer information loan -->
+    <dimen name="customer_information_loan_description_margin_start">16dp</dimen>
+    <dimen name="customer_information_loan_description_padding_vertical">16dp</dimen>
+    <dimen name="customer_information_loan_date_margin_start">16dp</dimen>
+    <dimen name="customer_information_loan_amount_text_size">20sp</dimen>
+    <dimen name="customer_information_loan_outstanding_margin_top">8dp</dimen>
+    <dimen name="customer_information_loan_outstanding_padding_horizontal">10dp</dimen>
+    <dimen name="customer_information_loan_outstanding_padding_vertical">3dp</dimen>
+    <dimen name="customer_information_loan_outstanding_text_size">12sp</dimen>
+    <dimen name="customer_information_loan_separator_margin_top">16dp</dimen>
+    <dimen name="customer_information_loan_separator_height">1dp</dimen>
+    <dimen name="customer_information_loan_summary_margin_bottom">16dp</dimen>
+    <dimen name="customer_information_loan_see_detail_button_margin_top">16dp</dimen>
+    <dimen name="customer_information_loan_see_detail_button_padding_horizontal">16dp</dimen>
+    <dimen name="customer_information_loan_see_detail_button_padding_vertical">6dp</dimen>
+    <!--endregion-->
+
+    <!--region item loan summary -->
+    <dimen name="item_loan_summary_margin_top">16dp</dimen>
+    <dimen name="item_loan_summary_title_margin_start">6dp</dimen>
+    <!--endregion-->
+
+    <!--region content history description-->
+    <dimen name="content_history_margin">10dp</dimen>
+    <dimen name="content_history_margin_start">20dp</dimen>
+    <dimen name="content_history__imageview_margin_start">5dp</dimen>
+    <dimen name="content_history_constrainlayout_margin_top">8dp</dimen>
+    <dimen name="content_history_margin_top">20dp</dimen>
+    <dimen name="content_history_padding">1dp</dimen>
+    <dimen name="content_history_padding_start">16dp</dimen>
+    <dimen name="content_history_padding_top">16dp</dimen>
+    <dimen name="content_history_padding_bottom">50dp</dimen>
+    <dimen name="content_history_text_size">20dp</dimen>
+    <dimen name="content_history_height">20dp</dimen>
+    <dimen name="content_history_padding_constrain">5dp</dimen>
+    <!--endregion-->
+
+    <!--region customer information history-->
+    <dimen name="fragment_customer_information_history_width_500">500dp</dimen>
+    <dimen name="fragment_customer_information_history_margin">10dp</dimen>
+    <dimen name="fragment_customer_information_history_padding_16">16dp</dimen>
+    <dimen name="fragment_customer_information_history_width">0dp</dimen>
+    <!--endregion-->
+
+    <!--region customer information cash flow -->
+    <dimen name="customer_information_cash_flow_padding">16dp</dimen>
+    <dimen name="customer_information_cash_flow_textview_title_padding_horizontal">8dp</dimen>
+    <dimen name="customer_information_cash_flow_textview_title_padding_vertical">3dp</dimen>
+    <dimen name="customer_information_cash_flow_circular_chart_size">250dp</dimen>
+    <dimen name="customer_information_cash_flow_margin_start">16dp</dimen>
+    <dimen name="customer_information_cash_flow_textview_title_height">25dp</dimen>
+    <dimen name="customer_information_cash_flow_textview_date_size">13sp</dimen>
+    <dimen name="customer_information_cash_flow_textview_date_margin_start">8sp</dimen>
+    <dimen name="customer_information_cash_flow_padding_vertical">16dp</dimen>
+    <dimen name="customer_information_cash_flow_margin_horizontal">16dp</dimen>
+    <dimen name="customer_information_cash_flow_margin_top">16dp</dimen>
+    <dimen name="customer_information_cash_flow_textview_summary_margin_start">28dp</dimen>
+    <dimen name="customer_information_cash_flow_view_height">1dp</dimen>
+    <dimen name="customer_information_cash_flow_margin_vertical">16dp</dimen>
+    <dimen name="customer_information_cash_flow_margin_end">16dp</dimen>
+    <!--endregion-->
+
+    <!--region customer information beneficial owner-->
+    <dimen name="customer_information_beneficial_owner_content_padding_horizontal">16dp</dimen>
+    <dimen name="customer_information_beneficial_owner_content_padding_vertical">16dp</dimen>
+    <dimen name="customer_information_beneficial_owner_content_item_margin_top">12dp</dimen>
+    <dimen name="customer_information_beneficial_owner_neighbourhood_margin_end">8dp</dimen>
+    <dimen name="customer_information_beneficial_owner_hamlet_margin_start">8dp</dimen>
+    <!--endregion-->
+
+    <!--region dialog company_representative-->
+    <dimen name="dialog_company_representative_layout_width">940dp</dimen>
+    <dimen name="dialog_company_representative_layout_padding_top">24dp</dimen>
+    <dimen name="dialog_company_representative_layout_padding_start">16dp</dimen>
+    <dimen name="dialog_company_representative_layout_padding_end">8dp</dimen>
+    <dimen name="dialog_company_representative_layout_padding_bottom">16dp</dimen>
+    <dimen name="dialog_company_representative_title_text_size">20sp</dimen>
+    <dimen name="dialog_company_representative_subtitle_text_size">14sp</dimen>
+    <dimen name="dialog_company_representative_subtitle_margin_top">8dp</dimen>
+    <dimen name="dialog_company_representative_table_margin_top">16dp</dimen>
+    <dimen name="dialog_company_representative_table_radius">8dp</dimen>
+    <dimen name="dialog_company_representative_table_margin_elevation">8dp</dimen>
+    <dimen name="dialog_company_representative_table_text_width">0dp</dimen>
+    <dimen name="dialog_company_representative_table_text_size">12sp</dimen>
+    <dimen name="dialog_company_representative_table_text_margin_start">16dp</dimen>
+    <dimen name="dialog_company_representative_table_text_padding_top">8dp</dimen>
+    <dimen name="dialog_company_representative_table_text_padding_bottom">8dp</dimen>
+    <dimen name="dialog_company_representative_list_height">159dp</dimen>
+    <dimen name="dialog_company_representative_divider">1dp</dimen>
+    <dimen name="dialog_company_representative_btn_close_width">343dp</dimen>
+    <dimen name="dialog_company_representative_btn_close_height">48dp</dimen>
+    <!--endregion-->
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright © 2020 PT Bank Mandiri (Persero) Tbk.
+  ~
+  ~ Unauthorized copying, publishing of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  -->
+
+<resources>
+    <integer name="transition_duration">150</integer>
+    <integer name="toast_horizontal_bias">0</integer>
+
+    <!--region Numeric Authorization-->
+    <integer name="numeric_tf_length">6</integer>
+    <!--endregion-->
+
+    <!--transaction dialog send receipt-->
+    <integer name="transaction_dialog_send_receipt_view_line_weight">1</integer>
+    <integer name="transaction_dialog_send_receipt_text_weight">0</integer>
+    <integer name="transaction_dialog_send_receipt_back_button_weight">0</integer>
+    <integer name="transaction_dialog_send_receipt_next_button_weight">1</integer>
+    <!--endregion-->
+</resources>

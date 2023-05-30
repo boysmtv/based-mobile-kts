@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~
+  ~ Copyright © 2022 PT Bank Mandiri (Persero) Tbk.
+  ~
+  ~ Unauthorized copying, publishing of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/transparent" />
+            <size
+                android:height="@dimen/tnc_scrollbar_size_height"
+                android:width="@dimen/tnc_scrollbar_size_width" />
+        </shape>
+    </item>
+    <item
+        android:width="@dimen/tnc_scrollbar_width"
+        android:height="@dimen/tnc_scrollbar_height"
+        android:drawable="@drawable/ic_scroll_thumb"
+        android:gravity="center_vertical|end"
+        android:left="@dimen/tnc_scrollbar_size"
+        android:right="@dimen/tnc_scrollbar_size" />
+</layer-list>

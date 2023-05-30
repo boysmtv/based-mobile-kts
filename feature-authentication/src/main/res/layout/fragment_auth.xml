@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_common_blue"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".feature.authentication.ui.AuthFragment">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_title_auth"
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/auth_tv_title_auth_margin_top"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:text="@string/auth_title_welcome_bds"
+            android:textColor="@color/colorTitleAuthBlue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/content_auth"
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/auth_content_layout_margin_start"
+            android:layout_marginEnd="@dimen/auth_content_layout_margin_end"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_auth">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_logo_auth"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="@dimen/auth_imageview_margin_top"
+                android:src="@drawable/img_logo_auth"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zero_dp"
+                android:layout_marginTop="@dimen/auth_constraint_layout_margin_top"
+                android:layout_marginBottom="@dimen/auth_constraint_layout_margin_end"
+                android:background="@drawable/bg_auth_shape"
+                android:elevation="@dimen/auth_elevation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_logo_auth">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_title_login_auth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/auth_label_login"
+                    android:textColor="@color/colorTitleAuthBlue"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_user_name_auth"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/auth_til_user_name_auth_height"
+                    android:layout_marginTop="@dimen/auth_til_user_name_auth_margin_top"
+                    android:background="@color/colorTextFieldGrey"
+                    android:textColorHint="@color/colorBlackCharacterMediumEmphasis40"
+                    app:errorTextColor="@color/colorTextFieldError"
+                    app:hintTextColor="@color/colorBlueMandiri"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_title_login_auth">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_user_name_auth"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/auth_et_user_name_auth_height"
+                        android:background="@color/colorTextFieldGrey"
+                        android:duplicateParentState="false"
+                        android:hint="@string/auth_username_hint"
+                        android:inputType="textEmailAddress"
+                        android:paddingStart="@dimen/auth_et_user_name_auth_padding_start"
+                        android:paddingEnd="@dimen/auth_et_user_name_auth_padding_end"
+                        android:singleLine="true"
+                        android:textColorHint="@color/colorBlackCharacterMediumEmphasis40" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_password_auth"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/auth_til_password_auth_height"
+                    android:layout_marginTop="@dimen/auth_til_password_auth_margin_top"
+                    android:background="@color/colorTextFieldGrey"
+                    android:textColorHint="@color/colorBlackCharacterMediumEmphasis40"
+                    android:textCursorDrawable="@null"
+                    app:endIconDrawable="@drawable/ic_eyes"
+                    app:errorTextColor="@color/colorTextFieldError"
+                    app:hintTextColor="@color/colorBlueMandiri"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/til_user_name_auth"
+                    app:passwordToggleDrawable="@drawable/ic_custom_eye"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/colorEyesGrey">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_password_auth"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/auth_et_password_auth_height"
+                        android:background="@color/colorTextFieldGrey"
+                        android:hint="@string/auth_password"
+                        android:inputType="textPassword"
+                        android:lineHeight="@dimen/auth_et_password_auth_line_height"
+                        android:paddingStart="@dimen/auth_et_password_auth_padding_start"
+                        android:paddingEnd="@dimen/auth_et_password_auth_padding_end"
+                        android:singleLine="true"
+                        android:textColorHint="@color/colorBlackCharacterMediumEmphasis40" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_login_auth"
+                    style="@style/ButtonTheme.MandiriDigital.Button.Primary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/auth_button_margin_top"
+                    android:text="@string/auth_login"
+                    app:layout_constraintTop_toBottomOf="@id/til_password_auth" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

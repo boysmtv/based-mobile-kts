@@ -1,5 +1,6 @@
 plugins {
     id(BuildPlugins.androidApplication)
+    id(BuildPlugins.appDynamicsAdeum)
     kotlin(BuildPlugins.kotlinAndroid)
     id(BuildPlugins.kotlinParcelize)
     kotlin(BuildPlugins.kapt)
@@ -31,7 +32,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.based.kotlin.kts"
+        applicationId = "com.based.kotlin"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
@@ -78,7 +79,7 @@ android {
     productFlavors {
         val unsecureNetworkEnabled =
             rootProject.extra[Secret.ENABLE_UNSECURE_HTTP_PROTOCOL].toString()
-        val appName = "NEW BDS"
+        val appName = "Kotlin Learn"
         create(ProductFlavors.DEV) {
             dimension = ProductFlavors.FLAVOR_DIMENSION
             resValue(
@@ -140,8 +141,6 @@ dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*jar"))))
 
     implementation(Core.appDynamicsRuntime)
-    implementation(Core.firebaseCrashlytics)
-    implementation(Analytic.firebaseAnalytics)
     implementation(Jetpack.lifecycleLiveData)
     implementation(Jetpack.lifecycleViewModel)
     implementation(Jetpack.navigationFragment)
@@ -155,7 +154,6 @@ dependencies {
     implementation(Network.okhttp)
     implementation(Network.okhttpLogging)
     implementation(Network.glide)
-    implementation(project(mapOf("path" to ":core")))
     kapt(Network.glideCompiler)
     api(Network.glideOkHttpIntegration) { exclude(group = "glide-parent") }
     kapt(Network.moshiKtxCodegen)
@@ -200,8 +198,6 @@ dependencies {
 
     // Presentation
     implementation(Presentation.viewPump)
-
-    androidTestImplementation(ExternalLib.magsik)
 }
 
 kapt {

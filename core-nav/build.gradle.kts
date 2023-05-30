@@ -14,6 +14,10 @@ val customModulePath: groovy.lang.Closure<Any> by ext
 
 dependencies {
     implementation(Jetpack.navigationUi)
+
     implementation(customModulePath(CoreModules.core))
     implementation(customModulePath(FeatureModules.featureAuth))
+    implementation(customModulePath(FeatureModules.featureAuthOtp))
+    implementation(customModulePath(FeatureModules.featureSplash))
+    implementation(customModulePath(FeatureModules.featureDashboard))
 }

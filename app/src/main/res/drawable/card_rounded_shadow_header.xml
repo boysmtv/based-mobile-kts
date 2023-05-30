@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:bottom="@dimen/card_margin_2x"
+        android:left="@dimen/card_margin_1x"
+        android:right="@dimen/card_margin_1x"
+        android:top="@dimen/card_margin_1x">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorGrayMandiri" />
+            <corners
+                android:topLeftRadius="8dp"
+                android:topRightRadius="8dp" />
+        </shape>
+    </item>
+</layer-list>

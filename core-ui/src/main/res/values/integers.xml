@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright © 2020 PT Bank Mandiri (Persero) Tbk.
+  ~
+  ~ Unauthorized copying, publishing of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  -->
+
+<resources>
+    <integer name="dialog_date_picker_wheel_item_visible_count">5</integer>
+    <integer name="group_list_transaction_remark_max_length">160</integer>
+    <integer name="input_layout_gather_max_length">27</integer>
+    <integer name="standar_menu_circle_max_lines">2</integer>
+    <integer name="dialog_content_confirmation_rk_statement_weight">1</integer>
+    <integer name="animation_duration">300</integer>
+
+    <!--region Password Input Screen-->
+    <integer name="password_input_edit_text_max_legth">50</integer>
+    <!--endregion-->
+
+    <!--region Dialog Progress Text View Title-->
+    <integer name="dialog_progress_tv_title_font_weight">700</integer>
+    <!--endregion-->
+
+    <!--region Input OTP-->
+    <integer name="input_otp_tf_length">6</integer>
+    <!--endregion-->
+
+    <!--region dialog cancellation-->
+    <integer name="dialog_cancellation_choose_reason_item_count">5</integer>
+    <integer name="dialog_cancellation_note_max_length">150</integer>
+    <!--end region-->
+</resources>

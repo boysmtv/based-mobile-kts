@@ -11,5 +11,6 @@ dependencies {
     implementation Presentation.material
     implementation Jetpack.navigationUi
     implementation Jetpack.navigationFragment
+    implementation customModulePath(CoreModules.coreUi)
     implementation Presentation.swipeRefresh
 }

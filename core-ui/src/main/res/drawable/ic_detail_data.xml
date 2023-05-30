@@ -1,0 +1,21 @@
+<!--
+  ~
+  ~ Copyright © 2022 PT Bank Mandiri (Persero) Tbk.
+  ~
+  ~ Unauthorized copying, publishing of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="14dp"
+    android:height="16dp"
+    android:viewportWidth="14"
+    android:viewportHeight="16">
+  <path
+      android:pathData="M8.3334,1.333H3.0001C2.6465,1.333 2.3073,1.4735 2.0573,1.7235C1.8072,1.9736 1.6667,2.3127 1.6667,2.6663V13.333C1.6667,13.6866 1.8072,14.0258 2.0573,14.2758C2.3073,14.5259 2.6465,14.6663 3.0001,14.6663H11.0001C11.3537,14.6663 11.6928,14.5259 11.9429,14.2758C12.1929,14.0258 12.3334,13.6866 12.3334,13.333V5.333M8.3334,1.333L12.3334,5.333M8.3334,1.333V5.333H12.3334M9.6667,8.6663H4.3334M9.6667,11.333H4.3334M5.6667,5.9997H4.3334"
+      android:strokeLineJoin="round"
+      android:strokeWidth="1.5"
+      android:fillColor="#00000000"
+      android:strokeColor="#0057E7"
+      android:strokeLineCap="round"/>
+</vector>

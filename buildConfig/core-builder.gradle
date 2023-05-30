@@ -7,7 +7,6 @@ dependencies {
     implementation(ExternalLib.threeTenABP)
     implementation(ExternalLib.i18nLanguagePack)
 
-    // Implement project
     implementation customModulePath(CoreModules.coreEntity)
     implementation customModulePath(CoreModules.core)
 }

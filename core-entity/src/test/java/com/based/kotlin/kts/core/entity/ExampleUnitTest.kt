@@ -1,8 +1,7 @@
-package com.based.kotlin.kts.core.entity
-
-import org.junit.Test
+package com.based.kotlin.core.entity
 
 import org.junit.Assert.*
+import org.junit.Test
 
 /**
  * Example local unit test, which will execute on the development machine (host).

@@ -1,5 +1,5 @@
 ext {
-    localAARPublishConfig = [groupId: "com.based.kotlin.kts", version: "1.0.0-SNAPSHOT"]
+    localAARPublishConfig = [groupId: "com.based.kotlin", version: "1.0.0-SNAPSHOT"]
 }
 
 // Load local.properties if it is found

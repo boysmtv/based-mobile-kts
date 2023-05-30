@@ -47,10 +47,6 @@ object Core {
         "com.appdynamics:appdynamics-runtime:${Versions.appDynamicsRuntime}"
     const val playServicesBase =
         "com.google.android.gms:play-services-base:${Versions.playServicesBase}"
-    const val firebaseCrashlytics =
-        "com.google.firebase:firebase-crashlytics:${Versions.firebaseCrashlytics}"
-    const val firebaseDynamicLinks =
-        "com.google.firebase:firebase-dynamic-links-ktx:${Versions.firebaseDynamicLinksPlugin}"
     const val legacySupport = "androidx.legacy:legacy-support-v4:${Versions.legacySupportVersion}"
     const val fragmentKtx = "androidx.fragment:fragment-ktx:${Versions.fragmentKtx}"
 }
@@ -229,8 +225,6 @@ object Analytic {
         const val playServiceAdsIdentifier = "17.0.0"
     }
 
-    const val firebaseAnalytics =
-        "com.google.firebase:firebase-analytics-ktx:${Versions.firebaseAnalytics}"
     const val googleTagManager =
         "com.google.android.gms:play-services-tagmanager:${Versions.googleTagManagerAndFirebaseInstallation}"
     const val adsIdentifier = "androidx.ads:ads-identifier:${Versions.adsIdentifier}"
@@ -279,17 +273,10 @@ object BuildPlugins {
     const val hiltGradlePlugin = "com.google.dagger:hilt-android-gradle-plugin:${Versions.hiltVersion}"
     const val googlePlayServicePlugin =
         "com.google.gms:google-services:${Versions.googlePlayService}"
-    const val googlePlayService = "com.google.gms.google-services"
     const val jacocoCore = "org.jacoco:org.jacoco.core:${Versions.jacocoVersion}"
     const val appDynamicsPlugin =
         "com.appdynamics:appdynamics-gradle-plugin:${Versions.appDynamics}"
     const val appDynamicsAdeum = "adeum"
-    const val firebaseCrashlyticsPlugin =
-        "com.google.firebase:firebase-crashlytics-gradle:${Versions.firebaseCrashlyticsPlugin}"
-    const val firebaseCrashlytics = "com.google.firebase.crashlytics"
-    const val firebasePerformance = "com.google.firebase.firebase-perf"
-    const val firebasePerformancePlugin =
-        "com.google.firebase:perf-plugin:${Versions.firebasePerformancePlugin}"
     const val hiltPlugin = "com.google.dagger.hilt.android"
 }
 
@@ -354,8 +341,8 @@ object Testing {
 
 
 object FeatureModules {
-    const val featureComponent = ":feature-component"
     const val featureAuth = ":feature-authentication"
+    const val featureAuthOtp = ":feature-authentication-otp"
     const val featureDashboard = ":feature-dashboard"
     const val featureTransaction = ":feature-transaction"
     const val featureSplash = ":feature-splash"
@@ -401,6 +388,7 @@ object UtilitiesModules {
 
 fun DependencyHandlerScope.featureDependencies() {
     "implementation"(project(FeatureModules.featureAuth))
+    "implementation"(project(FeatureModules.featureAuthOtp))
     "implementation"(project(FeatureModules.featureDashboard))
     "implementation"(project(FeatureModules.featureTransaction))
     "implementation"(project(FeatureModules.featureRating))

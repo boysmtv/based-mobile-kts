@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+* Copyright © 2022 PT Bank Mandiri (Persero) Tbk.
+*
+* Unauthorized copying, publishing of this file, via any medium is strictly prohibited
+* Proprietary and confidential
+*
+-->
+<resources>
+
+    <!-- Region fragment auth-->
+    <dimen name="auth_iv_title_auth_width">113dp</dimen>
+    <dimen name="auth_iv_title_auth_height">33dp</dimen>
+    <dimen name="auth_iv_title_auth_marginStart">54dp</dimen>
+    <dimen name="auth_iv_title_auth_margin_top">42dp</dimen>
+    <dimen name="auth_tv_title_auth_margin_top">18dp</dimen>
+    <dimen name="auth_til_user_name_auth_height">58dp</dimen>
+    <dimen name="auth_til_user_name_auth_margin_top">24dp</dimen>
+    <dimen name="auth_et_user_name_auth_height">58dp</dimen>
+    <dimen name="auth_et_user_name_auth_padding_start">16dp</dimen>
+    <dimen name="auth_et_user_name_auth_padding_end">16dp</dimen>
+    <dimen name="auth_til_password_auth_height">58dp</dimen>
+    <dimen name="auth_til_password_auth_margin_top">16dp</dimen>
+    <dimen name="auth_et_password_auth_height">58dp</dimen>
+    <dimen name="auth_et_password_auth_padding_start">16dp</dimen>
+    <dimen name="auth_et_password_auth_padding_end">16dp</dimen>
+    <dimen name="auth_et_password_auth_line_height">46dp</dimen>
+    <!--endregion-->
+
+    <!-- Region Dialog popup_messages-->
+    <!--endregion-->
+
+    <!-- region New Login-->
+    <dimen name="auth_textview_title_size">36sp</dimen>
+    <dimen name="auth_imageview_margin_start">60dp</dimen>
+    <dimen name="auth_imageview_margin_top">16dp</dimen>
+    <dimen name="auth_content_layout_margin_start">40dp</dimen>
+    <dimen name="auth_content_layout_margin_end">40dp</dimen>
+    <dimen name="auth_constraint_layout_width">400dp</dimen>
+    <dimen name="auth_constraint_layout_margin_start">60dp</dimen>
+    <dimen name="auth_constraint_layout_margin_end">40dp</dimen>
+    <dimen name="auth_constraint_layout_margin_top">40dp</dimen>
+    <dimen name="auth_textview_title_login_size">24sp</dimen>
+    <dimen name="auth_button_margin_top">32dp</dimen>
+    <dimen name="auth_elevation">6dp</dimen>
+    <!-- endregion-->
+</resources>

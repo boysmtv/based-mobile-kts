@@ -1,16 +1,467 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Basedkotlinmobilekts" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.BDS" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimary">@color/colorBlueMandiri</item>
+        <item name="colorPrimaryVariant">@color/colorBlueMandiri</item>
+        <item name="colorOnPrimary">@color/colorWhite</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_700</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondary">@color/colorBlueMandiri</item>
+        <item name="colorSecondaryVariant">@color/colorBlueMandiri</item>
+        <item name="colorOnSecondary">@color/colorBlack</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="ThemeNoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorBlueMandiri</item>
+        <item name="colorPrimaryVariant">@color/colorBlueMandiri</item>
+        <item name="colorOnPrimary">@color/colorBlack</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorBlueMandiri</item>
+        <item name="colorSecondaryVariant">@color/colorBlueMandiri</item>
+        <item name="colorOnSecondary">@color/colorBlack</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="CounterTitle">
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">@color/colorBlackCharacterHighEmphasis</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+    </style>
+
+    <style name="PrimaryButton">
+        <item name="fontFamily">@font/nunito_bold</item>
+        <item name="android:width">343dp</item>
+        <item name="android:height">84dp</item>
+        <item name="backgroundTint">@color/colorBlue</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="cornerRadius">37dp</item>
+    </style>
+
+    <style name="SecondaryButton">
+        <item name="fontFamily">@font/nunito_bold</item>
+        <item name="android:width">343dp</item>
+        <item name="android:height">84dp</item>
+        <item name="android:color">@color/colorBlue</item>
+        <item name="backgroundTint">@android:color/white</item>
+        <item name="android:textColor">@color/colorBlue</item>
+        <item name="cornerRadius">37dp</item>
+        <item name="strokeColor">@color/colorBlue</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="EditButton">
+        <item name="fontFamily">@font/nunito_bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:width">200dp</item>
+        <item name="android:height">32dp</item>
+        <item name="android:color">@color/colorBlue</item>
+        <item name="backgroundTint">@android:color/white</item>
+        <item name="android:textColor">@color/colorBlue</item>
+        <item name="cornerRadius">23dp</item>
+        <item name="strokeColor">@color/colorBlue</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="DetailButton">
+        <item name="fontFamily">@font/nunito_bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:width">140dp</item>
+        <item name="android:height">32dp</item>
+        <item name="android:color">@color/colorBlue</item>
+        <item name="backgroundTint">@android:color/white</item>
+        <item name="android:textColor">@color/colorBlue</item>
+        <item name="cornerRadius">23dp</item>
+        <item name="strokeColor">@color/colorBlue</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="YellowPrimaryButton">
+        <item name="background">@drawable/rounded_shadow</item>
+        <item name="fontFamily">@font/nunito_bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">38dp</item>
+        <item name="android:paddingRight">38dp</item>
+        <item name="backgroundTint">@color/colorYellowPrimary</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="cornerRadius">23dp</item>
+    </style>
+
+    <style name="YellowSecondaryButton">
+        <item name="background">@drawable/rounded_shadow</item>
+        <item name="fontFamily">@font/nunito_bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">38dp</item>
+        <item name="android:paddingRight">38dp</item>
+        <item name="android:textColor">@color/colorYellowPrimary</item>
+        <item name="backgroundTint">@android:color/white</item>
+        <item name="cornerRadius">23dp</item>
+    </style>
+
+    <style name="PrimaryWarningButton">
+        <item name="fontFamily">@font/nunito_bold</item>
+        <item name="android:width">343dp</item>
+        <item name="android:height">56dp</item>
+        <item name="backgroundTint">@color/colorYellowPrimary</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="cornerRadius">23dp</item>
+    </style>
+
+    <style name="SecondaryWarningButton">
+        <item name="fontFamily">@font/nunito_bold</item>
+        <item name="android:width">343dp</item>
+        <item name="android:height">56dp</item>
+        <item name="android:color">@color/colorYellowPrimary</item>
+        <item name="backgroundTint">@android:color/white</item>
+        <item name="android:textColor">@color/colorYellowPrimary</item>
+        <item name="cornerRadius">23dp</item>
+        <item name="strokeColor">@color/colorYellowPrimary</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="PrimaryWarningPopUpButton">
+        <item name="fontFamily">@font/nunito_bold</item>
+        <item name="android:width">343dp</item>
+        <item name="android:height">56dp</item>
+        <item name="backgroundTint">@color/colorYellowPrimary</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="cornerRadius">12dp</item>
+    </style>
+
+    <style name="WarningNoOutlinePopupButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="fontFamily">@font/nunito_bold</item>
+        <item name="android:width">343dp</item>
+        <item name="android:height">56dp</item>
+        <item name="backgroundTint">@android:color/white</item>
+        <item name="android:textColor">@color/colorYellowPrimary</item>
+        <item name="cornerRadius">12dp</item>
+    </style>
+
+    <style name="SecondaryWarningPopUpButton">
+        <item name="fontFamily">@font/nunito_bold</item>
+        <item name="android:width">343dp</item>
+        <item name="android:height">56dp</item>
+        <item name="android:color">@color/colorYellowPrimary</item>
+        <item name="backgroundTint">@android:color/white</item>
+        <item name="android:textColor">@color/colorYellowPrimary</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="strokeColor">@color/colorYellowPrimary</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="SecondaryWarningAltButton">
+        <item name="fontFamily">@font/nunito_bold</item>
+        <item name="android:width">200dp</item>
+        <item name="android:height">20dp</item>
+        <item name="android:color">@color/colorYellowPrimary</item>
+        <item name="backgroundTint">@android:color/white</item>
+        <item name="android:textColor">@color/colorYellowPrimary</item>
+        <item name="cornerRadius">23dp</item>
+        <item name="strokeColor">@color/colorYellowPrimary</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="WarningFreeButton">
+        <item name="fontFamily">@font/nunito_bold</item>
+        <item name="cornerRadius">100dp</item>
+        <item name="strokeColor">@color/colorYellowPrimary</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="WarningFreeButton.Primary" parent="WarningFreeButton">
+        <item name="backgroundTint">@color/colorYellowPrimary</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="WarningFreeButton.Secondary" parent="WarningFreeButton">
+        <item name="backgroundTint">@android:color/white</item>
+        <item name="android:textColor">@color/colorYellowPrimary</item>
+    </style>
+
+    <style name="PrimaryAltButton">
+        <item name="android:textSize">12sp</item>
+        <item name="fontFamily">@font/nunito_bold</item>
+        <item name="android:height">20dp</item>
+        <item name="android:color">@color/colorBlueMandiri</item>
+        <item name="backgroundTint">@color/colorBlueMandiri</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="cornerRadius">23dp</item>
+        <item name="strokeColor">@color/colorBlueMandiri</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="GreeterPopupMenu" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:width">256dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorBlackCharacterMediumEmphasis</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="android:layout_marginStart">14dp</item>
+        <item name="android:popupBackground">@drawable/rounded_menu</item>
+        <item name="android:actionButtonStyle">@style/GreeterPopupMenu.ActionButton</item>
+        <item name="android:listPreferredItemPaddingStart">20dp</item>
+    </style>
+
+    <style name="GreeterPopupMenu.ActionButton" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:minWidth">0dp</item>
+        <item name="android:paddingStart">34dip</item>
+        <item name="android:paddingEnd">34dip</item>
+        <item name="cornerRadius">15dp</item>
+    </style>
+
+    <style name="SmallSecondaryButton">
+        <item name="android:width">82dp</item>
+        <item name="android:height">56dp</item>
+        <item name="android:color">@color/colorBlue</item>
+        <item name="backgroundTint">@android:color/white</item>
+        <item name="android:textColor">@color/colorBlue</item>
+        <item name="cornerRadius">23dp</item>
+        <item name="strokeColor">@color/colorBlue</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="SmallGreyButton">
+        <item name="android:height">18dp</item>
+        <item name="cornerRadius">20dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="backgroundTint">@color/colorButtonGrey</item>
+        <item name="android:textColor">@color/colorBlackCharacterHighEmphasis</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="TransactionOverviewTextViewTitle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorBlackCharacterHighEmphasis</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+    </style>
+
+    <style name="TransactionOverviewTextViewSubtitle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/nunito_bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorBlackCharacterHighEmphasis</item>
+    </style>
+
+    <style name="TransactionOverviewTextViewContent">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="android:textColor">@color/colorBlackCharacterHighEmphasis</item>
+    </style>
+
+    <style name="BackButtonLabel">
+        <item name="android:textColor">@color/colorBlue</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/nunito</item>
+    </style>
+
+    <style name="BackButtonNominal">
+        <item name="android:textColor">@color/colorBlackCharacterHighEmphasis</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+    </style>
+
+    <style name="spinnerEditTransactionItemStyle" parent="android:Widget.TextView.SpinnerItem">
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorBlackCharacterLowEmphasis</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="spinnerDropDownItemStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorBlackCharacterHighEmphasis</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="OutlinedRoundedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="shapeAppearanceOverlay">
+            @style/ShapeAppearanceOverlay.MyApp.TextInputLayout.Rounded
+        </item>
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorBlackCharacterLowEmphasis</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.MyApp.TextInputLayout.Rounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">15dp</item>
+        <item name="android:background">@color/colorOldWhite</item>
+    </style>
+
+    <style name="TransactionHistoryTableMainTitle">
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textColor">@color/colorBlackCharacterHighEmphasis</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TransactionHistoryTableTitle">
+        <item name="android:fontFamily">@font/nunito_bold</item>
+        <item name="android:textColor">@color/colorBlue</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginTop">18dp</item>
+        <item name="android:layout_marginBottom">18dp</item>
+    </style>
+
+    <style name="TransactionHistoryTableContent">
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="android:textColor">@color/colorBlackCharacterMediumEmphasis</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginTop">18dp</item>
+        <item name="android:layout_marginBottom">18dp</item>
+    </style>
+
+    <style name="EditTransactionTitle">
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textColor">@color/colorBlackCharacterHighEmphasis</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginLeft">18dp</item>
+        <item name="android:layout_marginBottom">18dp</item>
+    </style>
+
+    <style name="EditTransactionFieldName">
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="android:textColor">@color/colorBlue</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginLeft">18dp</item>
+        <item name="android:layout_marginBottom">18dp</item>
+    </style>
+
+    <style name="EditTransactionFieldNameDarkBlue">
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="android:textColor">@color/colorTextBlue</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginLeft">18dp</item>
+        <item name="android:layout_marginBottom">18dp</item>
+    </style>
+
+    <style name="EditTransactionInput">
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="android:textColor">@color/colorBlackCharacterHighEmphasis</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginLeft">18dp</item>
+        <item name="android:layout_marginBottom">18dp</item>
+    </style>
+
+    <style name="EditTransactionInputArea">
+        <item name="android:background">@drawable/card_rounded_grey</item>
+        <item name="android:backgroundTint">@color/colorTextFieldGrey</item>
+    </style>
+
+    <style name="EditTransactionInputAreaSecondary">
+        <item name="android:background">@drawable/card_rounded_border</item>
+    </style>
+
+    <style name="ClearPageButton">
+        <item name="backgroundTint">@android:color/white</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="SelectedPageButton">
+        <item name="backgroundTint">@color/colorBlue</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="DashboardQueueNumberCardTitle">
+        <item name="android:fontFamily">@font/nunito_bold</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="DashboardQueueNumberCardContent">
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">40sp</item>
+    </style>
+
+    <style name="DashboardQueueNumberInfoTitle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/nunito_bold</item>
+        <item name="android:textColor">@color/colorBlackCharacterHighEmphasis</item>
+    </style>
+
+    <style name="DashboardQueueNumberInfoContent">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="android:textColor">@color/colorBlackCharacterHighEmphasis</item>
+    </style>
+
+    <style name="DashboardCardTitle">
+        <item name="android:fontFamily">@font/nunito_bold</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:breakStrategy">simple</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="DashboardCardContent">
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="DashboardCardSubtitle">
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <!-- START Card Styling -->
+    <style name="CardShadow">
+        <item name="android:background">@drawable/card_rounded_shadow</item>
+        <item name="android:layout_marginTop">@dimen/card_margin_1x_neg</item>
+        <item name="android:layout_marginLeft">@dimen/card_margin_1x_neg</item>
+        <item name="android:layout_marginRight">@dimen/card_margin_1x_neg</item>
+        <item name="android:paddingTop">@dimen/card_margin_2x</item>
+        <item name="android:paddingLeft">@dimen/card_margin_2x</item>
+        <item name="android:paddingRight">@dimen/card_margin_2x</item>
+        <item name="android:paddingBottom">@dimen/card_margin_8x</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+
+    <style name="CardShadowBatik">
+        <item name="android:background">@drawable/card_rounded_shadow_batik</item>
+        <item name="android:layout_marginTop">@dimen/card_margin_1x_neg</item>
+        <item name="android:layout_marginLeft">@dimen/card_margin_1x_neg</item>
+        <item name="android:layout_marginRight">@dimen/card_margin_1x_neg</item>
+        <item name="android:paddingTop">@dimen/card_margin_2x</item>
+        <item name="android:paddingLeft">@dimen/card_margin_2x</item>
+        <item name="android:paddingRight">@dimen/card_margin_2x</item>
+        <item name="android:paddingBottom">@dimen/card_margin_8x</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+
+    <style name="CardShadowHeader">
+        <item name="android:background">@drawable/card_rounded_shadow_header</item>
+        <item name="android:layout_marginTop">@dimen/card_margin_2x_neg</item>
+        <item name="android:layout_marginLeft">@dimen/card_margin_2x_neg</item>
+        <item name="android:layout_marginRight">@dimen/card_margin_2x_neg</item>
+        <item name="android:paddingTop">@dimen/card_margin_2x</item>
+        <item name="android:paddingLeft">@dimen/card_margin_2x</item>
+        <item name="android:paddingRight">@dimen/card_margin_2x</item>
+        <item name="android:paddingBottom">@dimen/card_margin_2x</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+    <!-- END of Card Styling -->
 </resources>

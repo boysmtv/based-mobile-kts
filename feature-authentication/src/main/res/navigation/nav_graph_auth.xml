@@ -1,11 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-* Copyright © 2022 PT Bank Mandiri (Persero) Tbk.
-*
-* Unauthorized copying, publishing of this file, via any medium is strictly prohibited
-* Proprietary and confidential
-*
--->
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -14,7 +7,11 @@
 
     <fragment
         android:id="@+id/fragment_auth"
-        android:name="com.based.kotlin.kts.feature.authentication.presentation.ui.AuthFragment"
+        android:name="com.based.kotlin.feature.authentication.presentation.ui.AuthFragment"
         android:label="AuthFragment"
-        tools:layout="@layout/fragment_auth"/>
+        tools:layout="@layout/fragment_auth">
+        <deepLink
+            android:autoVerify="true"
+            app:uri="based.kotlin.id://learn/authentication_navigate" />
+    </fragment>
 </navigation>

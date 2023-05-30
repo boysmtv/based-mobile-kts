@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* Copyright © 2022 PT Bank Mandiri (Persero) Tbk.
+*
+* Unauthorized copying, publishing of this file, via any medium is strictly prohibited
+* Proprietary and confidential
+*
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/popup_message_card_width"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/popup_message_card_margin"
+        android:padding="@dimen/popup_message_card_padding"
+        android:elevation="@dimen/popup_message_card_elevation"
+        app:cardCornerRadius="@dimen/popup_message_card_corner_radius"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="@dimen/popup_message_content_width"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_title_dialog_popup_messages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/popup_message_title_margin_top"
+                android:textColor="@color/colorBlackCharacterHighEmphasis"
+                android:textSize="@dimen/popup_message_title_text_size"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="-" />
+
+            <ProgressBar
+                android:id="@+id/iv_loading_dialog_popup_messages"
+                android:layout_width="@dimen/popup_message_loading_width"
+                android:layout_height="@dimen/popup_message_loading_height"
+                android:layout_marginTop="@dimen/popup_message_loading_margin_top"
+                android:layout_marginBottom="@dimen/popup_message_loading_margin_bottom"
+                android:visibility="visible"
+                app:layout_constraintBottom_toTopOf="@+id/iv_status_dialog_popup_messages"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title_dialog_popup_messages" />
+
+            <ImageView
+                android:id="@+id/iv_status_dialog_popup_messages"
+                android:layout_width="@dimen/popup_message_status_width"
+                android:layout_height="@dimen/popup_message_status_height"
+                android:layout_marginTop="@dimen/popup_message_status_margin_top"
+                android:layout_marginBottom="@dimen/popup_message_status_margin_bottom"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_success"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/tv_desc_dialog_popup_messages"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title_dialog_popup_messages" />
+
+            <TextView
+                android:id="@+id/tv_desc_dialog_popup_messages"
+                android:layout_width="@dimen/popup_message_desc_width"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/popup_message_desc_height"
+                android:layout_marginTop="@dimen/popup_message_desc_margin_top"
+                android:layout_marginBottom="@dimen/popup_message_desc_margin_bottom"
+                android:gravity="center"
+                android:textColor="@color/textColorGrayPopupDesc"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_status_dialog_popup_messages"
+                tools:text="-"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

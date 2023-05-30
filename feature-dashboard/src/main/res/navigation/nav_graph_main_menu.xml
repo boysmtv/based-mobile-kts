@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_debit_card_maintenance"
+    app:startDestination="@id/fragment_main_menu_entry_point">
+
+    <fragment
+        android:id="@+id/fragment_main_menu_entry_point"
+        android:name="com.based.kotlin.feature.dashboard.presentation.ui.MainMenuEntryPointFragment"
+        android:label="fragment_main_menu_entry_point"
+        tools:layout="@layout/fragment_main_menu_entry_point">
+
+        <deepLink
+            android:autoVerify="true"
+            app:uri="based.kotlin.id://learn/main_menu_navigate" />
+        <action
+            android:id="@+id/action_to_fragment_main_menu_home"
+            app:destination="@id/fragment_main_menu_home">
+        </action>
+        <action
+            android:id="@+id/action_fragment_main_menu_entry_point_to_baseFragment"
+            app:destination="@id/baseFragment" />
+        <action
+            android:id="@+id/action_fragment_main_menu_entry_point_to_baseFragment2"
+            app:destination="@id/baseFragment2" />
+        <action
+            android:id="@+id/action_fragment_main_menu_entry_point_to_baseFragment5"
+            app:destination="@id/baseFragment5" />
+        <action
+            android:id="@+id/action_fragment_main_menu_entry_point_to_baseFragment6"
+            app:destination="@id/baseFragment6" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_main_menu_home"
+        android:name="com.based.kotlin.feature.dashboard.presentation.ui.MainMenuFragment"
+        android:label="MainMenuHomeFragment" >
+        <action
+            android:id="@+id/action_fragment_main_menu_home_to_baseFragment3"
+            app:destination="@id/baseFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/baseFragment"
+        android:name="com.based.kotlin.core.base.BaseFragment"
+        android:label="BaseFragment" />
+    <fragment
+        android:id="@+id/baseFragment6"
+        android:name="com.based.kotlin.core.base.BaseFragment"
+        android:label="BaseFragment" />
+    <fragment
+        android:id="@+id/baseFragment2"
+        android:name="com.based.kotlin.core.base.BaseFragment"
+        android:label="BaseFragment" />
+    <fragment
+        android:id="@+id/baseFragment5"
+        android:name="com.based.kotlin.core.base.BaseFragment"
+        android:label="BaseFragment" />
+    <fragment
+        android:id="@+id/baseFragment3"
+        android:name="com.based.kotlin.core.base.BaseFragment"
+        android:label="BaseFragment" >
+        <action
+            android:id="@+id/action_baseFragment3_to_baseFragment4"
+            app:destination="@id/baseFragment4" />
+    </fragment>
+    <fragment
+        android:id="@+id/baseFragment4"
+        android:name="com.based.kotlin.core.base.BaseFragment"
+        android:label="BaseFragment" />
+
+</navigation>

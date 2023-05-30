@@ -13,13 +13,15 @@
 #define APPNAME "FridaDetectionTest"
 #define MAX_LINE 512
 
-extern "C" int my_openat(int, const char*, int, int);
-extern "C" int my_read(int, void*, int);
+extern "C" int my_openat(int, const char *, int, int);
+extern "C" int my_read(int, void *, int);
 
 static char keyword[] = "LIBFRIDA";
 
-int find_mem_string(unsigned long, unsigned long, char*, unsigned int);
+int find_mem_string(unsigned long, unsigned long, char *, unsigned int);
+
 int scan_executable_segments(char *);
+
 int read_one_line(int fd, char *buf, unsigned int max_len);
 
 void *detect_frida_loop(void *) {
@@ -44,13 +46,13 @@ void *detect_frida_loop(void *) {
          * 1: Frida Server Detection.
          */
 
-        for(i = 0 ; i <= 65535 ; i++) {
+        for (i = 0; i <= 65535; i++) {
 
-            sock = socket(AF_INET , SOCK_STREAM , 0);
+            sock = socket(AF_INET, SOCK_STREAM, 0);
             sa.sin_port = htons(i);
 
-            if (connect(sock , (struct sockaddr*)&sa , sizeof sa) != -1) {
-                memset(res, 0 , 7);
+            if (connect(sock, (struct sockaddr *) &sa, sizeof sa) != -1) {
+                memset(res, 0, 7);
 
                 send(sock, "\x00", 1, NULL);
                 send(sock, "AUTH\r\n", 6, NULL);
@@ -59,7 +61,8 @@ void *detect_frida_loop(void *) {
 
                 if ((ret = recv(sock, res, 6, MSG_DONTWAIT)) != -1) {
                     if (strcmp(res, "REJECT") == 0) {
-                        __android_log_print(ANDROID_LOG_VERBOSE, APPNAME,  "FRIDA DETECTED [1] - frida server running on port %d!", i);
+                        __android_log_print(ANDROID_LOG_VERBOSE, APPNAME,
+                                            "FRIDA DETECTED [1] - frida server running on port %d!", i);
                     }
                 }
             }
@@ -84,11 +87,13 @@ void *detect_frida_loop(void *) {
             }
 
             if (num_found > 1) {
-                __android_log_print(ANDROID_LOG_VERBOSE, APPNAME,  "FRIDA DETECTED [2] - suspect string found in memory!");
+                __android_log_print(ANDROID_LOG_VERBOSE, APPNAME,
+                                    "FRIDA DETECTED [2] - suspect string found in memory!");
             }
 
         } else {
-            __android_log_print(ANDROID_LOG_VERBOSE, APPNAME, "Error opening /proc/self/maps. That's usually a bad sign.");
+            __android_log_print(ANDROID_LOG_VERBOSE, APPNAME,
+                                "Error opening /proc/self/maps. That's usually a bad sign.");
 
         }
 
@@ -101,30 +106,35 @@ void *detect_frida_loop(void *) {
  */
 
 extern "C"
-JNIEXPORT void JNICALL Java_sg_vantagepoint_antifrida_MainActivity_init(JNIEnv *env, jobject thisObj) {
+JNIEXPORT void JNICALL
+Java_sg_vantagepoint_antifrida_MainActivity_init(JNIEnv
+*env,
+jobject thisObj
+) {
 
-    pthread_t t;
+pthread_t t;
 
-    pthread_create(&t, NULL, detect_frida_loop, (void *)NULL);
+pthread_create(&t, NULL, detect_frida_loop,
+(void *)NULL);
 
 }
 
 
 int find_mem_string(unsigned long start, unsigned long end, char *bytes, unsigned int len) {
 
-    char *pmem = (char*)start;
+    char *pmem = (char *) start;
     int matched = 0;
 
-    while ((unsigned long)pmem < (end - len)) {
+    while ((unsigned long) pmem < (end - len)) {
 
-        if(*pmem == bytes[0]) {
+        if (*pmem == bytes[0]) {
 
             matched = 1;
             char *p = pmem + 1;
 
-            while (*p == bytes[matched] && (unsigned long)p < end) {
-                matched ++;
-                p ++;
+            while (*p == bytes[matched] && (unsigned long) p < end) {
+                matched++;
+                p++;
             }
 
             if (matched >= len) {
@@ -132,20 +142,20 @@ int find_mem_string(unsigned long start, unsigned long end, char *bytes, unsigne
             }
         }
 
-        pmem ++;
+        pmem++;
 
     }
     return 0;
 }
 
-int scan_executable_segments(char * map) {
+int scan_executable_segments(char *map) {
     char buf[512];
     unsigned long start, end;
 
     sscanf(map, "%lx-%lx %s", &start, &end, buf);
 
     if (buf[2] == 'x') {
-        return (find_mem_string(start, end, (char*)keyword, 8) == 1);
+        return (find_mem_string(start, end, (char *) keyword, 8) == 1);
     } else {
         return 0;
     }
@@ -171,7 +181,7 @@ int read_one_line(int fd, char *buf, unsigned int max_len) {
         }
 
         if (b == '\n') {
-                return bytes_read;
+            return bytes_read;
         }
 
         *(buf++) = b;

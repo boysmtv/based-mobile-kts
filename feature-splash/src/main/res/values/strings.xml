@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2023 PT Bank Mandiri (Persero) Tbk.
+  ~
+  ~ Unauthorized copying, publishing of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  -->
+<resources>
+    <string name="splash_copyright_label">splashCopyrightLabel</string>
+    <string name="splash_app_version_info_label">splashAppVersionInfoLabel</string>
+</resources>

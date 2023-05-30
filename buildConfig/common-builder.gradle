@@ -4,7 +4,6 @@ dependencies {
     implementation fileTree(dir: 'libs', includes: ['*.jar'])
     implementation Core.coreKtx
     implementation Core.appcompat
-    implementation Core.coreKtx
     implementation ExternalLib.timber
     implementation Core.biometric
     implementation project(UtilitiesModules.utilitiesConstants)

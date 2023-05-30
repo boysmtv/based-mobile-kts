@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~
+  ~ Copyright © 2022 PT Bank Mandiri (Persero) Tbk.
+  ~
+  ~ Unauthorized copying, publishing of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/dialog_cancellation_card_width"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/dialog_cancellation_card_corner_radius"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_content_dialog_cancellation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_icon_dialog_cancellation"
+                    android:layout_width="@dimen/dialog_cancellation_icon_width"
+                    android:layout_height="@dimen/dialog_cancellation_icon_height"
+                    android:layout_marginTop="@dimen/dialog_cancellation_icon_margin_top"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_warning_rounded"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_title_dialog_cancellation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dialog_cancellation_title_dialog_margin_horizontal"
+                    android:layout_marginTop="@dimen/dialog_cancellation_title_margin_top"
+                    android:drawableStart="@drawable/ic_exclamation_black"
+                    android:drawablePadding="@dimen/dialog_cancellation_title_drawable_padding"
+                    android:gravity="center_vertical"
+                    android:text="@string/dialog_cancellation_text_title"
+                    android:textSize="@dimen/dialog_cancellation_title_text_size"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_icon_dialog_cancellation" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_desc_dialog_cancellation"
+                    android:layout_width="@dimen/dialog_cancellation_title_layout_width"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dialog_cancellation_desc_margin_start"
+                    android:layout_marginTop="@dimen/dialog_cancellation_desc_margin_top"
+                    android:layout_marginEnd="@dimen/dialog_cancellation_desc_margin_end"
+                    android:text="@string/dialog_cancellation_text_desc"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/dialog_cancellation_desc_text_size"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_title_dialog_cancellation" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_content_dialog_cancellation"
+                    android:layout_width="@dimen/dialog_cancellation_card_content_layout_width"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dialog_cancellation_card_content_margin"
+                    app:cardBackgroundColor="@color/color_verification_script_background_enable_edit"
+                    app:cardCornerRadius="@dimen/dialog_cancellation_card_content_corner_radius"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_desc_dialog_cancellation">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cv_content_message_dialg_cancellation"
+                            android:layout_width="@dimen/dialog_cancellation_card_content_message_layout_width"
+                            android:layout_height="@dimen/dialog_cancellation_card_content_message_layout_height"
+                            android:layout_margin="@dimen/dialog_cancellation_card_content_message_margin"
+                            app:cardCornerRadius="@dimen/dialog_cancellation_card_content_message_corner_radius"
+                            app:layout_constraintBottom_toTopOf="@+id/il_reason_dialog_cancellation"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rv_dialog_cancellation"
+                                    android:layout_width="@dimen/dialog_cancellation_rv_layout_width"
+                                    android:layout_height="@dimen/dialog_cancellation_rv_layout_height"
+                                    android:isScrollContainer="false"
+                                    android:orientation="vertical"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    tools:itemCount="@integer/dialog_cancellation_choose_reason_item_count"
+                                    tools:listitem="@layout/item_rv_cancellation" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/il_reason_dialog_cancellation"
+                            android:layout_width="@dimen/dialog_cancellation_layout_width"
+                            android:layout_height="@dimen/dialog_cancellation_reason_layout_height"
+                            android:layout_marginHorizontal="@dimen/dialog_cancellation_margin_horizontal"
+                            android:layout_marginBottom="@dimen/dialog_cancellation_til_reason_margin_bottom"
+                            android:visibility="gone"
+                            app:errorTextColor="@color/colorRed"
+                            app:helperText="@string/dialog_cancellation_text_error_reason"
+                            app:helperTextEnabled="true"
+                            app:hintEnabled="false"
+                            app:layout_constraintBottom_toTopOf="@+id/ll_count_text_dialog_cancellation"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/et_reason_dialog_cancellation"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/bg_rounded_white"
+                                android:drawSelectorOnTop="true"
+                                android:gravity="top|start"
+                                android:hint="@string/dialog_cancellation_text_hint"
+                                android:inputType="textMultiLine"
+                                android:maxLength="@integer/dialog_cancellation_note_max_length"
+                                android:overScrollMode="always"
+                                android:paddingStart="@dimen/dialog_cancellation_reason_padding_size"
+                                android:paddingTop="@dimen/dialog_cancellation_reason_padding_size"
+                                android:scrollbarStyle="insideInset"
+                                android:scrollbars="vertical" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_count_text_dialog_cancellation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/dialog_cancellation_margin_size"
+                            android:layout_marginBottom="@dimen/dialog_cancellation_margin_size"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent">
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/tv_count_text_dialog_cancellation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="@dimen/dialog_cancellation_text_count_margin_size"
+                                android:text="@string/dialog_cancellation_first_text_count"
+                                android:textColor="@color/color_divider"
+                                android:textSize="@dimen/dialog_cancellation_text_count_size" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/dialog_cancellation_text_count_margin_size"
+                                android:text="@string/dialog_cancellation_text_count_to"
+                                android:textColor="@color/color_divider"
+                                android:textSize="@dimen/dialog_cancellation_text_count_size" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/dialog_cancellation_second_text_count"
+                                android:textColor="@color/color_divider"
+                                android:textSize="@dimen/dialog_cancellation_text_count_size" />
+
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_back_dialog_cancellation_close"
+                    style="@style/ButtonTheme.MandiriDigital.Button.Link"
+                    android:layout_width="@dimen/dialog_cancellation_back_button_width"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dialog_cancellation_back_button_margin_start"
+                    android:layout_marginTop="@dimen/dialog_cancellation_back_button_margin_top"
+                    android:layout_marginEnd="@dimen/dialog_cancellation_back_button_margin_end"
+                    android:layout_marginBottom="@dimen/dialog_cancellation_back_button_margin_bottom"
+                    android:text="@string/dialog_cancellation_button_back"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/btn_next_dialog_cancellation"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cv_content_dialog_cancellation" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_next_dialog_cancellation"
+                    style="@style/ButtonTheme.MandiriDigital.Button.Primary"
+                    android:layout_width="@dimen/dialog_cancellation_next_button_width"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dialog_cancellation_next_button_margin_start"
+                    android:layout_marginTop="@dimen/dialog_cancellation_next_button_margin_top"
+                    android:layout_marginEnd="@dimen/dialog_cancellation_next_button_margin_end"
+                    android:layout_marginBottom="@dimen/dialog_cancellation_next_button_margin_bottom"
+                    android:enabled="false"
+                    android:text="@string/dialog_cancellation_button_verify_next"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/btn_back_dialog_cancellation_close"
+                    app:layout_constraintTop_toBottomOf="@+id/cv_content_dialog_cancellation" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

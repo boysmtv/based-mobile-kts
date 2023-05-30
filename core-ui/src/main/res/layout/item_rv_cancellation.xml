@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~
+  ~ Copyright © 2022 PT Bank Mandiri (Persero) Tbk.
+  ~
+  ~ Unauthorized copying, publishing of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_container_content_transaction"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_content_dialog_cancelation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/item_rv_cancellation_content_margin"
+        android:fontFamily="@font/tt_interphases_regular"
+        android:padding="@dimen/item_rv_cancellation_content_padding"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlackUnselectedText"
+        android:textSize="@dimen/item_rv_cancellation_content_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_checklist_item_dialog_cancellation"
+        android:layout_width="@dimen/dialog_cancellation_image_view_size"
+        android:layout_height="@dimen/dialog_cancellation_image_view_size"
+        android:layout_marginStart="@dimen/dialog_cancellation_item_image_margin_start"
+        android:src="@drawable/ic_checklist_blue"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_content_dialog_cancelation"
+        app:layout_constraintStart_toEndOf="@+id/tv_content_dialog_cancelation"
+        app:layout_constraintTop_toTopOf="@+id/tv_content_dialog_cancelation" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

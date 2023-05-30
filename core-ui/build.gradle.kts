@@ -19,7 +19,6 @@ android {
 }
 
 dependencies {
-    implementation(Core.coreKtx)
     implementation(Presentation.constraintLayout)
     implementation(Presentation.material)
     implementation(Presentation.viewPump)
@@ -36,8 +35,4 @@ dependencies {
     implementation(Presentation.constraintLayout)
     implementation(Jetpack.navigationFragment)
     implementation(Jetpack.navigationUi)
-
-    // Implement project
-    implementation(customModulePath(CoreModules.coreEntity))
-    implementation(customModulePath(UtilitiesModules.utilitiesCurrency))
 }

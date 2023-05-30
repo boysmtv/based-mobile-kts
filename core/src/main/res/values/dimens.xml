@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+* Copyright © 2022 PT Bank Mandiri (Persero) Tbk.
+*
+* Unauthorized copying, publishing of this file, via any medium is strictly prohibited
+* Proprietary and confidential
+*
+-->
+<resources>
+
+    <dimen name="core_toast_icon_margin_end">4dp</dimen>
+    <dimen name="core_toast_message_margin_start">12dp</dimen>
+    <dimen name="core_toast_container_padding">16dp</dimen>
+
+    <!--region Numeric-->
+    <!--endregion-->
+
+    <!--region fragment Numeric Authorization Verification Landing-->
+    <!--endregion-->
+
+
+    <!--region fail numeric proceed-->
+
+    <!--region image list-->
+    <!--endregion-->
+
+    <!--region camera document-->
+    <!--endregion-->
+
+    <!-- region dialog tnc -->
+    <!-- endregion -->
+
+    <!--region transaction dialog not enough -->
+    <!--endregion-->
+</resources>

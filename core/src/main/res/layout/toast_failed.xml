@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+* Copyright © 2022 PT Bank Mandiri (Persero) Tbk.
+*
+* Unauthorized copying, publishing of this file, via any medium is strictly prohibited
+* Proprietary and confidential
+*
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toast_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPinkSoft"
+    android:padding="@dimen/core_toast_container_padding">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/toast_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/core_toast_icon_margin_end"
+        android:background="@drawable/ic_tailing"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/toast_message"
+        app:layout_constraintHorizontal_bias="@integer/toast_horizontal_bias"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/toast_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/core_toast_message_margin_start"
+        android:textColor="@color/colorToastRed"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/toast_icon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

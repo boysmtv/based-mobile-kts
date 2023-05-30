@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright © 2020 PT Bank Mandiri (Persero) Tbk.
+  ~
+  ~ Unauthorized copying, publishing of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_container_error"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="@dimen/error_view_padding"
+    android:paddingHorizontal="@dimen/padding_60"
+    android:visibility="visible">
+
+    <ImageView
+        android:id="@+id/iv_error"
+        android:layout_width="@dimen/error_view_image_size"
+        android:layout_height="@dimen/error_view_image_size"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_server_no_response"
+        app:layout_constraintBottom_toTopOf="@id/tv_title_error_bottom"
+        app:layout_constraintEnd_toStartOf="@+id/tv_message_error"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_title_error"
+        android:layout_width="@dimen/zero_dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/error_view_default_message_label"
+        android:textColor="@color/errorViewTitleTextColor"
+        android:textSize="@dimen/error_view_text_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_message_error"
+        app:layout_constraintEnd_toEndOf="@+id/tv_message_error"
+        app:layout_constraintStart_toStartOf="@+id/tv_message_error"
+        app:layout_constraintTop_toTopOf="@+id/iv_error"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_message_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/error_view_text_margin_vertical"
+        android:layout_marginStart="@dimen/error_view_message_margin_start"
+        android:layout_marginEnd="@dimen/error_view_message_margin_horizontal"
+        android:gravity="center"
+        android:text="@string/error_view_default_message_label"
+        android:textSize="@dimen/error_view_message_text_size"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toTopOf="@+id/tv_reload_error"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_error"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_error" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_reload_error"
+        style="@style/TextAppearance.MandiriDigital.BodyTexts.Body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/error_view_reload_margin_top"
+        android:drawableStart="@drawable/ic_reload_right"
+        android:drawablePadding="@dimen/error_view_reload_padding"
+        android:gravity="center"
+        android:text="@string/error_view_default_message_reload_label"
+        android:textColor="@color/colorBlueReloadLabelErrorView"
+        android:textSize="@dimen/error_view_reload_text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_error"
+        app:layout_constraintEnd_toEndOf="@+id/tv_message_error"
+        app:layout_constraintStart_toStartOf="@+id/tv_message_error"
+        app:layout_constraintTop_toBottomOf="@+id/tv_message_error" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_error_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="tv_title_error, tv_message_error, tv_reload_error" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_error_view_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="tv_title_error_bottom, tv_message_error_bottom, tv_reload_error_bottom" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_title_error_bottom"
+        android:layout_width="@dimen/zero_dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/error_view_title_margin_vertical"
+        android:gravity="center"
+        android:text="@string/error_view_default_message_label"
+        android:textColor="@color/errorViewTitleTextColor"
+        android:textSize="@dimen/error_view_text_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/tv_message_error_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_error"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_message_error_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/error_view_message_margin_horizontal"
+        android:layout_marginVertical="@dimen/error_view_text_margin_vertical"
+        android:gravity="center"
+        android:text="@string/error_view_default_message_label"
+        android:textSize="@dimen/error_view_message_text_size"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toTopOf="@+id/tv_reload_error_bottom"
+        app:layout_constraintEnd_toEndOf="@id/tv_title_error_bottom"
+        app:layout_constraintStart_toStartOf="@+id/tv_title_error_bottom"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_error_bottom" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_reload_error_bottom"
+        style="@style/TextAppearance.MandiriDigital.BodyTexts.Body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/error_view_reload_margin_top"
+        android:drawableStart="@drawable/ic_reload_right"
+        android:drawablePadding="@dimen/error_view_reload_padding"
+        android:gravity="center"
+        android:text="@string/error_view_default_message_reload_label"
+        android:textColor="@color/colorBlueReloadLabelErrorView"
+        android:textSize="@dimen/error_view_reload_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_message_error_bottom"
+        app:layout_constraintStart_toStartOf="@+id/tv_message_error_bottom"
+        app:layout_constraintTop_toBottomOf="@+id/tv_message_error_bottom" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

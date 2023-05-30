@@ -6,12 +6,19 @@ val includeIfEnabled = extra.get("includeIfEnabled") as groovy.lang.Closure<*>
 val includeAlways = extra.get("includeAlways") as groovy.lang.Closure<*>
 
 includeAlways(":app")
-includeIfEnabled(":core")
 includeIfEnabled(":core-ui")
-includeIfEnabled(":core-entity")
 includeIfEnabled(":core-nav")
+includeIfEnabled(":core-entity")
+includeIfEnabled(":core")
+
+includeIfEnabled(":api-splash")
+includeIfEnabled(":api-authentication")
+includeIfEnabled(":api-dashboard")
+
+includeIfEnabled(":feature-authentication")
+includeIfEnabled(":feature-splash")
+includeIfEnabled(":feature-dashboard")
+
 includeIfEnabled(":utilities:constants")
 includeIfEnabled(":utilities:currency")
-includeIfEnabled(":api-splash")
-includeIfEnabled(":feature-authentication")
-include(":api-authentication")
+include(":feature-authentication-otp")

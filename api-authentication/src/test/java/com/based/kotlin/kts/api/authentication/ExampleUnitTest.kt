@@ -1,8 +1,7 @@
-package com.based.kotlin.kts.api.authentication
-
-import org.junit.Test
+package com.based.kotlin.api.authentication
 
 import org.junit.Assert.*
+import org.junit.Test
 
 /**
  * Example local unit test, which will execute on the development machine (host).

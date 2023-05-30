@@ -1,3 +1,1684 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">core-ui</string>
+    <string name="divider">-</string>
+    <string name="alphabet">a bcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="alphanumeric">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="textAlphanumeric">0 123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="textCapital">ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="numeric">0123456789</string>
+
+    <!--region NumPad-->
+    <string name="num_pad_input_icon_description">Input Icon</string>
+    <!--endregion-->
+
+    <!--region Custom Date Picker-->
+    <string name="list_transaction_filter_date_title_label_information">Tanggal</string>
+    <!--endregion-->
+
+    <!--region Bottom Sheet Payment Detail-->
+    <string name="dashboard_dialog_transaction_detail_colon">:</string>
+    <string name="dashboard_dialog_transaction_detail_tv_label_queue_number">generalBankerCustomerDetailQueueNumberTitleLabel</string>
+    <string name="dashboard_dialog_transaction_detail_tv_label_source">generalBankerCustomerDetailBranchNameTitleLabel</string>
+    <!--endregion-->
+
+    <!--region Biometric-->
+    <string name="fingerprint">Fingerprint</string>
+    <!--endregion-->
+
+    <!--region Password Overlay-->
+    <string name="common_pass_try_again">tryAgain</string>
+    <string name="button_general_error_try_again">commonGeneralErrorTryAgainButton</string>
+    <string name="button_general_error_back">commonGeneralErrorTryAgainButton</string>
+    <string name="button_general_error_close">commonGeneralErrorMaxRetryCloseButton</string>
+    <string name="button_general_error_max_retry_close">Tutup Aplikasi</string>
+    <!--endregion-->
+
+    <!--region WebView Base Path-->
+    <string name="webview_base_path">file:///android_asset/</string>
+    <string name="webview_mime_type">text/html</string>
+    <string name="webview_encoding">UTF-8</string>
+    <string name="webview_stylesheet"><![CDATA[<html><style type=\'text/css\'>@font-face { font-family: tt_interphases_regular; src: url(\'fonts/tt_interphases_regular.ttf\'); } body {font-family: tt_interphases_regular;}</style><body>]]></string>
+    <string name="webview_stylesheet_suffix"><![CDATA[</body></html>]]></string>
+    <!--endregion-->
+
+    <!--region ProgressBar-->
+    <string name="progress_bar_waiting_label">progressBarWaitingTitle</string>
+    <!--endregion-->
+
+    <!--region receipt-->
+    <string name="item_receipt_transaction_receipt_number_label">transactionResultReceiptNumberTitleLabel</string>
+    <string name="item_receipt_transaction_type_withdrawal">transactionResultTransactionTypeCashWithdrawalLabel</string>
+    <string name="item_receipt_transaction_type_deposit">transactionResultTransactionTypeCashDepositLabel</string>
+    <string name="item_receipt_transaction_amount_label">transactionResultTotalAmountTitleLabel</string>
+    <string name="item_receipt_transaction_news_label">transactionResultTransactionNotesLabel</string>
+    <!--endregion-->
+
+    <!--region content summary transaction-->
+    <string name="content_summary_transaction_detail_debet">Debet Rekening</string>
+    <string name="content_summary_transaction_detail_total">transactionResultSummaryDetailTitle</string>
+    <string name="content_summary_transaction_detail_amount_label">transactionResultCashDepositDetailsAmountDetailSecTrxAmountTitleLabel</string>
+    <string name="content_summary_transaction_detail_fee_label">transactionResultCashDepositDetailsAmountDetailSecTrxFeeTitleLabel</string>
+    <string name="content_summary_transaction_detail_total_amount_label">transactionResultCashDepositDetailsAmountDetailSecTotalAmountTitleLabel</string>
+    <string name="content_summary_transaction_detail_amount_counted_label">Terbilang</string>
+    <!--endregion-->
+
+    <!--region input-otp-->
+    <string name="dialog_input_otp_title">inputOtpLoginGbTitleLabel</string>
+    <string name="dialog_input_otp_loading_input_desc">inputOtpLoginLoadingVerificationDescLabel</string>
+    <string name="dialog_input_otp_loading_input_title">inputOtpLoginLoadingVerificationTitleLabel</string>
+    <string name="dialog_input_otp_loading_type_status">Loading</string>
+    <string name="dialog_input_connection_error">Terjadi kesalahan, silakan coba lagi.</string>
+    <string name="dialog_detail_data_not_found">Terjadi Kesalahan, data tidak ditemukan.</string>
+    <!--endregion-->
+
+    <string name="input_otp_info_retry_on">inputOtpLoginGbResendCountdownLabel</string>
+
+    <!--region error-->
+    <string name="error_view_default_message_label">commonGeneralErrorTitleLabel</string>
+    <string name="error_view_default_message_reload_label">commonGeneralErrorReloadButton</string>
+    <!--endregion-->
+
+    <!--region no internet connection-->
+    <string name="dialog_no_internet_title">commonInternetConnectionTitleLabel</string>
+    <string name="dialog_no_internet_message">commonInternetConnectionDescLabel</string>
+    <!--endregion-->
+
+    <!--region dialogTransactionDetail-->
+    <string name="dialog_transaction_detail_print_button_label">generalBankerCustomerDetailTransactionPhotoOverlayPrintTransactionForm</string>
+    <string name="dialog_transaction_detail_total_cash_deposit">generalBankerCustomerDetailTransactionTotalTrxCashDepositTitleLabel</string>
+    <string name="dialog_transaction_detail_list_transaction">generalBankerCustomerDetailTodayTransactionTitleLabel</string>
+    <!--endregion-->
+
+    <!--region timer-->
+    <string name="timer_title_label">generalBankerWaitReservationDurationTimeTitleLabel</string>
+    <!--endregion-->
+
+    <!--region dialog logout-->
+    <string name="dialog_logout_tv_title">headerTopBarLogoutOptionLogoutTitleLabel</string>
+    <string name="dialog_logout_tv_desc">headerTopBarLogoutOptionLogoutDescriptionLabel</string>
+    <string name="dialog_logout_btn_gb_tablet">headerTopBarLogoutOptionLogoutGbButton</string>
+    <string name="dialog_logout_btn_customer_tablet">headerTopBarLogoutOptionLogoutCustomerButton</string>
+    <string name="dialog_logout_tv_back">headerTopBarLogoutOptionLogouBackButton</string>
+    <!--endregion-->
+
+    <!--region dialog cancellation-->
+    <string name="dialog_cancellation_text_error_reason">transactionOverviewTextFieldCanceInlineErrorButton</string>
+    <string name="dialog_cancellation_text_hint">transactionOverviewTextFieldCancelButton</string>
+    <string name="dialog_cancellation_first_text_count">0</string>
+    <string name="dialog_cancellation_text_count_to">/</string>
+    <string name="dialog_cancellation_second_text_count">150</string>
+    <string name="dialog_cancellation_button_back">transactionOverviewCancelTransactionCancelButton</string>
+    <string name="dialog_cancellation_button_verify_next">transactionOverviewCancelTransactionNextButton</string>
+    <!--endregion-->
+
+    <!--region Switch Button-->
+    <string name="auth_segment_label_login_gb">loginGBTabButtonContainer</string>
+    <string name="auth_segment_label_login_customer">loginCustomerTabButtonContainer</string>
+
+    <!--region Confirmation Transaction-->
+    <string name="confirmation_transaction_destination_to_account_title">transactionConfirmationLandingToAccountLabel</string>
+    <string name="confirmation_transaction_cancel">transactionConfirmationLandingCancelButton</string>
+    <string name="confirmation_transaction_edit">transactionConfirmationLandingEditButton</string>
+    <string name="confirmation_transaction_news">transactionConfirmationLandingTransactionNoteLabel</string>
+    <string name="confirmation_transaction_type_title">transactionConfirmationLandingTransactionTypeLabel</string>
+    <string name="confirmation_transaction_destination_title">transactionConfirmationLandingTransactionPurposeLabel</string>
+    <string name="confirmation_transaction_phone_number_title">transactionConfirmationLandingPhoneNumberLabel</string>
+    <string name="confirmation_transaction_nominal_title">transactionConfirmationLandingTransactionAmountLabel</string>
+    <string name="confirmation_transaction_source_title">transactionConfirmationLandingSourceFundLabel</string>
+    <string name="confirmation_transaction_email_title">transactionConfirmationLandingEmailLabel</string>
+    <string name="confirmation_transaction_account_name_title">transactionConfirmationLandingDepositCustomerNameLabel</string>
+    <string name="confirmation_transaction_method_title">transactionConfirmationLandingTransactionMethodLabel</string>
+    <string name="confirmation_transaction_source_account_title">transactionConfirmationLandingFromAccountLabel</string>
+    <string name="confirmation_transaction_account_owner_name_title">transactionConfirmationLandingWithdrawalFromAccountLabel</string>
+    <string name="confirmation_transaction_fee_title">transactionConfirmationLandingFeeLabel</string>
+    <string name="confirmation_transaction_title_screen">transactionConfirmationLandingConfirmationLabel</string>
+    <!--endregion-->
+
+    <!--region card transaction overview-->
+    <string name="card_transaction_overview_success_label">transactionOverviewDetailSuccessLabel</string>
+    <string name="card_transaction_overview_failed_label">transactionOverviewDetailFailedLabel</string>
+    <string name="card_transaction_overview_cancel_by_customer_label">transactionOverviewDetailCancelByCustLabel</string>
+    <string name="card_transaction_overview_cancel_by_gb_label">transactionOverviewDetailCancelByGbLabel</string>
+    <string name="card_transaction_overview_not_process_label">transactionOverviewDetailInBranchLabel</string>
+    <!--endregion-->
+
+    <!--region card transaction-->
+    <string name="card_transaction_choose_transaction_label">transactionOverviewAddButton</string>
+    <string name="card_transaction_cancel_choose_transaction_label">transactionOverviewRemoveButton</string>
+    <string name="card_transaction_success_label">transactionConfirmationLandingSuccessStatusLabel</string>
+    <string name="card_transaction_denunciation_success_label">transactionResultAccountMaintenanceDetailDenunciationTransactionStatusSuccessTitleLabel</string>
+    <string name="card_transaction_failed_label">transactionConfirmationLandingFailedStatusLabel</string>
+    <string name="card_transaction_cancel_label_gb">transactionConfirmationCancelByGb</string>
+    <string name="card_transaction_denunciation_cancel_label_gb">transactionResultAccountMaintenanceDetailDenunciationTransactionStatusCancelByBankTitleLabel</string>
+    <string name="card_transaction_cancel_label_customer">transactionConfirmationCancelByCustomer</string>
+    <string name="card_transaction_denunciation_cancel_label_customer">transactionResultAccountMaintenanceDetailDenunciationTransactionStatusCancelByCustomerTitleLabel</string>
+    <string name="card_transaction_wait_customer_confirmation_label">transactionConfirmationLandingCheckingWarkatPhotoToastLabel</string>
+    <string name="card_transaction_see_details_label">transactionOverviewDetailButton</string>
+    <string name="card_transaction_verified_label">transactionConfirmationLandingConfirmationStatusVerifiedDetailedLabel</string>
+    <string name="card_transaction_type_customer_data_maintenance_label">transactionOverviewTransactionTypeCustomerDataMaintenanceLabel</string>
+    <string name="card_transaction_checking_warkat_true_photo_label">transactionConfirmationLandingCheckingWarkatTruePhotoToastLabel</string>
+    <!--endregion-->
+
+    <!--region dialog with action-->
+    <string name="dialog_with_action_retry_label">commonGeneralErrorMaxRetryTryAgainButton</string>
+    <!--endregion-->
+
+    <!--region dialog calender-->
+    <string name="dialog_calender_button_cancel_label">Cancel</string>
+    <string name="dialog_calender_button_choose_date_label">OK</string>
+    <!--endregion-->
+
+    <!--region item webview tnc-->
+    <string name="agree_button_tnc_text">cashDepositWebViewTermsAndConditionPopUpBackButton</string>
+    <!--endregion-->
+
+    <!--region numeric authorization landing pin-->
+    <string name="numeric_authorization_landing_pin_label">AuthVerificationNotActiveCardButtonLabel</string>
+    <!--endregion-->
+
+    <!--region debit card-->
+    <string name="debit_card_transaction_card_number_title">AuthChooseDebitProductNumberTitleLabel</string>
+    <string name="debit_card_transaction_account_number_title">AuthChooseDebitAccountNumberTitleLabel</string>
+    <string name="debit_card_transaction_status_active">AuthChooseDebitLandingActiveStatusLabel</string>
+    <string name="debit_card_transaction_status_blocked">AuthChooseDebitLandingBlockStatusLabel</string>
+    <string name="debit_card_transaction_status_expired">AuthChooseDebitLandingExpiredStatusLabel</string>
+    <string name="debit_card_transaction_status_inactive">AuthChooseDebitLandingInactiveStatusLabel</string>
+    <!--endregion-->
+
+    <!--region dialog detail transaction-->
+    <string name="dialog_detail_transaction_detail_total_cash_deposit">generalBankerCustomerDetailTransactionTotalTrxCashDepositTitleLabel</string>
+    <string name="dialog_detail_transaction_detail_total_cash_withdrawal">generalBankerCustomerDetailTransactionTotalTrxCashWithdrawalLabel</string>
+    <string name="dialog_detail_transaction_detail_total_foreign_exchange">generalBankerCustomerDetailTransactionTotalTrxForeignCurrency</string>
+    <string name="dialog_detail_transaction_detail_total_account_transfer">generalBankerCustomerDetailTransactionTotalTrxTransferLabel</string>
+    <string name="dialog_detail_transaction_detail_total_transfer_another_bank">generalBankerCustomerDetailTransactionTotalTrxInterbankTransferLabel</string>
+    <string name="dialog_detail_transaction_detail_total_payment">generalBankerCustomerDetailTransactionTotalTrxPaymentLabel</string>
+    <string name="dialog_detail_transaction_insufficient_balance_title">generalBankerDashboardGeneralBankerNoCashOnHandTitleLabel</string>
+    <string name="dialog_detail_transaction_insufficient_balance_content">generalBankerDashboardGeneralBankerNoCashOnHandDescLabel</string>
+    <string name="dialog_detail_transaction_insufficient_branch_limit_title">generalBankerDashboardGeneralBankerBranchLimitTitleLabel</string>
+    <string name="dialog_detail_transaction_insufficient_branch_limit_content">generalBankerDashboardGeneralBankerBranchLimitDescLabel</string>
+    <string name="dialog_detail_customer_processed_title">generalBankerDashboardCustomerProccessedConfirmationTitle</string>
+    <string name="dialog_detail_customer_processed_content">generalBankerDashboardCustomerProccessedConfirmationLabel</string>
+    <string name="dialog_detail_customer_processed_primary_button_label">generalBankerDashboardCustomerProccessedConfirmationBackButton</string>
+    <string name="dialog_detail_transaction_detail_other_transaction">generalBankerCustomerDetailTransactionTotalTrxOthersTransactionLabel</string>
+    <string name="dialog_detail_transaction_detail_saving_account_opening">generalBankerCustomerDetailTransactionTypeSavingAccOpeningLabel</string>
+    <string name="dialog_detail_transaction_detail_saving_plan_account_opening">generalBankerCustomerDetailTransactionTypeSavingPlanAccOpeningLabel</string>
+    <string name="dialog_detail_transaction_detail_current_account_opening">generalBankerCustomerDetailTransactionTypeCurrentAccOpeningLabel</string>
+    <string name="dialog_detail_transaction_detail_deposito_account_opening">generalBankerCustomerDetailTransactionTypeDepositoAccOpeningLabel</string>
+    <string name="dialog_detail_transaction_detail_current_account_service">generalBankerCustomerDetailTransactionTypeCurrentAccServiceLabel</string>
+    <string name="dialog_detail_transaction_detail_debit_card_complaint">generalBankerCustomerDetailTransactionTypeDebitCardComplaintLabel</string>
+    <string name="dialog_detail_transaction_detail_echannel_service">generalBankerCustomerDetailTransactionTypeEchannelServiceLabel</string>
+    <string name="dialog_detail_transaction_detail_deposito_service">generalBankerCustomerDetailTransactionTypeDepositoServiceLabel</string>
+    <string name="dialog_detail_transaction_detail_other_service">generalBankerCustomerDetailTransactionTypeOthersServiceLabel</string>
+    <string name="dialog_detail_transaction_detail_customer_complaint">generalBankerCustomerDetailTransactionTypeCustomerComplaintLabel</string>
+    <string name="dialog_detail_transaction_detail_customer_data_maintenance">generalBankerCustomerDetailTransactionTypeCustomerDataMaintenanceLabel</string>
+    <string name="dialog_detail_transaction_detail_not_enough_card">generalBankerDashboardNotEnoughCardButton</string>
+    <string name="dialog_detail_transaction_detail_change_card">generalBankerCustomerDetailServiceCategoryDebitCardChangeCardLabel</string>
+    <string name="dialog_detail_transaction_detail_unblock_card">generalBankerCustomerDetailServiceCategoryDebitCardUnblockCardLabel</string>
+    <string name="dialog_detail_transaction_detail_register_visa">generalBankerCustomerDetailServiceCategoryDebitCardRegisterVisaLabel</string>
+    <string name="dialog_detail_transaction_detail_change_pin_card">generalBankerCustomerDetailServiceCategoryDebitCardChangePinCardLabel</string>
+    <string name="dialog_detail_transaction_detail_card_retrieval">generalBankerCustomerDetailTransactionTypeDebitCardCardRetrievalLabel</string>
+    <string name="dialog_detail_transaction_detail_change_blocked_card">generalBankerCustomerDetailServiceCategoryDebitCardBlockCardLabel</string>
+    <string name="dialog_detail_transaction_detail_activation_account">generalBankerCustomerDetailTransactionTypeAccountMaintenanceActivationAccountLabel</string>
+    <string name="dialog_detail_transaction_detail_block_account">generalBankerCustomerDetailTransactionTypeAccountMaintenanceBlockAccountLabel</string>
+    <string name="dialog_detail_transaction_detail_denunciation_account">generalBankerCustomerDetailTransactionTypeAccountMaintenanceDenunciationAccountLabel</string>
+    <string name="dialog_detail_transaction_detail_update_denunciation_account">generalBankerCustomerDetailTransactionTypeAccountMaintenanceUpdateDenunciationAccountLabel</string>
+    <string name="dialog_detail_transaction_detail_rk_statement">generalBankerCustomerDetailTransactionTypeAccountMaintenanceRKStatementLabel</string>
+    <string name="dialog_checking_warkat_photo_representative_label">transactionConfirmationLandingCheckingWarkatPhotoRepresentativeToastLabel</string>
+    <string name="dialog_checking_warkat_photo_label">transactionConfirmationLandingCheckingWarkatPhotoToastLabel</string>
+    <!--endregion-->
+
+    <!--region nbds custom input-->
+    <string name="nbds_custom_input_field_auto_complete_text_hint">null</string>
+    <!--endregion-->
+
+    <!--region dialog dukcapil web portal-->
+    <string name="dialog_dukcapil_web_portal_tv_title_label">customerVerificationDataDukcapilPortalPopUpTitleLabel</string>
+    <string name="dialog_dukcapil_web_portal_tv_id_card_title_label">customerVerificationDataDukcapilPortalPopUpCustomerIdentityNumberLabel</string>
+    <string name="dialog_dukcapil_web_portal_btn_close_dukcapil_label">customerVerificationDataDukcapilPortalPopUpCloseButtonLabel</string>
+    <string name="dialog_dukcapil_web_portal_btn_refresh_dukcapil_label">customerVerificationDataDukcapilPortalPopUpReloadButtonLabel</string>
+    <string name="customer_verification_data_face_verif_success">customerVerificationDataFaceVerificationSuccessStatusLabel</string>
+    <string name="customer_verification_data_face_verif_failed">customerVerificationDataFaceVerificationFailedStatusLabel</string>
+    <string name="customer_verification_data_debit_pin_success">customerVerificationDataDebitCardPinVerificationSuccessStatusLabel</string>
+    <string name="customer_verification_data_debit_pin_fail">customerVerificationDataDebitCardPinVerificationFailedStatusLabel</string>
+    <string name="customer_verification_data_debit_pin_skip">customerVerificationDataDebitCardPinVerificationSkippedStatusLabel</string>
+    <string name="customer_verification_data_pending_description">customerVerificationDataPendingCustomerVerificationDescLabel</string>
+    <string name="customer_information_verification_otp_code_success">customerVerificationDataOtpCodeVerificationSuccessLabel</string>
+    <string name="customer_verification_verification_otp_code_fail">customerVerificationDataOtpCodeVerificationFailedLabel</string>
+    <!--endregion-->
+
+    <!--region component script signature-->
+    <string name="component_script_signature_title_label">generalBankerWarkatVerificationPageWarkatSpecimenTitleLabel</string>
+    <!--endregion-->
+
+    <!-- region component signature verification view -->
+    <string name="component_signature_verification_text_choose_signature">generalBankerWarkatVerificationPageWarkatSpecimenDescriptionDefaultLabel</string>
+    <string name="component_signature_verification_btn_verify">generalBankerWarkatVerificationPageWarkatSpecimenButtonLabel</string>
+    <string name="component_signature_verification_btn_reselect_signature">generalBankerWarkatVerificationPageSignatureButtonLabel</string>
+    <string name="component_signature_verification_error_title">generalBankerWarkatVerificationPageSignatureVerificationErrorTitleLabel</string>
+    <string name="component_signature_verification_error_message">generalBankerWarkatVerificationPageSignatureVerificationErrorDescLabel</string>
+    <string name="component_signature_verification_error_retry_button_text">generalBankerWarkatVerificationPageSignatureVerificationErrorRetryButtonLabel</string>
+    <!-- endregion -->
+
+    <!-- region dialog warkat verification failed -->
+    <string name="dialog_warkat_verification_failed_title">customerWarkatAuthenticationVerifyFailedDescriptionLabel</string>
+    <string name="dialog_warkat_verification_failed_reason_label">gbWarkatAuthenticationVerifyFailedReasonTitleLabel</string>
+    <string name="dialog_warkat_verification_failed_footer_label">customerWarkatAuthenticationVerifyRedirectLabel</string>
+    <string name="dialog_warkat_verification_failed_button_label">gbWarkatAuthenticationVerifyFailedNextButton</string>
+    <!-- endregion -->
+
+    <!-- region warkat verification failed -->
+    <string name="customer_screen_status_dialog_warkat_verification_failed_title_gb_label">gbWarkatAuthenticationVerifyFailedDescriptionLabel</string>
+    <string name="customer_screen_status_dialog_warkat_verification_failed_reason_title_gb_label">gbWarkatAuthenticationVerifyFailedReasonTitleLabel</string>
+    <string name="customer_screen_status_dialog_warkat_verification_failed_footer_gb_label">gbWarkatAuthenticationVerifyRedirectLabel</string>
+    <!-- endregion -->
+
+    <!-- region Calender -->
+    <string name="transfer_edit_script_select_date_title">Pilih Tanggal</string>
+    <!-- endregion -->
+
+    <!-- region Amount Field Component -->
+    <string name="edit_amount_description_label">Terbilang</string>
+    <!-- endregion -->
+
+    <!-- region dialog nominal confirmation -->
+    <string name="dialog_amount_confirmation_title">transactionConfirmationLandingCashAcceptanceTitleLabel</string>
+    <string name="dialog_amount_confirmation_description">transactionConfirmationLandingCashAcceptanceSubTitleLabel</string>
+    <string name="dialog_amount_confirmation_total_amount_label">transactionConfirmationLandingTotalLabel</string>
+    <string name="dialog_amount_confirmation_checkbox_agreement_text">transactionConfirmationLandingCashAcceptanceConsentCustomerLabel</string>
+    <string name="dialog_amount_confirmation_button_confirmation_label">transactionConfirmationLandingCashAcceptanceMatchButton</string>
+    <!-- endregion dialog nominal confirmation -->
+
+    <!--region card detail fund-->
+    <string name="card_detail_fund_see_detail_button_label">customerFundPortfolioSeeDetailButtonLabel</string>
+    <string name="label_pie_chart">Juli-Sep 2022</string>
+    <!--endregion-->
+
+    <!--region card detail fund-->
+    <string name="debit_card_change_supervisor_instruction_details_page_popup_cancel">debitCardInstructionDetailsPageChangeCardInputDebitCardCancelTitleLabel</string>
+    <string name="debit_card_change_supervisor_description_details_page_popup_cancel">debitCardInstructionDetailsPageChangeCardInputDebitCardCancelDescriptionLabel</string>
+    <!--endregion-->
+
+    <string name="label_see_script_button">transactionConfirmationLandingPreviewWarkatButton</string>
+
+    <!--region calendar information-->
+    <string name="label_sunday">S</string>
+    <string name="label_monday">M</string>
+    <string name="label_tuesday">T</string>
+    <string name="label_wednesdey">W</string>
+    <string name="label_thursday">T</string>
+    <string name="label_friday">F</string>
+    <!--endregion-->
+
+
+    <!--region confirmation-transaction-->
+    <string name="choose_input_otp_title">otpVerificationLandingInputOtpLandingInstructionOtpLabel</string>
+    <string name="choose_input_otp_sub_title">otpVerificationLandingNextStepOtpTitleLabel</string>
+    <string name="choose_input_otp_information">otpVerificationLandingInputOtpLandingOtpSendOptionLabel</string>
+    <string name="confirmation_transaction_account_giro">transactionConfirmationLandingAccountProductCurrentAccountLabel</string>
+    <string name="confirmation_transaction_account_saving">transactionConfirmationLandingAccountProductSavingAccountLabel</string>
+    <string name="confirmation_wait_allocation_transaction_title_label">transactionConfirmationLandingWaitAllocationTransactionTitleLabel</string>
+    <string name="confirmation_wait_allocation_transaction_cancel_button">transactionConfirmationLandingWaitAllocationTransactionCancelButton</string>
+    <string name="confirmation_wait_allocation_transaction_next_button">transactionConfirmationLandingWaitAllocationTransactionNextButton</string>
+    <string name="transaction_confirmation_failed_transaction_title_label">transactionConfirmationLandingFailedTransactionTitleLabel</string>
+    <string name="transaction_confirmation_failed_transaction_desc_label">transactionConfirmationLandingFailedTransactionDescLabel</string>
+    <string name="transaction_confirmation_failed_transaction_retry_button">transactionConfirmationLandingFailedTransactionRetryButton</string>
+    <!--endregion-->
+
+    <string name="tnc_overview_transaction">transactionConfirmationLandingGeneralBankerVerificationDeclaration</string>
+
+    <!--region Overview Transaction-->
+    <string name="overview_transaction_title">transactionOverviewTransactionTitle</string>
+    <string name="overview_content_transaction_title">transactionOverviewReservationHeaderTitleLabel</string>
+    <string name="overview_transaction_choose_all">transactionOverviewTransactionChoiceTitle</string>
+    <string name="overview_transaction_change_button">transactionOverviewEditTransactionButton</string>
+    <string name="overview_transaction_summary">transactionOverviewTransactionSummaryTitle</string>
+    <string name="overview_transaction_total_cash_out">transactionOverviewTotalWithdrawaltransactionsTitle</string>
+    <string name="overview_transaction_total_cash_in">transactionOverviewTotalDepositDetransactionsTitle</string>
+    <string name="overview_transaction_customer_button_cancel">transactionOverviewCustomerCancelTransactionButton</string>
+    <string name="overview_transaction_button_start">transactionOverviewCustomerNextTransactionButton</string>
+    <string name="overview_transaction_button_print">transactionOverviewPrintButtonLabel</string>
+    <string name="overview_transaction_button_close">transactionOverviewNonBalanceOverlayreCheckButton</string>
+    <string name="overview_transaction_button_cancel">transactionOverviewInactiveButton</string>
+    <string name="overview_transaction_content_all_acc_inactive">transactionOverviewInactiveButton</string>
+    <string name="overview_transaction_account_not_active">transactionOverviewInactiveTitleLabel</string>
+    <string name="overview_transaction_content_have_acc_inactive">transactionOverviewInactiveDescriptionLabel</string>
+    <string name="overview_transaction_resend_receipt_label">transactionOverviewTransactionResendTransactionDescription</string>
+    <string name="overview_transaction_resend_receipt_button_label">transactionOverviewTransactionResendTransactionButton</string>
+    <string name="overview_transaction_print_receipt_button_label">transactionOverviewTransactionPrintReceiptButton</string>
+    <string name="overview_transaction_insufficient_balance_title">transactionOverviewTellerBalanceCustomerTitleLabel</string>
+    <string name="overview_transaction_insufficient_balance_button">transactionOverviewBackButton</string>
+    <string name="overview_transaction_insufficient_balance_gb_title">transactionOverviewTellerBalanceTitleLabel</string>
+    <string name="overview_transaction_insufficient_balance_gb_body">transactionOverviewTellerBalanceTLabel</string>
+    <string name="overview_transaction_insufficient_balance_gb_button">transactionOverviewCancelTransactionButton</string>
+    <string name="overview_transaction_summary_cash_withdrawal_title">transactionOverviewTotalWithdrawaltransactionsTitle</string>
+    <string name="overview_transaction_summary_cash_deposit_title">transactionOverviewTotalDepositDetransactionsTitle</string>
+    <string name="overview_transaction_category_change_card">transactionOverviewDebitCardDetailChangeCardLabel</string>
+    <string name="overview_transaction_category_unblock_card">transactionOverviewDebitCardDetailUnblockedCardLabel</string>
+    <string name="overview_transaction_category_change_pin">transactionOverviewDebitCardDetailChangePinLabel</string>
+    <string name="overview_transaction_category_register_visa">transactionOverviewDebitCardDetailRegisterVisaLabel</string>
+    <string name="overview_transaction_category_card_retrieval">transactionOverviewDebitCardDetailCardRetrievalLabel</string>
+    <string name="overview_transaction_category_card_retrieval_purpose">transactionOverviewDebitCardDetailTrxPurposeCardRetrievalLabel</string>
+    <string name="overview_transaction_category_summary_change_card">transactionOverviewTransactionCategorySummaryChangeCardLabel</string>
+    <string name="overview_transaction_category_summary_unblock_card">transactionOverviewTransactionCategorySummaryUnblockedCardLabel</string>
+    <string name="overview_transaction_category_summary_change_pin">transactionOverviewTransactionCategorySummaryChangePinLabel</string>
+    <string name="overview_transaction_category_summary_register_visa">transactionOverviewTransactionCategorySummaryRegisterVisaLabel</string>
+    <string name="overview_transaction_category_summary_card_retrieval">transactionOverviewTransactionCategorySummaryCardRetrievalLabel</string>
+    <string name="overview_transaction_category_card_change_card">transactionOverviewTransactionServiceCategoryChangeCardLabel</string>
+    <string name="overview_transaction_category_card_unblock_card">transactionOverviewTransactionServiceCategoryUnblockedCardLabel</string>
+    <string name="overview_transaction_category_card_change_pin">transactionOverviewTransactionServiceCategoryChangePinLabel</string>
+    <string name="overview_transaction_category_card_register_visa">transactionOverviewTransactionServiceCategoryRegisterVisaLabel</string>
+    <string name="overview_transaction_category_card_card_retrieval">transactionOverviewTransactionServiceCategoryCardRetrievalLabel</string>
+    <string name="overview_transaction_category_customer_data_personal">transactionOverviewTransactionCategorySummaryPersonalDataLabel</string>
+    <string name="overview_transaction_category_customer_data_electronic_address">transactionOverviewTransactionCategorySummaryElectronicAddressLabel</string>
+    <string name="overview_transaction_category_customer_data_personal_address">transactionOverviewTransactionCategorySummaryPersonalAddressLabel</string>
+    <string name="overview_transaction_category_customer_data_occupation">transactionOverviewTransactionCategorySummaryOccupationDataLabel</string>
+    <string name="overview_transaction_category_customer_data_occupation_address">transactionOverviewTransactionCategorySummaryOccupationAddressLabel</string>
+    <string name="overview_transaction_category_customer_data_additional">transactionOverviewTransactionServiceCategoryCustomerDataMaintenanceLabel</string>
+    <string name="overview_transaction_category_customer_data_additional_summary">transactionOverviewTransactionCategorySummaryCustomerDataMaintenanceLabel</string>
+    <string name="overview_transaction_dialog_details_text_title_detail">transactionOverviewAccountMaintenanceRkStatementDetailTitleLabel</string>
+    <string name="overview_transaction_dialog_details_text_account_name">transactionOverviewDebitCardDetailAccountHolderNameTitleLabel</string>
+    <string name="overview_transaction_dialog_details_text_debit_type">transactionOverviewDebitCardDetailDebitTypeTitleLabel</string>
+    <string name="overview_transaction_dialog_details_text_account_detail">transactionOverviewDebitCardDetailAccountProductNameTitleLabel</string>
+    <string name="overview_transaction_dialog_details_text_service_category">transactionOverviewDebitCardDetailTransactionPurposeTitleLabel</string>
+    <string name="overview_transaction_dialog_details_text_title_date">transactionOverviewDebitCardDetailTransactionDateLabel</string>
+    <string name="overview_transaction_dialog_details_substitute_debit_card">transactionOverviewNonFinChangeCardDetailSubstituteCardTypeTitleLabel</string>
+    <string name="overview_transaction_dialog_details_text_title_account_maintenance_date">transactionResultAccountMaintenanceDetailTransactionDateLabel</string>
+    <string name="overview_transaction_dialog_details_text_status">transactionOverviewDebitCardDetailTransactionTypeLabel</string>
+    <string name="overview_transaction_dialog_details_text_catergory">transactionOverviewDebitCardDetailCategoryTitleLabel</string>
+    <string name="overview_transaction_dialog_confirmation_next">transactionOverviewConfirmationTransactionButton</string>
+    <string name="overview_transaction_dialog_confirmation_cancel">transactionOverviewConfirmationTransactionRecheckButton</string>
+    <string name="overview_transaction_type_cash_withdrawal">transactionOverviewTransactionTypeCashWithdrawalLabel</string>
+    <string name="overview_transaction_old_transaction_service_label">transactionOverviewTransactionServiceLabel</string>
+    <string name="overview_transaction_type_cash_deposit">transactionOverviewTransactionTypeCashDepositLabel</string>
+
+    <string name="overview_non_fin_old_bds_sender_information_title_label">transactionOverviewTransferNonFinancialSenderInformationTitleLabel</string>
+    <string name="overview_non_fin_old_bds_sender_name_title_label">transactionOverviewTransferNonFinancialSenderNameTitleLabel</string>
+    <string name="overview_non_fin_old_bds_account_number_title_label">transactionOverviewTransferNonFinancialAccountNumberSourceTitleLabel</string>
+    <string name="overview_non_fin_old_bds_phone_number_title_label">transactionOverviewTransferNonFinancialPhoneNumberCustomerTitleLabel</string>
+    <string name="overview_non_fin_old_bds_address_title_label">transactionOverviewTransferNonFinancialAddressCustomerTitleLabel</string>
+    <string name="overview_non_fin_old_bds_service_title_label">transactionOverviewTransferNonFinancialServiceTitle</string>
+    <string name="overview_transaction_category_type_personal_data">transactionOverviewCustomerDataMaintenanceDetailPersonalDataLabel</string>
+    <string name="overview_transaction_category_type_personal_address">transactionOverviewCustomerDataMaintenancePersonalAddressLabel</string>
+    <string name="overview_transaction_category_type_electronic_address">transactionOverviewCustomerDataMaintenanceElectronicAddressLabel</string>
+    <string name="overview_transaction_category_type_occupation_data">transactionOverviewCustomerDataMaintenanceOccupationDataLabel</string>
+    <string name="overview_transaction_category_type_occupation_address">transactionOverviewCustomerDataMaintenanceOccupationAddressLabel</string>
+    <string name="overview_transaction_category_title_label">transactionOverviewCustomerDataMaintenanceDetailCategoryTitleLabel</string>
+    <string name="overview_transaction_category_activate_label">transactionOverviewTransactionServiceCategoryActivationAccountLabel</string>
+    <string name="overview_transaction_category_block_label">transactionOverviewTransactionServiceCategoryBlockAccountLabel</string>
+    <string name="overview_transaction_category_denunciation_label">transactionOverviewTransactionServiceCategoryDenunciationAccountLabel</string>
+    <string name="overview_transaction_category_update_denunciation_label">transactionOverviewTransactionServiceCategoryUpdateDenunciationAccountLabel</string>
+    <string name="overview_transaction_category_rk_statement_label">transactionOverviewTransactionServiceCategoryRkStatementLabel</string>
+    <string name="overview_details_transaction_category_activation_label">transactionOverviewAccountMaintenanceActivationAccountLabel</string>
+    <string name="overview_details_transaction_category_block_label">transactionOverviewAccountMaintenanceDetailBlockAccountLabel</string>
+    <string name="overview_details_transaction_category_denunciation_label">transactionOverviewAccountMaintenanceDenunciationAccountLabel</string>
+    <string name="overview_details_transaction_category_update_denunciation_label">transactionOverviewAccountMaintenanceUpdateDenunciationAccountLabel</string>
+    <string name="overview_details_transaction_category_rk_statement_label">transactionOverviewAccountMaintenanceRkStatementLabel</string>
+    <string name="overview_details_transaction_rk_statement_transaction_detail_title">transactionOverviewAccountMaintenanceRkStatementDetailTitleLabel</string>
+    <string name="overview_transaction_result_category_activate_label">transactionResultDebitCardDetailActivationAccountLabel</string>
+    <string name="overview_transaction_result_category_block_label">transactionResultDebitCardDetailBlockAccountLabel</string>
+    <string name="overview_transaction_result_category_denunciation_label">transactionResultDebitCardDetailDenunciationAccountLabel</string>
+    <string name="overview_transaction_result_category_update_denunciation_label">transactionResultDebitCardDetailUpdateDenunciationAccountLabel</string>
+    <string name="overview_transaction_result_category_rk_statement_label">Pilih Periode Rekening Koran</string>
+    <string name="dialog_see_details_account_maintenance_activation_block_transaction_type_label">transactionResultActivationAccountDetailTransactionTypeLabel</string>
+    <string name="dialog_see_details_account_maintenance_denunciation_transaction_type_label">transactionResultAccountMaintenanceDetailDenunciationAccountLabel</string>
+    <string name="dialog_see_details_account_maintenance_rk_statement_transaction_type_label">transactionResultActivationAccountDetailRkStatementTransactionTypeLabel</string>
+    <string name="dialog_see_details_account_maintenance_transaction_type_label">transactionOverviewTransactionTypeActivationAccountLabel</string>
+    <string name="dialog_see_details_account_maintenance_transaction_denunciation_type_label">transactionOverviewTransactionTypeDenunciationAccountLabel</string>
+    <string name="dialog_see_details_account_maintenance_transaction_rk_type_label">transactionConfirmationLandingCustomerSummaryTrxTypeRkAccountLabel</string>
+    <string name="dialog_see_details_account_maintenance_transaction_detail_label">transactionResultAccountMaintenanceDetailTitleLabel</string>
+    <string name="dialog_see_details_account_maintenance_transaction_account_name_label">transactionResultAccountMaintenanceDetailAccountHolderNameTitleLabel</string>
+    <string name="dialog_see_details_account_maintenance_transaction_account_number_label">transactionResultAccountMaintenanceDetailAccountNumberTitleLabel</string>
+    <string name="dialog_see_details_account_maintenance_transaction_id_number_label">transactionResultAccountMaintenanceDetailIdentityCardTitleLabel</string>
+    <string name="dialog_see_details_account_maintenance_transaction_activation_label">transactionResultAccountMaintenanceDetailActivationPurposeTitleLabel</string>
+    <string name="dialog_see_details_account_maintenance_transaction_block_label">transactionResultAccountMaintenanceDetailBlockedPurposeTitleLabel</string>
+    <string name="dialog_see_details_account_maintenance_transaction_status_label">transactionResultAccountMaintenanceDetailAccountStatusTitleLabel</string>
+    <string name="dialog_see_details_account_maintenance_transaction_block_date_label">transactionOverviewAccountMaintenanceDenunciationDetailTransactionDateLabel</string>
+    <string name="dialog_see_details_account_maintenance_category_label">transactionResultAccountMaintenanceDetailCategoryLabel</string>
+    <string name="dialog_see_details_account_maintenance_category_old_bds_label">transactionOverviewTransactionServiceLabel</string>
+    <string name="dialog_see_details_account_maintenance_reason_self_needs_label">transactionResultAccountMaintenanceDetailTrxSelfNeedsLabel</string>
+    <string name="dialog_see_details_account_maintenance_reason_done_block_period_label">transactionResultAccountMaintenanceDetailTrxDoneBlockPeriodLabel</string>
+    <string name="dialog_see_details_account_maintenance_reason_activation_others_label">transactionResultAccountMaintenanceDetailTrxActivationOthersLabel</string>
+    <string name="dialog_see_details_account_maintenance_reason_blocked_others_label">transactionResultAccountMaintenanceDetailTrxBlockedOthersLabel</string>
+    <string name="dialog_see_details_account_maintenance_blocked_date_title_label">transactionOverviewAccountMaintenanceAccountDateTitleLabel</string>
+    <string name="dialog_see_details_account_maintenance_blocked_information_title_label">transactionConfirmationLandingBlockedInformationTitleLabel</string>
+
+    <!--endregion-->
+
+    <!--region Transaction-->
+    <string name="transaction_cancel">otpVerificationLandingMaxResendOTPButtonLabel</string>
+    <string name="transaction_success_text">transactionConfirmationLandingSuccessStatusLabel</string>
+    <string name="transaction_failed_text">transactionConfirmationLandingFailedStatusLabel</string>
+    <string name="transaction_failed_title_text">generalBankerTransactionConfirmationSemiAssistedTitleLabel</string>
+    <string name="transaction_cancel_text">transactionConfirmationLandingCancelByCustStatusLabel</string>
+    <string name="transaction_status_cancel_by_customer_status_label">transactionConfirmationLandingCancelByCustomerStatusLabel</string>
+    <string name="transaction_status_cancel_by_bank_status_label">transactionConfirmationLandingCancelByBankStatusLabel</string>
+    <!--endregion-->
+
+    <!--region Transaction Confirmation-->
+    <string name="transaction_confirmation_top_bar_label">transactionConfirmationLandingHeaderGeneralBankerTitleLabel</string>
+    <string name="transaction_confirmation_content">transactionConfirmationLandingConfirmationDescriptionLabel</string>
+    <string name="transaction_confirmation_button_primary">transactionConfirmationLandingSubmitButton</string>
+    <string name="transaction_confirmation_button_secondary">transactionConfirmationLandingRecheckButton</string>
+    <string name="transaction_confirmation_success_transaction">transactionConfirmationLandingSuccessTransactionTitleLabel</string>
+    <string name="transaction_confirmation_fail_transaction">transactionConfirmationLandingFailedTransactionTitleLabel</string>
+    <string name="transaction_confirmation_dialog_cancel_title">transactionConfirmationLandingCancelTitleLabel</string>
+    <string name="transaction_confirmation_dialog_cancel_description">transactionConfirmationLandingCancelDescriptionLabel</string>
+    <string name="transaction_confirmation_dialog_cancel_next_button">transactionConfirmationLandingCancelSubmitButton</string>
+    <string name="transaction_confirmation_dialog_cancel_cancel_button">transactionConfirmationLandingCancelButton</string>
+    <string name="transaction_confirmation_dialog_confirmation_title_label">transactionConfirmationLandingConfirmationTitleLabel</string>
+    <string name="transaction_overview_transaction_dialog_confirmation_title_label">transactionOverviewConfirmationTransactionTitleLabel</string>
+    <string name="transaction_overview_transaction_dialog_confirmation_description_label">transactionOverviewConfirmationTransactionDescriptionLabel</string>
+    <string name="transaction_confirmation_button_finish">transactionConfirmationLandingFinishTransactionButton</string>
+    <string name="transaction_confirmation_locked_account_teller_button_next">transactionConfirmationLandingLockedAccountTellerApprovalNextButton</string>
+    <string name="transaction_confirmation_item_print">nonFinancialTransactionConfirmationLandingCustomerPrintDocumentButton</string>
+    <string name="transaction_confirmation_item_title_transaction_information">transactionConfirmationLandingTransactionInformationTitleLabel</string>
+    <string name="transaction_confirmation_item_title_date">transactionConfirmationLandingTransactionExecutionTitleLabel</string>
+    <string name="transaction_confirmation_item_title_information_transaction">transactionConfirmationLandingTransactionMethodTitleLabel</string>
+    <string name="transaction_confirmation_item_title_number_warkat">Nomor Warkat</string>
+    <string name="transaction_confirmation_item_title_date_warkat">Tanggal Warkat</string>
+    <string name="transaction_confirmation_item_title_transaction_note">transactionConfirmationLandingTransactionNoteLabel</string>
+    <string name="transaction_confirmation_item_title_warkat">Warkat</string>
+    <string name="transaction_confirmation_item_title_nominal_transaction">Nominal Transaksi</string>
+    <string name="transaction_confirmation_item_title_cost_transaction">Biaya Transaksi</string>
+    <string name="transaction_confirmation_item_title_cash">Tunai</string>
+    <string name="transaction_confirmation_item_title_service">Biaya Layanan</string>
+    <string name="transaction_confirmation_item_title_amount_transaction">Total Nomimal Transaksi</string>
+    <string name="transaction_confirmation_item_title_information_source">Informasi Sumber</string>
+    <string name="transaction_confirmation_item_deposit_title_label">transactionConfirmationLandingDepositSenderCustomerTitleLabel</string>
+    <string name="transaction_confirmation_item_deposit_customer_name">transactionConfirmationLandingDepositCustomerNameLabel</string>
+    <string name="transaction_confirmation_item_withdrawal_title_label">transactionConfirmationLandingWithdrawalSenderCustomerTitleLabel</string>
+    <string name="transaction_confirmation_item_withdrawal_company_title_label">transactionConfirmationCustomerSourceInformationDetailAccountTitleLabel</string>
+    <string name="transaction_confirmation_item_withdrawal_company_sub_title_label">transactionConfirmationCustomerSourceInformationDetailAccountSubTitleLabel</string>
+    <string name="transaction_confirmation_item_withdrawal_customer_name">transactionConfirmationLandingWithdrawalFromAccountLabel</string>
+    <string name="transaction_confirmation_item_title_owner_name">Nama Pemilik Rekening</string>
+    <string name="transaction_confirmation_item_deposit_title_account_source">transactionConfirmationLandingDepositToAccountLabel</string>
+    <string name="transaction_confirmation_item_withdrawal_title_account_source">transactionConfirmationLandingWithdrawFromAccountLabel</string>
+    <string name="transaction_confirmation_item_title_account_source">Rekening Sumber</string>
+    <string name="transaction_confirmation_item_title_customer_id_card">Kartu Identitas</string>
+    <string name="transaction_confirmation_item_title_executor_name">Nama</string>
+    <string name="transaction_confirmation_item_title_identity_type">Jenis Identitas</string>
+    <string name="transaction_confirmation_item_title_account_number">Nomor Rekening</string>
+    <string name="transaction_confirmation_item_title_type_warkat">Jenis Warkat</string>
+    <string name="transaction_confirmation_item_title_source_of_fund">transactionConfirmationLandingSourceFundLabel</string>
+    <string name="transaction_confirmation_item_title_purpose_transaction">transactionConfirmationLandingTransactionPurposeLabel</string>
+    <string name="transaction_confirmation_item_title_information_executor">Informasi Pelaksana</string>
+    <string name="transaction_confirmation_item_title_summary_transaction">transactionConfirmationLandingTransactionSummaryTitle</string>
+    <string name="transaction_confirmation_item_title_summary_body">transactionConfirmationLandingTransactionSummaryDescription</string>
+    <string name="transaction_confirmation_item_agreement_general_banker">Data di atas adalah benar dan menyetujui serta tunduk pada ketentuan yang berlaku di PT BANK MANDIRI (Persero) Tbk yang merupakan satu kesatuan dengan formulir ini.</string>
+    <string name="transaction_confirmation_item_title_funding_agreement">transactionConfirmationCustomerFirstCheckbox</string>
+    <string name="transaction_confirmation_item_agreement_customer">transactionConfirmationCustomerSecondCheckbox</string>
+    <string name="transaction_confirmation_item_agreement_customer_term_and_condition">transactionConfirmationLandingTnCLabel_link</string>
+    <string name="transaction_confirmation_item_agreement_gb">transactionGeneralBankerCheckbox</string>
+    <string name="transaction_confirmation_item_title_edit_confirmation_button">Edit Oleh Nasabah</string>
+    <string name="transaction_confirmation_item_title_confirmation_button">transactionConfirmationTransactionConfirmationButtonLabel</string>
+    <string name="transaction_confirmation_upload_document_button">nonFinancialTransactionConfirmationLandingDocumentUnderlyingButton</string>
+    <string name="transaction_confirmation_item_title_confirmation_supervisor_button">nonFinancialTransactionConfirmationLandingGbVerificationButton</string>
+    <string name="transaction_confirmation_item_summary_confirmation_button">transactionConfirmationLandingFinishTransactionButton</string>
+    <string name="transaction_confirmation_item_title_confirm_changes_button">Perbarui Data Saya</string>
+    <string name="transaction_confirmation_item_title_cancel_button">Batalkan Transaksi</string>
+    <string name="transaction_confirmation_item_title_information_source_receive">Informasi Penerima</string>
+    <string name="transaction_confirmation_item_title_information_source_receiver_name">Nama Penerima</string>
+    <string name="transaction_confirmation_item_title_information_source_receiver_account_num">Rekening Penerima</string>
+    <string name="transaction_confirmation_item_title_btn_edit_summary">Ubah Banyak</string>
+    <string name="transaction_confirmation_item_title_btn_confirmation_summary">Selesaikan Transaksi</string>
+    <string name="transaction_confirmation_item_detail_transaction">transactionConfirmationLandingDetailScreenTitleLabel</string>
+    <string name="transaction_confirmation_transaction_cash_confirmation">Informasi Transaksi</string>
+    <string name="transaction_confirmation_customer_details_label">Detail Nasabah</string>
+    <string name="transaction_confirmation_customer_data_maintenance_details_label">Detail Pengkinian Data</string>
+    <string name="transaction_confirmation_category_customer_data_maintenance_details_label">Kategori</string>
+    <string name="transaction_confirmation_description_customer_data_maintenance_details_label">Keterangan</string>
+    <string name="transaction_confirmation_customer_name_label">transactionConfirmationLandingCustomerFullNameTitleLabel</string>
+    <string name="transaction_confirmation_cif_customer_label">CIF</string>
+    <string name="transaction_confirmation_identity_type_value">transactionConfirmationLandingCustomerIdentityValueTitleLabel</string>
+    <string name="transaction_confirmation_title_customer_identity_type_label">transactionConfirmationLandingCustomerIdentityTypeTitleLabel</string>
+    <string name="transaction_confirmation_title_customer_cif_label">transactionConfirmationLandingCustomerCifTitleLabel</string>
+    <string name="transaction_confirmation_title_cdm_list_category_personal_data_label">transactionConfirmationLandingCustomerDataMaintenancePersonalDataCategoryLabel</string>
+    <string name="transaction_confirmation_title_cdm_list_category_electronic_address_label">transactionConfirmationLandingCustomerDataMaintenanceElectronicAddressCategoryLabel</string>
+    <string name="transaction_confirmation_title_cdm_list_category_personal_address_label">transactionConfirmationLandingCustomerDataMaintenancePersonalAddressCategoryLabel</string>
+    <string name="transaction_confirmation_title_cdm_list_category_occupation_data_label">transactionConfirmationLandingCustomerDataMaintenanceOccupationDataCategoryLabel</string>
+    <string name="transaction_confirmation_title_cdm_list_category_occupation_address_label">transactionConfirmationLandingCustomerDataMaintenanceOccupationAddressCategoryLabel</string>
+    <string name="transaction_confirmation_title_cdm_list_category_personal_data_desc">transactionConfirmationLandingCustomerDataMaintenancePersonalDataDescriptionLabel</string>
+    <string name="transaction_confirmation_title_cdm_list_category_electronic_address_desc">transactionConfirmationLandingCustomerDataMaintenanceElectronicAddressDescriptionLabel</string>
+    <string name="transaction_confirmation_title_cdm_list_category_personal_address_desc">transactionConfirmationLandingCustomerDataMaintenancePersonalAddressDescriptionLabel</string>
+    <string name="transaction_confirmation_title_cdm_list_category_occupation_data_desc">transactionConfirmationLandingCustomerDataMaintenanceOccupationDataDescriptionLabel</string>
+    <string name="transaction_confirmation_title_cdm_list_category_occupation_address_desc">transactionConfirmationLandingCustomerDataMaintenanceOccupationAddressDescriptionLabel</string>
+    <string name="tv_item_transaction_tab_text_obds_status">OBDS</string>
+    <string name="transaction_confirmation_content_information_title_source_of_fund">Sumber Dana</string>
+    <string name="transaction_confirmation_sample_text">Sample Text</string>
+    <string name="transaction_confirmation_cash_withdrawal_account_source_title">transactionConfirmationLandingAccountSourceTitleLabel</string>
+    <string name="transaction_confirmation_cash_withdrawal_account_holder_title">transactionConfirmationCustomerCompanyTransactionCompanyTransferSourceFundLabel</string>
+    <string name="transaction_confirmation_cash_withdrawal_company_information_title">transactionConfirmationCustomerCompanyInformationTitleLabel</string>
+    <string name="transaction_confirmation_cash_withdrawal_company_information_sub_title">transactionConfirmationCustomerCompanyInformationSubTitleLabel</string>
+    <!--endregion-->
+
+    <!--region Edit Transaction-->
+    <string name="transaction_edit_title_screen">editBranchTransactionEditTransactionTitleLabel</string>
+    <string name="transaction_edit_account_title_screen">editBranchTransactionEditTransactionAccountTitleLabel</string>
+    <string name="transaction_edit_title_edit_account_screen">editBranchTransactionEditTransactionTitleEditAccountLabel</string>
+    <string name="transaction_edit_title_edit_amount_screen">editBranchTransactionEditTransactionTitleEditAmountLabel</string>
+    <string name="transaction_edit_title_deposit_choose_account_screen">beneficiaryDetailTransactionDepositPageInstructionTitleCustomerLabel</string>
+    <string name="transaction_edit_title_withdrawal_choose_account_screen">beneficiaryDetailTransactionWithdrawalPageInstructionTitleCustomerLabel</string>
+    <string name="transaction_edit_purpose_transaction">editBranchTransactionPurposePlaceholderLabel</string>
+    <string name="transaction_edit_source_transaction">editBranchTransactionSourceOfFundPlaceholderLabel</string>
+    <string name="transaction_edit_notes">editBranchTransactionCustomerNotesPlaceholderLabel</string>
+    <string name="transaction_edit_dialog_title">editBranchTransactionOverlayEditTransactionConfirmationTitle</string>
+    <string name="transaction_edit_dialog_desc">editBranchTransactionOverlayEditTransactionConfirmationDetail</string>
+    <string name="transaction_edit_dialog_success_title">editBranchTransactionOverlayEditTransactionConfirmationDialogSuccessTitle</string>
+    <string name="transaction_edit_dialog_success_desc">editBranchTransactionOverlayEditTransactionConfirmationDialogSuccessDesc</string>
+    <string name="transaction_edit_dialog_cancel_title">editBranchTransactionOverlayEditTransactionConfirmationDialogCancelTitle</string>
+    <string name="transaction_edit_dialog_canccel_desc">editBranchTransactionOverlayEditTransactionConfirmationDialogCancelDesc</string>
+    <string name="transaction_edit_header_amount_deposit">editBranchTransactionOverlayEditHeaderAmountDeposit</string>
+    <string name="transaction_edit_header_amount_withdrawal">editBranchTransactionOverlayEditHeaderAmountWithdrawal</string>
+    <string name="transaction_edit_amount_terbilang_label">Terbilang</string>
+    <!--endregion-->
+
+
+    <!--region item receipt transaction-->
+    <string name="item_receipt_transaction_status_success">transactionResultTransactionStatusSuccessLabel</string>
+    <string name="item_receipt_transaction_status_failed">transactionResultTransactionStatusFailedLabel</string>
+    <string name="item_receipt_transaction_status_canceled_by_customer">transactionResultTransactionStatusCancelCustomerLabel</string>
+    <string name="item_receipt_transaction_status_canceled_by_gb">transactionResultTransactionStatusCancelGeneralBankerLabel</string>
+    <string name="item_receipt_transaction_status_canceled_by_bank">transactionResultTransactionStatusCancelBankLabel</string>
+    <!--endregion-->
+
+
+    <string name="reload_page_overview_transaction">generalBankerWarkatVerificationErrorDescButton</string>
+    <string name="warning_text_title">transactionOverviewTransactionTipsTitle</string>
+    <string name="warning_text_deposit_transaction">transactionOverviewTransactionCustomerThirdCautionMessage</string>
+
+    <!--region receipt-->
+    <string name="receipt_transaction_top_bar_label">Receipt</string>
+    <string name="receipt_transaction_header_title">transactionResultCustomerHeaderTitleLabel</string>
+    <string name="receipt_transaction_reference_number">transactionResultReferenceNumberTitleLabel</string>
+    <string name="receipt_transaction_text_list_description">transactionResultTransactionListDescription</string>
+    <string name="receipt_transaction_tv_status_card_text_success">transactionResultTransactionStatusSuccessLabel</string>
+    <string name="receipt_transaction_tv_status_card_text_failed">transactionResultWithdrawalDetailsTransactionStatusFailedLabel</string>
+    <string name="receipt_transaction_tv_status_card_text_cancel_by_customer">transactionResultTransactionStatusCancelCustomerLabel</string>
+    <string name="receipt_transaction_tv_status_card_text_cancel_by_bank">transactionResultTransactionStatusCancelBankLabel</string>
+    <string name="receipt_transaction_tv_label_receipt_number">transactionResultReceiptNumberTitleLabel</string>
+    <string name="receipt_transaction_tv_label_receipt_number_account_maintenance">transactionResultAccountMaintenanceDetailReceiptNumberLabel</string>
+    <string name="receipt_transaction_tv_result_service_category">transactionResultServiceCategoryTitleLabel</string>
+    <string name="receipt_transaction_transfer_tv_label_receipt_number">transactionResultReceiptNumberTitleLabel</string>
+    <string name="receipt_transaction_tv_label_status_transaction_title">transactionResultReceiptStatusTitleLabel</string>
+    <string name="receipt_transaction_tv_label_status_transaction_account_maintenance_title">transactionResultAccountMaintenanceDetailTransactionStatusLabel</string>
+    <string name="receipt_transaction_tv_label_deposit">transactionResultTransactionTypeCashDepositLabel</string>
+    <string name="receipt_transaction_tv_label_withdrawal">transactionResultTransactionTypeCashWithdrawalLabel</string>
+    <string name="receipt_transaction_tv_label_change_card">transactionResultTransactionTypeChangeCardLabel</string>
+    <string name="receipt_transaction_tv_label_unblock_card">transactionResultTransactionTypeUnblockedCardLabel</string>
+    <string name="receipt_transaction_tv_label_change_pin">transactionResultTransactionTypeChangePinLabel</string>
+    <string name="receipt_transaction_tv_label_customer_data_maintenance">transactionResultTransactionTypeCustomerDataMaintenanceLabel</string>
+    <string name="receipt_transaction_tv_label_customer_data_maintenance_title">transactionResultCustomerDataMaintenanceTitleLabel</string>
+    <string name="receipt_transaction_tv_label_personal_data_title">transactionResultCustomerDataMaintenanceDescriptionPersonalDataLabel</string>
+    <string name="receipt_transaction_tv_label_electronic_address_title">transactionResultCustomerDataMaintenanceDescriptionElectronicAddressLabel</string>
+    <string name="receipt_transaction_tv_label_address_title">transactionResultCustomerDataMaintenanceDescriptionPersonalAddressLabel</string>
+    <string name="receipt_transaction_tv_label_occupation_title">transactionResultCustomerDataMaintenanceDescriptionOccupationDataLabel</string>
+    <string name="receipt_transaction_tv_label_occupation_address_title">transactionResultCustomerDataMaintenanceDescriptionOccupationAddressLabel</string>
+    <string name="receipt_transaction_tv_label_register_visa">transactionResultTransactionTypeRegisterVisaLabel</string>
+    <string name="receipt_transaction_tv_label_sender_deposit_title">transactionResultDepositSenderCustomerTitleLabel</string>
+    <string name="receipt_transaction_tv_label_sender_withdrawal_title">transactionResultWithdrawalSenderCustomerTitleLabel</string>
+    <string name="receipt_transaction_tv_label_sender_change_card_title">transactionResultChangeCardSenderCustomerTitleLabel</string>
+    <string name="receipt_transaction_tv_label_sender_unblock_card_title">transactionResultUnblockedCardSenderCustomerTitleLabel</string>
+    <string name="receipt_transaction_tv_label_sender_change_pin_title">transactionResultChangePinSenderCustomerTitleLabel</string>
+    <string name="receipt_transaction_tv_label_sender_customer_data_maintenance_title">transactionResultCustomerDataMaintenanceCustomerInformationTitleLabel</string>
+    <string name="receipt_transaction_tv_label_sender_register_visa_title">transactionResultRegisterVisaSenderCustomerTitleLabel</string>
+    <string name="receipt_transaction_tv_label_total_amount">transactionResultTotalAmountTitleLabel</string>
+    <string name="receipt_transaction_tv_greeting_name">transactionResultCustomerLabel</string>
+    <string name="receipt_transaction_tv_text_description">transactionResultDetailTransactionPurposeLabel</string>
+    <string name="receipt_transaction_tv_text_description_end">transactionResultSendToLabel</string>
+    <string name="receipt_transaction_yth">transactionResultCustomerLabel</string>
+    <string name="receipt_transaction_thank_you_line_1">transactionResultDetailTransactionPurposeLabel</string>
+    <string name="receipt_transaction_thank_you_line_middle_and">transactionResultAndTypeLabel</string>
+    <string name="receipt_transaction_thank_you_line_middle">transactionResultFromTypeLabel</string>
+    <string name="receipt_transaction_thank_you_line_2">transactionResultSendToLabel</string>
+    <string name="receipt_transaction_cash_deposit">transactionResultCashDepositLabel</string>
+    <string name="receipt_transaction_cash_withdrawal">transactionResultCashWithdrawalLabel</string>
+    <string name="receipt_transaction_customer_male_label">transactionResultCustomerNameMaleLabel</string>
+    <string name="receipt_transaction_customer_female_label">transactionResultCustomerNameFemaleLabel</string>
+    <string name="receipt_transaction_old_bds_label">transactionResultTransactionOldBdsLabel</string>
+    <string name="receipt_transaction_type_payment_old_bds_label">transactionResultTransactionOldTypePaymentLabel</string>
+    <string name="receipt_transaction_type_foreign_old_bds_label">transactionResultTransactionOldTypeForeignCurrencyLabel</string>
+    <string name="receipt_transaction_type_other_fin_old_bds_label">transactionResultTransactionOldTypeOtherTransactionLabel</string>
+    <string name="receipt_transaction_sender_fin_old_bds_label">transactionResultSenderFinancialCustomerInformationTitleLabel</string>
+    <string name="receipt_transaction_sender_non_fin_old_bds_label">transactionResultNonFinancialCustomerInformationTitleLabel</string>
+    <string name="receipt_transaction_result_non_financial_customer_information_company_label">transactionResultNonFinancialCustomerInformationCompanyTitleLabel</string>
+    <string name="text_title_dialog_success_download_receipt_transaction">transactionConfirmationSuccessTitleLabel</string>
+    <string name="text_title_dialog_error_download_receipt_transaction">Cetak Transaksi Gagal!</string>
+    <string name="receipt_transaction_tv_label_bi_fast">transactionResultTransactionTypeTransferAnotherBankBiFastLabel</string>
+    <string name="receipt_transaction_tv_label_rtgs">transactionResultTransactionTypeTransferAnotherBankRTGSLabel</string>
+    <string name="receipt_transaction_tv_label_overbooking">transactionResultTransactionTypeTransferLabel</string>
+    <string name="receipt_transaction_tv_label_transfer_customer">transactionResultTransferCustomerTitleLabel</string>
+    <string name="receipt_transaction_tv_label_acc_maintenance">Account Maintenance</string>
+    <string name="receipt_transaction_tv_label_acc_maintenance_category_label">transactionResultAccountMaintenanceCustomerInformationTitleLabel</string>
+    <string name="receipt_transaction_tv_label_acc_maintenance_rk_statement_label">transactionResultRkStatementAccountCustomerInformationTitleLabel</string>
+    <string name="receipt_transaction_tv_label_acc_maintenance_denunciation">transactionResultTransactionTypeDenunciationAccountLabel</string>
+    <string name="receipt_transaction_tv_label_acc_maintenance_denunciation_number_title">transactionResultDenunciationNumberTitleLabel</string>
+    <string name="receipt_transaction_tv_label_acc_maintenance_rk_statement_title">transactionResultAccountMaintenanceTransactionCategoryTitleTitleLabel</string>
+    <string name="receipt_transaction_tv_label_acc_maintenance_service_category_label">transactionResultServiceCategoryTitleLabel</string>
+    <string name="receipt_transaction_tv_label_acc_maintenance_rk_statement_category">transactionOverviewTransactionNonFinancialRKStatementSubLabel</string>
+    <string name="receipt_transaction_tv_label_acc_maintenance_activation_category">transactionOverviewTransactionNonFinancialActivationAccountSubLabel</string>
+    <string name="receipt_transaction_tv_label_acc_maintenance_block_category">transactionOverviewTransactionNonFinancialBlockAccountSubLabel</string>
+    <string name="receipt_transaction_tv_label_acc_maintenance_activate">transactionResultActivationAccountCategoryTitleLabel</string>
+    <string name="receipt_transaction_tv_label_acc_maintenance_block">transactionResultBlockAccountCategoryTitleLabel</string>
+    <string name="receipt_transaction_tv_label_acc_maintenance_update_denunciation">transactionResultTransactionTypeUpdateDenunciationAccountLabel</string>
+    <string name="transaction_result_transaction_type_activation_account_label">transactionResultTransactionTypeActivationAccountLabel</string>
+    <string name="transaction_result_transaction_type_block_account_label">transactionResultTransactionTypeBlockAccountLabel</string>
+    <string name="transaction_result_transaction_type_denunciation_account_label">transactionResultTransactionTypeDenunciationAccountLabel</string>
+    <string name="transaction_result_transaction_type_update_denunciation_account_label">transactionResultTransactionTypeUpdateDenunciationAccountLabel</string>
+    <string name="transaction_result_transaction_type_rk_statement_account_label">transactionResultTransactionTypeRkSatamentLabel</string>
+    <string name="transaction_result_activation_account_customer_information_title_label">transactionResultActivationAccountCustomerInformationTitleLabel</string>
+    <string name="transaction_result_block_account_customer_information_title_label">transactionResultBlockAccountCustomerInformationTitleLabel</string>
+    <string name="transaction_result_denunciation_account_customer_information_title_label">transactionResultDenunciationAccountCustomerInformationTitleLabel</string>
+    <string name="transaction_result_update_denunciation_account_customer_information_title_label">transactionResultUpdateDenunciationAccountCustomerInformationTitleLabel</string>
+    <string name="transaction_result_status_dialog_label">transactionResultCustomerDataMaintenanceDetailTransactionStatusTitleLabel</string>
+    <string name="transaction_result_status_success_dialog_label">transactionResultCustomerDataMaintenanceDetailTransactionStatusSuccessLabel</string>
+    <string name="transaction_result_status_failed_dialog_label">transactionResultCustomerDataMaintenanceDetailTransactionStatusFailedLabel</string>
+    <string name="transaction_result_status_cancel_by_customer_label">transactionResultCustomerDataMaintenanceDetailTransactionStatusCancelCustomerLabel</string>
+    <string name="transaction_result_status_cancel_by_bank_dialog_label">transactionResultCustomerDataMaintenanceDetailTransactionStatusCancelBankLabel</string>
+    <string name="transaction_result_receipt_number_dialog_label">transactionResultCustomerDataMaintenanceReceiptNumberTitleLabel</string>
+    <string name="transaction_result_debit_card_detail_card_retrieval_label">transactionResultDebitCardDetailTrxPurposeCardRetrievalLabel</string>
+    <string name="transaction_result_retrieval_card_sender_customer_title_label">transactionResultRetrievalCardSenderCustomerTitleLabel</string>
+
+    <!--region transaction receipt-->
+    <string name="transaction_receipt_customer_title">transactionResultCustomerHeaderTitleLabel</string>
+    <string name="transaction_receipt_resend_destination_title">transactionResultReceiptTransactionSendTitle</string>
+    <string name="transaction_receipt_multi_email_detail">transactionResultReceiptTransactionSendEmailLinkLabel</string>
+    <string name="dialog_transaction_detail_email_list_transaction">transactionConfirmationCompanyDetailsReceiptTitleLabel</string>
+    <string name="dialog_transaction_detail_dismiss_button_label">transactionConfirmationResendReceiptBackButtonLabel</string>
+    <string name="transaction_receipt_tv_see_detail">transactionResultTransactionDetailsAccordionLabel</string>
+    <string name="transaction_receipt_resend_button_label">transactionResultReceiptTransactionSentButton</string>
+    <string name="transaction_receipt_print_button_label">transactionResultReceiptTransactionPrintButton</string>
+    <string name="transaction_receipt_print_skp_button_label">Cetak SKP</string>
+    <string name="transaction_receipt_finish_button">transactionResultFinishButton</string>
+    <string name="transaction_receipt_dialog_confirmation_print_title">transactionConfirmationPrintTitleLabel</string>
+    <string name="transaction_receipt_dialog_confirmation_print_description">transactionConfirmationPrintDescriptionLabel</string>
+    <string name="transaction_receipt_dialog_confirmation_print_back_button">transactionConfirmationBackButtonLabel</string>
+    <string name="transaction_receipt_dialog_confirmation_print_submit_button">transactionConfirmationSubmitButtonLabel</string>
+    <string name="transaction_receipt_dialog_resend_title">transactionConfirmationResendReceiptTitleLabel</string>
+    <string name="transaction_receipt_dialog_resend_description">transactionConfirmationResendReceiptDescriptionLabel</string>
+    <string name="transaction_receipt_dialog_resend_back_button">transactionConfirmationResendReceiptBackButtonLabel</string>
+    <string name="transaction_receipt_dialog_resend_submit_button">transactionConfirmationResendReceiptSubmitButtonLabel</string>
+    <string name="transaction_receipt_transaction_top_bar_financial_label">transactionResultGeneralBankerHeaderTitleLabel</string>
+    <string name="transaction_receipt_transaction_top_bar_non_financial_label">transactionResultGeneralBankerNonFinancialHeaderTitleLabel</string>
+    <string name="transaction_receipt_dialog_non_financial_transaction_type_label">transactionOverviewDebitCardDetailTransactionTypeLabel</string>
+    <string name="transaction_receipt_dialog_non_financial_transaction_date_label">transactionOverviewDebitCardDetailTransactionDateLabel</string>
+    <string name="transaction_receipt_dialog_non_financial_category_title_label">transactionOverviewDebitCardDetailCategoryTitleLabel</string>
+    <string name="transaction_receipt_dialog_non_financial_category_change_card_label">transactionOverviewDebitCardDetailChangeCardLabel</string>
+    <string name="transaction_receipt_dialog_non_financial_category_unblocked_card_label">transactionOverviewDebitCardDetailUnblockedCardLabel</string>
+    <string name="transaction_receipt_dialog_non_financial_category_change_pin_label">transactionOverviewDebitCardDetailChangePinLabel</string>
+    <string name="transaction_receipt_dialog_non_financial_category_register_visa_label">transactionOverviewDebitCardDetailRegisterVisaLabel</string>
+    <string name="transaction_receipt_dialog_non_financial_detail_title_label">transactionOverviewDebitCardDetailTitleLabel</string>
+    <string name="transaction_receipt_dialog_transfer_transaction_date_label">transactionResultTransferPopupTransactionDateTitleLabel</string>
+    <string name="transaction_receipt_dialog_cdm_personal_data_label">transactionResultCustomerDataMaintenanceDescriptionPersonalDataLabel</string>
+    <string name="transaction_receipt_dialog_cdm_electronic_address_label">transactionResultCustomerDataMaintenanceDescriptionElectronicAddressLabel</string>
+    <string name="transaction_receipt_dialog_cdm_personal_address_label">transactionResultCustomerDataMaintenanceDescriptionPersonalAddressLabel</string>
+    <string name="transaction_receipt_dialog_cdm_occupation_data_label">transactionResultCustomerDataMaintenanceDescriptionOccupationDataLabel</string>
+    <string name="transaction_receipt_dialog_cdm_occupation_address_label">transactionResultCustomerDataMaintenanceDescriptionOccupationAddressLabel</string>
+    <!--endregion-->
+
+    <!--   dialog-->
+    <string name="dialog_verify_cek_ulang">transactionOverviewCancelTransactionTryAgain</string>
+    <string name="dialog_cancellation_kembali">transactionOverviewCancelTransactionCancelButton</string>
+    <string name="dialog_verify_lanjutkan">transactionOverviewCancelTransactionNextButton</string>
+    <string name="text_desc_dialog_verification_next">customerVerificationDataConfirmationDescriptionLabel</string>
+    <string name="dialog_cancellation_text_desc">transactionOverviewCancelTransactionDescriptionLabel</string>
+    <string name="text_title_dialog_verifikasi_next">customerVerificationDataConfirmationTitleNewBdsLabel</string>
+    <string name="text_title_dialog_supervisor_confirmation">customerVerificationDataConfirmationBankerConfirmationTitleLabel</string>
+    <string name="dialog_cancellation_text_title">transactionOverviewCancelTransactionTitleLabel</string>
+
+    <string name="text_news_dialog_details">transactionOverviewWithdrawalDetailCustomerNoteTitle</string>
+    <string name="text_news_deposit_dialog_details">transactionOverviewDepositDetailCustomerNoteTitle</string>
+    <string name="text_amount_summary_title_withdrawal_dialog_details">transactionOverviewWithdrawalDetailTransactionAmountSummaryLabel</string>
+    <string name="text_amount_summary_title_deposit_dialog_details">transactionOverviewDepositDetailTransactionAmountSummaryLabel</string>
+    <string name="text_withdrawal_label">transactionConfirmationLandingConfirmationCustomerCashWithdrawalLabel</string>
+    <string name="text_deposit_label">transactionConfirmationLandingSideBarCashDepositLabel</string>
+    <string name="text_forefin_currency_label">transactionConfirmationLandingConfirmationCustomerForeignCurrencyLabel</string>
+    <string name="text_cash_in_dialog_details">transactionResultCashDepositDetailsTransactionStatusSuccessLabel</string>
+    <string name="transaction_dialog_details_transaction_deposit_close_button_label">transactionOverviewDepositTransactionCloseButton</string>
+    <string name="transaction_dialog_details_transaction_withdrawal_close_button_label">transactionOverviewWithdrawalTransactionCloseButton</string>
+    <string name="transaction_dialog_details_transaction_deposit_transaction_type_label">transactionOverviewDepositDetailTransactionTypeLabel</string>
+    <string name="transaction_dialog_details_transaction_transfer_transaction_type_label">transactionResultTransferPopupTransactionTypeOverbookingLabel</string>
+    <string name="transaction_dialog_details_transaction_withdrawal_transaction_type_label">transactionOverviewWithdrawalDetailTransactionTypeLabel</string>
+    <string name="transaction_dialog_details_transaction_non_financial_close_button_label">transactionOverviewDepositTransactionCloseButton</string>
+    <string name="transaction_dialog_details_transaction_account_maintenance_close_button_label">transactionResultDebitCardDetailCloseButton</string>
+
+    <string name="transaction_result_dialog_withdrawal_details_transaction_type_label">transactionResultWithdrawalDetailsTrasactionTypeLabel</string>
+    <string name="content_transaction_result_tv_detail_executor_title_label">transactionResultWithdrawalDetailsSourceSecTitleLabel</string>
+    <string name="content_transaction_result_tv_detail_executor_name_label">transactionResultWithdrawalDetailsSourceSecAccountHolderNameTitleLabel</string>
+    <string name="content_transaction_result_tv_transaction_warkat_type_label">transactionResultTransferPopupWarkatTypeTitleLabel</string>
+    <string name="content_transaction_result_tv_transaction_warkat_number_label">transactionResultTransferPopupWarkatNumberTitleLabel</string>
+    <string name="content_transaction_result_tv_transaction_warkat_date_label">transactionResultTransferPopupWarkatDateTitleLabel</string>
+    <string name="content_transaction_result_tv_transaction_account_holder_name_label">transactionResultTransferPopupSourceAccountHolderNameTitleLabel</string>
+    <string name="content_transaction_result_tv_transaction_account_source">transactionResultWithdrawalDetailsSourceSecAccountTitleLabel</string>
+
+    <string name="text_receiver_detail_dialog_details">transactionOverviewDepositDetailBeneficairyDetailSectionTitleLabel</string>
+    <string name="text_source_detail_dialog_details">transactionOverviewWithdrawalDetailCustomerDetailsTitleLabel</string>
+    <string name="text_name_account_dialog_details">transactionOverviewWithdrawalDetailCustomerNameTitleLabel</string>
+    <string name="text_name_receiver_dialog_details">transactionOverviewDepositDetailAccountHolderNameTitleLabel</string>
+    <string name="text_source_account_title_dialog_details">transactionOverviewWithdrawalDetailSourceAccountTitleLabel</string>
+    <string name="text_account_number_title_dialog_details">transactionOverviewDepositDetailAccountNumberTitleLabel</string>
+    <string name="text_detail_transaction_dialog_details">transactionOverviewWithdrawalDetailTransactionDetailsSectionTitleLabel</string>
+    <string name="text_method_withdrawal_transaction_dialog_details">transactionOverviewWithdrawalDetailTransactionMethodLabel</string>
+    <string name="text_source_fund_dialog_details">transactionOverviewTransactionFinancialSourceIncomeTitleLabel</string>
+    <string name="text_transaction_purpose_dialog_details">transactionOverviewDepositTransactionPurposeTitleLabel</string>
+    <string name="text_method_deposit_dialog_details">transactionOverviewDepositDetailTransactionMethodLabel</string>
+
+    <string name="not_enough_balance_dialog_not_enough_balance">transactionConfirmationLandingBalanceTitleLabel</string>
+    <string name="not_enough_balance_dialog_not_enough_balance_insufficient">transactionConfirmationLandingBalanceSubTitleLabel</string>
+    <string name="not_enough_balance_dialog_not_enough_balance_canceled">transactionConfirmationLandingBalanceCardDescriptionLabel</string>
+    <string name="transaction_dialog_not_enough_balance_recheck_button_label">transactionConfirmationLandingBalanceEditlButtonLabel</string>
+    <string name="transaction_dialog_not_enough_balance_change_button_label">transactionConfirmationLandingBalanceCancelButtonLabel</string>
+    <string name="transaction_dialog_not_enough_balance_message_edit_or_cancel_label">Anda dapat merubah atau membatalkan transaksi ini.</string>
+
+    <!--region dialog confirmation warning-->
+    <string name="text_title_dialog_con_warning">transactionConfirmationLandingFinishConfirmationTitleLabel</string>
+    <string name="text_desc1_dialog_con_warning">transactionConfirmationLandingFinishConfirmationDescriptionFirstLabel</string>
+    <string name="text_desc2_dialog_con_warning">transactionConfirmationLandingFinishConfirmationDescriptionLastLabel</string>
+    <string name="button_back_dialog_con_warning">transactionConfirmationLandingFinishConfirmationBackButton</string>
+    <string name="button_next_dialog_con_warning">transactionConfirmationLandingFinishConfirmationSubmitButton</string>
+    <!--endregion-->
+
+    <!--region dialog send receipt transaction-->
+    <string name="transaction_dialog_send_receipt_transaction_title">commonInputResendOverlayTransactionTitleLabel</string>
+    <string name="transaction_dialog_send_receipt_transaction_desc">commonInputResendOverlayTransactionDescriptionLabel</string>
+    <string name="transaction_dialog_send_receipt_transaction_container_email_hint">commonInputResendOverlayTransactionDescriptionTitleLabel</string>
+    <string name="transaction_dialog_send_receipt_transaction_email_label">commonInputResendOverlayTransactionEmailPlaceHolderLabel</string>
+    <string name="transaction_dialog_send_receipt_transaction_content_divider_title">commonInputResendOverlayChoiceLabel</string>
+    <string name="transaction_dialog_send_receipt_transaction_phone_number_label">commonInputResendOverlayTransactionPhoneNumberPlaceHolderLabel</string>
+    <string name="transaction_dialog_send_receipt_transaction_note_desc">commonInputResendOverlayInstructionCustomerDescriptionLabel</string>
+    <string name="transaction_dialog_send_receipt_transaction_next_button_label">commonInputResendOverlayNextButton</string>
+    <string name="transaction_dialog_send_receipt_transaction_back_button_label">commonInputResendOverlayBackButton</string>
+    <string name="text_title_dialog_con_send_receipt_transaction">Kirim Ulang Bukti Transaksi Gagal</string>
+    <string name="text_title_dialog_success_send_receipt_transaction">commonInputResendOverlaySuccessTitle</string>
+    <string name="button_retry_dialog_send_receipt_transaction">commonInputResendOverlayFailedButtonTitle</string>
+    <string name="transaction_dialog_send_receipt_transaction_email_error_label">commonInputResendOverlayEmailInlineErrorMessageLabel</string>
+    <string name="transaction_dialog_send_receipt_transaction_error_phone_number_label">commonInputResendOverlayPhoneNumberInlineErrorMessageLabel</string>
+    <string name="transaction_dialog_send_receipt_transaction_email_hint">commonInputResendOverlayTransactionEmailInfoLabel</string>
+    <string name="transaction_dialog_send_receipt_transaction_phone_number_hint">commonInputResendOverlayTransactionPhoneNumberInfoLabel</string>
+    <string name="transaction_dialog_send_receipt_transaction_warning_sign">commonInputResendOverlayInstructionCustomerTitleLabel</string>
+    <string name="transaction_waiting_sheet_title">customerConfirmationInstructionSKPDataHeaderTitleLabel</string>
+    <string name="transaction_waiting_sheet_subtitle">customerConfirmationInstructionNextProcessTitleOverviewLabel</string>
+    <string name="transaction_waiting_sheet_description">customerConfirmationInstructionDetailDescOverviewNonFinPageLabel</string>
+    <string name="transaction_waiting_sheet_locked_account_description">customerConfirmationInstructionNextStepInstructionNonFinSupervisorCancelPageLabel</string>
+    <string name="transaction_confirmation_waiting_sheet_self_service_title">customerConfirmationInstructionNextStepInstructionGeneralBankerLabel</string>
+    <string name="transaction_confirmation_waiting_sheet_self_service_subtitle">customerConfirmationInstructionNextProcessTitleOverviewLabel</string>
+    <string name="transaction_confirmationn_waiting_sheet_self_service_description">customerConfirmationInstructionDetailDescOverviewNonFinPageLabel</string>
+    <!--endregion-->
+
+    <!--region dialog see transaction-->
+    <string name="dialog_see_details_transaction_deposit_date_label">transactionOverviewDepositDetailTransactionDateLabel</string>
+    <string name="dialog_see_details_transaction_withdrawal_date_label">transactionOverviewWithdrawalDetailTransactionDateLabel</string>
+    <string name="dialog_see_details_transaction_total_amount_label">transactionOverviewWithdrawalDetailTransactionTotalAmountTitleLabel</string>
+    <string name="dialog_see_details_customer_data_maintenance_cif_title">transactionOverviewCustomerDataMaintenanceCIFTitleLabel</string>
+    <string name="dialog_see_details_customer_data_maintenance_identity_type_value">transactionOverviewCustomerDataMaintenanceIdentityTypeValueLabel</string>
+    <string name="dialog_see_details_customer_data_maintenance_title_label">transactionOverviewCustomerDataMaintenanceDetailTransactionTypeLabel</string>
+    <string name="dialog_see_details_customer_data_maintenance_identity_card_title">transactionOverviewCustomerDataMaintenanceIdentityCardValueLabel</string>
+    <string name="dialog_see_details_customer_data_maintenance_full_name_title">transactionOverviewCustomerDataMaintenanceFullNameTitleLabel</string>
+    <string name="dialog_see_details_customer_data_maintenance_transaction_detail_title">transactionOverviewCustomerDataMaintenanceDetailTitleLabel</string>
+    <string name="dialog_see_details_customer_data_maintenance_transaction_type_label">transactionOverviewCustomerDataMaintenanceDetailTransactionTypeLabel</string>
+    <string name="dialog_see_details_transaction_transfer_total_amount_label">transactionResultTransferPopupTransactionAmountTitleLabel</string>
+    <string name="dialog_detail_transaction_oldBds_fin_label">transactionOverviewTransactionFinancialDetailTransactionOldBdsLabel</string>
+    <string name="dialog_detail_transaction_oldBds_non_fin_label">transactionOverviewTransactionNonFinancialDetailTransactionOldBdsLabel</string>
+    <string name="dialog_detail_transaction_oldBds_other_label">transactionOverviewTransactionFinancialDetailTOtherTransactionOldBdsLabel</string>
+    <!--endregion-->
+
+    <!--region choose edit transaction account-->
+    <string name="choose_edit_transaction_account_own_account_title_label">beneficiaryDetailTransactionOwnAccountTitleCustomerLabel</string>
+    <string name="choose_edit_transaction_account_another_account_title_label">beneficiaryDetailTransactionAnotherAccountCustomerButton</string>
+    <string name="choose_edit_transaction_account_input_account_number_description_label">beneficiaryDetailTransactionAnotherAccountCustomerPlaceHolder</string>
+    <string name="choose_edit_transaction_account_continue_button_label">beneficiaryDetailTransactionCustomerNextButton</string>
+    <string name="message_edit_transaction_account_another_account_error">beneficiaryDetailTransactionInvalidInlineErrorLabel</string>
+    <!--endregion-->
+
+    <!--region dialog account not found-->
+    <string name="dialog_account_not_found_back">beneficiaryDetailAccountNotFoundBackButton</string>
+    <!--endregion-->
+
+    <!--region dialog check transaction-->
+    <string name="text_title_dialog_check_transaction">transactionConfirmationLandingRecheckTransactionTitleLabel</string>
+    <string name="text_first_desc_dialog_check_transaction">transactionConfirmationLandingRecheckTransactionConfirmationDescriptionLabel</string>
+    <string name="text_desc2_dialog_check_transaction">transactionConfirmationLandingRecheckTransactionNextDecriptionInstructionLabel</string>
+    <string name="text_button_dialog_check_transaction">transactionConfirmationLandingRecheckTransactionOkayButton</string>
+    <string name="dialog_with_action_button_check_transaction_back">transactionConfirmationTaskProcessingStillInProgressCloseButtonLabel</string>
+    <!--endregion-->
+
+    <!--region banner receipt-->
+    <string name="customer_ads_receipt_text_offering_for_you">Penawaran Untuk Anda</string>
+    <string name="customer_ads_receipt_text_promotion_and_discount">Promo dan Diskon</string>
+    <string name="item_banner_receipt_button_see_details">Selengkapnya</string>
+    <!--endregion-->
+    <!--region customer screen status-->
+
+    <string name="tv_customer_screen_status_alert_otp">generalBankerWaitReservationAttentionBanner</string>
+    <!--endregion-->
+
+    <!--region transaction review old bds-->
+    <string name="transaction_review_old_bds_cancel_button">customerReviewTransactionCancelTransactionLabel</string>
+    <string name="transaction_review_old_bds_finish_button">customerReviewTransactionFinishTransactionLabel</string>
+    <string name="transaction_review_old_bds_title">customerReviewPageTitleLabel</string>
+    <string name="transaction_review_old_bds_desc">customerReviewPageSubTitleLabel</string>
+    <string name="transaction_review_old_bds_print_button">customerReviewPrintReservationButton</string>
+    <string name="transaction_review_old_bds_name_title">customerReviewCustomerNameTitleLabel</string>
+    <string name="transaction_review_old_bds_source_title">customerReviewCustomerReservationSourceTitleLabel</string>
+    <string name="transaction_review_old_bds_queue_title">customerReviewCustomerQueueNumberTitleLabel</string>
+    <string name="transaction_review_old_bds_transaction_title">customerReviewTransactionTypeListTitleLabel</string>
+    <string name="transaction_review_old_bds_reference_title">customerReviewReferenceCodeListTitleLabel</string>
+    <string name="transaction_review_old_bds_total_title">customerReviewTransactionTotalListTitleLabel</string>
+    <string name="transaction_review_old_bds_dialog_cancel_title">customerReviewFinishConfirmationTitleLabel</string>
+    <string name="transaction_review_old_bds_dialog_cancel_description">customerReviewFinishConfirmationDescriptionLabel</string>
+    <string name="transaction_review_old_bds_dialog_cancel_cancel">customerReviewFinishConfirmationCancelButton</string>
+    <string name="transaction_review_old_bds_dialog_cancel_submit">customerReviewFinishConfirmationSubmitButton</string>
+    <!--endregion-->
+
+    <!--region presentation ui review old bds-->
+    <string name="fragment_review_old_bds_dialog_title">customerReviewFinishTransactionConfirmationTitleLabel</string>
+    <string name="fragment_review_old_bds_dialog_message">customerReviewFinishTransactionConfirmationDescriptionLabel</string>
+    <string name="fragment_review_old_bds_dialog_primary">customerReviewFinishTransactionConfirmationSubmitButton</string>
+    <string name="fragment_review_old_bds_dialog_secondary">customerReviewFinishTransactionConfirmationCloseButton</string>
+    <!--endregion-->
+
+    <!--region presentation com.based.kotlin.feature.customer.information.presentation.adapter review old bds-->
+    <string name="adapter_review_old_bds_strip">-</string>
+    <string name="adapter_review_old_bds_cash_deposit">customerReviewTransactionCashDepositLabel</string>
+    <string name="adapter_review_old_bds_cash_withdrawal">customerReviewTransactionCashWithdrawalLabel</string>
+    <string name="adapter_review_old_bds_saving_account">customerReviewTransactionSavingAccountOpeningLabel</string>
+    <string name="adapter_review_old_bds_saving_plan">customerReviewTransactionSavingPlanAccountOpeningLabel</string>
+    <string name="adapter_review_old_bds_current_account">customerReviewTransactionCurrentAccountOpeningLabel</string>
+    <string name="adapter_review_old_bds_deposito_account">customerReviewTransactionDepositoAccountOpeningLabel</string>
+    <string name="adapter_review_old_bds_current_account_service">customerReviewTransactionCurrentAccountServiceLabel</string>
+    <string name="adapter_review_old_bds_debit_card_complain">customerReviewTransactionDebitCardComplaintLabel</string>
+    <string name="adapter_review_old_bds_echannel">customerReviewTransactionEchannelServiceLabel</string>
+    <string name="adapter_review_old_bds_deposito">customerReviewTransactionDepositoServiceLabel</string>
+    <string name="adapter_review_old_bds_others">customerReviewTransactionOthersServiceLabel</string>
+    <string name="adapter_review_old_bds_customer_complaint">customerReviewTransactionCustomerComplaintLabel</string>
+    <string name="adapter_review_old_bds_transfer">customerReviewTransactionIntrabankTransferLabel</string>
+    <string name="adapter_review_old_bds_transfer_another">customerReviewTransactionInterbankTransferLabel</string>
+    <string name="adapter_review_old_bds_foreign_currency">customerReviewTransactionForeignCurrencyLabel</string>
+    <string name="adapter_review_old_bds_payment">customerReviewTransactionPaymentLabel</string>
+    <string name="adapter_review_old_bds_other_kliring">customerReviewTransactionOthersTransactionKliringLabel</string>
+    <string name="adapter_review_old_bds_other_inkaso">customerReviewTransactionOthersTransactionInkasoLabel</string>
+    <string name="adapter_review_old_bds_other_payment">customerReviewTransactionOthersTransactionLabel</string>
+    <string name="fragment_review_old_bds_error_back">customerReviewFinishErrorPopUpHandlingButon</string>
+    <string name="adapter__review_old_bds_reference_code_label">customerReviewReferenceCodeListValueLabel</string>
+    <string name="adapter_review_old_bds_transfer_method_rtgs_label">customerReviewTransactionInterbankTransferRtgsLabel</string>
+    <string name="adapter_review_old_bds_transfer_method_sknbi_label">customerReviewTransactionInterbankTransferBiNationalClearingLabel</string>
+    <string name="adapter_review_old_bds_transfer_method_telegraphic_label">customerReviewTransactionInterbankTransferTelegraphicTransferLabel</string>
+    <string name="adapter_review_old_bds_transaction_type_cdm_label">customerReviewTransactionTypeCustomerDataMaintenanceLabel</string>
+    <string name="adapter_review_old_bds_transaction_type_am_label">customerReviewTransactionTypeCustomerAccountMaintenanceLabel</string>
+    <string name="adapter_review_old_bds_activation_account">transactionOverviewTransactionServiceCategoryActivationAccountLabel</string>
+    <string name="adapter_review_old_bds_block_account">transactionOverviewTransactionServiceCategoryBlockAccountLabel</string>
+    <string name="adapter_review_old_bds_denunciation_account">customerReviewTransactionTypeAccountMaintenanceDenunciationAccountLabel</string>
+    <string name="adapter_review_old_bds_update_denunciation_account">customerReviewTransactionTypeAccountMaintenanceDenunciationAccountLabel</string>
+    <string name="adapter_review_old_bds_rk_statement">transactionOverviewTransactionCategorySummaryRkStatementLabel</string>
+    <!--endregion-->
+
+    <!--region TransactionCustomerAdsReceipt-->
+    <string name="fragment_customer_ads_receipt_title_first_banner">Test 1</string>
+    <string name="fragment_customer_ads_receipt_title_second_banner">Test 2</string>
+    <string name="fragment_customer_ads_receipt_sub_title_first_banner">#Merdeka</string>
+    <string name="fragment_customer_ads_receipt_sub_title_second_banner">#Merdeka2</string>
+    <string name="fragment_customer_ads_receipt_description_title_banner">Jangan Coba- Coba</string>
+    <!--endregion-->
+
+    <!--region dialog view sign-->
+    <string name="dialog_view_sign_header_title">A) Name</string>
+    <string name="dialog_view_sign_button_back">generalBankerWarkatVerificationPageResizeImageBackButton</string>
+    <string name="dialog_view_sign_button_choose">generalBankerWarkatVerificationPageResizeImageSubmitButton</string>
+    <!--endregion-->
+    <!--region item signature-->
+    <string name="item_signature_label_view">generalBankerWarkatVerificationPageWarkatSpecimenImageButtonLabel</string>
+    <!--endregion-->
+
+    <!--region verification warkat-->
+    <string name="verification_script_title_script_verification">Script Verification</string>
+    <string name="verification_script_type_script_label">generalBankerWarkatVerificationPageWarkatTypeTitleLabel</string>
+    <string name="verification_script_code_script_label">generalBankerWarkatVerificationPageWarkatCodeTitleLabel</string>
+    <string name="verification_script_number_script_label">generalBankerWarkatVerificationPageWarkatNumberTitleLabel</string>
+    <string name="verification_script_appointment_date_label">generalBankerWarkatVerificationPageWarkatAppointmentTitleLabel</string>
+    <string name="verification_script_script_date_label">generalBankerWarkatVerificationPageWarkatDatePlaceholderLabel</string>
+    <string name="verification_script_effective_date_label">generalBankerWarkatVerificationPageWarkatEffectivePlaceholderLabel</string>
+    <string name="verification_script_edit_script_number">generalBankerWarkatVerificationPageWarkatEditWarkatButtonLabel</string>
+    <string name="verification_script_check_date">generalBankerWarkatVerificationPageWarkatDateCheckButtonLabel</string>
+    <string name="verification_script_next">generalBankerWarkatVerificationPageWarkatSpecimenWarkatFundButtonTransactionLabel</string>
+    <string name="verification_script_cancel">generalBankerWarkatVerificationPageWarkatSpecimenWarkatFundCancelTransactionLabel</string>
+    <string name="verification_script_status_script_label">generalBankerWarkatVerificationPageWarkatStatusTitleLabel</string>
+    <string name="verification_script_status_script_active">generalBankerWarkatVerificationPageWarkatStatusActiveLabel</string>
+    <string name="verification_script_status_script_blocked">generalBankerWarkatVerificationPageWarkatStatusBlockedLabel</string>
+    <string name="verification_script_status_date_desc">Periode Pengajuan Valid, Proses Warkat Dapat Dilanjutkan</string>
+    <string name="verification_script_customer_name_label">generalBankerWarkatVerificationPageWarkatAccountNameTitleLabel</string>
+    <string name="verification_script_account_type_label">generalBankerWarkatVerificationPageWarkatAccTypeTitleLabel</string>
+    <string name="verification_script_account_number_label">generalBankerWarkatVerificationPageWarkatAccountNumberTitleLabel</string>
+    <string name="verification_script_total_amount_label">generalBankerWarkatVerificationPageWarkatAmountTitleLabel</string>
+    <string name="verification_script_tnc_desc_one">generalBankerWarkatVerificationPageWarkatSpecimenWarkatFundLabel</string>
+    <string name="verification_script_tnc_desc_two">berlaku, serta memenuhi seluruh </string>
+    <string name="verification_script_tnc_desc_three">generalBankerWarkatVerificationPageWarkatSpecimenWarkatFundLabel_link</string>
+    <string name="verification_script_signature_label">generalBankerWarkatVerificationPageWarkatSpecimenTitleLabel</string>
+    <string name="verification_script_verify_label">generalBankerWarkatVerificationPageWarkatSpecimenButtonLabel</string>
+    <string name="verification_script_verify_signature_label">generalBankerWarkatVerificationPageWarkatSpecimenDescriptionDefaultLabel</string>
+    <string name="verification_script_verify_verified_desc">generalBankerWarkatVerificationPageWarkatSpecimenDescriptionTrueVerifiedLabel</string>
+    <string name="verification_script_verify_not_verified_desc">generalBankerWarkatVerificationPageWarkatSpecimenDescriptionFalseVerifiedLabel</string>
+    <string name="verification_script_type_giro">generalBankerWarkatVerificationPageWarkatTypeBilyetGiroLabel</string>
+    <string name="verification_script_type_cek">generalBankerWarkatVerificationPageWarkatTypeCekLabel</string>
+    <string name="verification_script_type_loa">generalBankerWarkatVerificationPageWarkatTypeLoaLabel</string>
+    <!--endregion-->
+
+    <!--region Edit Script-->
+    <string name="edit_script_nav_label">EditScriptFragment</string>
+    <string name="edit_script_title">editBranchTransactionWarkatPageTitleLabel</string>
+    <string name="edit_script_card_content_label">editBranchTransactionWarkatEditPageTitleLabel</string>
+    <string name="edit_script_transaction_type_label">editBranchTransactionWarkatEditTransactionTypeTitleLabel</string>
+    <string name="edit_script_customer_account_label">editBranchTransactionWarkatEditTransactionCustomerNameTitleLabel</string>
+    <string name="edit_script_transaction_amount_label">editBranchTransactionWarkatEditTransactionAmountTitleLabel</string>
+    <string name="edit_script_phone_number_label">editBranchTransactionWarkatEditTransactionPhoneNumberTitleLabel</string>
+    <string name="edit_script_source_account_label">editBranchTransactionWarkatEditTransactionBeneficiaryAccountTitleLabel</string>
+    <string name="edit_script_email_label">editBranchTransactionWarkatEditTransactionEmailTitleLabel</string>
+    <string name="edit_script_transaction_note_label">editBranchTransactionWarkatEditTransactionCustomerNotesTitleLabel</string>
+    <string name="edit_script_transaction_account_giro">editBranchTransactionWarkatEditAccountProductCurrentAccountLabel</string>
+    <string name="edit_script_transaction_account_saving">editBranchTransactionWarkatEditAccountProductSavingAccountLabel</string>
+    <string name="edit_script_cancel_button_label">editBranchTransactionWarkatEditTransactionCancelButtonLabel</string>
+    <string name="edit_script_save_button_label">editBranchTransactionWarkatEditTransactionSaveButtonLabel</string>
+    <string name="edit_script_code_text_field_label">editBranchTransactionWarkatEditPageCodePlaceHolderLabel</string>
+    <string name="edit_script_number_text_field_label">editBranchTransactionWarkatEditPageNumberPlaceHolderLabel</string>
+    <string name="edit_script_deposit_transaction_type_label">editBranchTransactionWarkatEditTransactionTypeCashDepositLabel</string>
+    <string name="edit_script_withdrawal_transaction_type_label">editBranchTransactionWarkatEditTransactionTypeCashWithdrawalLabel</string>
+    <!--endregion-->
+
+    <!--Region Card Transaction Overview-->
+    <string name="card_transaction_overview_to_checking_account_label">transactionOverviewTransactionPurposeCurrentAccountDepositLabel</string>
+    <string name="card_transaction_overview_from_checking_account_label">transactionOverviewTransactionPurposeCurrentAccountWithdrawalLabel</string>
+    <string name="card_transaction_overview_to_saving_account_label">transactionOverviewTransactionPurposeSavingAccountDepositLabel</string>
+    <string name="card_transaction_overview_from_saving_account_label">transactionOverviewTransactionPurposeSavingAccountWithdrawalLabel</string>
+    <!--endregion-->
+
+    <!--Region Confirmation Debit Card Maintenance-->
+    <string name="confirmation_debit_card_maintenance_cancel_transaction_label">transactionConfirmationLandingCancelButton</string>
+    <string name="confirmation_debit_card_maintenance_edit_transaction_label">transactionConfirmationLandingEditButton</string>
+    <string name="confirmation_debit_card_maintenance_title">transactionConfirmationLandingInformationTransactionLabel</string>
+    <string name="confirmation_debit_card_maintenance_date_label">transactionConfirmationLandingTransactionDateLabel</string>
+    <string name="confirmation_debit_card_maintenance_card_type_label">transactionConfirmationLandingDebitCardTypeTitleLabel</string>
+    <string name="confirmation_debit_card_maintenance_owner_card_label">transactionConfirmationLandingDebitCardHoldingTitleLabel</string>
+    <string name="confirmation_debit_card_maintenance_account_label">transactionConfirmationLandingFromAccountDebitCardLabel</string>
+    <string name="confirmation_debit_card_maintenance_reason_label">transactionConfirmationLandingCustomerPurposeTitleLabel</string>
+    <string name="confirmation_debit_card_maintenance_confirmation_label">transactionConfirmationTransactionConfirmationButtonLabel</string>
+    <string name="confirmation_debit_card_maintenance_new_card_name_type_label">transactionConfirmationLandingCustomerDebitSubstituteTitleLabel</string>
+    <!--endregion-->
+
+    <!--Region Card Transaction Confirmation Transaction-->
+    <string name="transaction_confirmation_item_first_agreement_customer">transactionConfirmationCustomerFirstCheckbox</string>
+    <string name="transaction_dialog_term_and_condition_button_text">transactionConfirmationLandingBalanceTermsAndConditionButtonLabel</string>
+    <string name="card_transaction_type_from_debit_card_maintenance_title">transactionConfirmationLandingSummaryDebitCardCustomerInfoLabel</string>
+    <string name="card_transaction_type_customer_data_maintenance_title">transactionOverviewTransactionPurposeNonFinancialCustomerDataMaintenanceWithdrawalLabel</string>
+    <string name="card_transaction_type_from_debit_card_maintenance_label">transactionOverviewDebitCardDetailTransactionTypeLabel</string>
+    <string name="card_transaction_type_from_customer_data_maintenance_label">transactionOverviewTransactionTypeSummaryCustomerDataMaintenanceLabel</string>
+    <string name="card_transaction_type_account_maintenance_activation_label">transactionOverviewTransactionTypeActivationAccountLabel</string>
+    <string name="card_transaction_type_account_maintenance_block_label">transactionOverviewTransactionTypeBlockAccountLabel</string>
+    <string name="card_transaction_type_account_maintenance_denunciation_label">transactionOverviewTransactionTypeDenunciationAccountLabel</string>
+    <string name="card_transaction_type_account_maintenance_update_denunciation_label">transactionOverviewTransactionTypeUpdateDenunciationAccountLabel</string>
+    <string name="card_transaction_type_account_maintenance_rk_statement_label">transactionOverviewTransactionTypeRkStatementLabel</string>
+    <string name="card_transaction_type_account_maintenance_status_label">transactionOverviewTransactionPurposeNonFinancialAccountMaintenanceCustomerInformationWithdrawalLabel</string>
+    <string name="card_transaction_type_account_maintenance_denunciation_status_label">transactionOverviewTransactionPurposeNonFinancialAccountMaintenanceReportedInformationWithdrawalLabel</string>
+    <!--endregion-->
+
+    <!--region Change Debit Card-->
+    <string name="transaction_change_debit_card_header_title_label">editBranchTransactionEditTransactionCustomerHeaderTitleLabel</string>
+    <string name="transaction_change_debit_card_instruction_label">editBranchDebitCardListChooseDebitCardTitleLabel</string>
+    <string name="transaction_change_debit_card_button_back_label">editBranchTransactionCancelButton</string>
+    <string name="transaction_change_debit_card_button_save_label">editBranchTransactionSaveCustomerButton</string>
+    <string name="transaction_change_debit_card_max_withdrawal_label">editBranchDebitCardListTotalWithdrawalDebitCardTitleLabel</string>
+    <string name="transaction_change_debit_card_max_deposit_label">editBranchDebitCardListTotalDepositTitleLabel</string>
+    <string name="transaction_change_debit_card_empty_card_list_title_label">editBranchDebitCardListTotalWithdrawalDebitCardEmptyTitleLabel</string>
+    <string name="transaction_change_debit_card_empty_card_list_description_label">editBranchDebitCardListTotalWithdrawalDebitCardEmptyLabel</string>
+    <!--endregion-->
+
+    <!--region Adapter Transaction Tab-->
+    <string name="transaction_tab_service_category_change_card">transactionConfirmationLandingCustPurposeDebitCardDetailChangeCardLabel</string>
+    <string name="transaction_tab_service_category_un_block_card">transactionConfirmationLandingCustPurposeDebitCardDetailUnblockedCardLabel</string>
+    <string name="transaction_tab_service_category_change_pin">transactionConfirmationLandingCustPurposeDebitCardDetailChangePinLabel</string>
+    <string name="transaction_tab_service_category_register_visa">transactionConfirmationLandingCustPurposeDebitCardRegisterVisaLabel</string>
+    <string name="transaction_tab_service_category_card_retrieval">transactionConfirmationLandingCustPurposeDebitCardRetrievalLabel</string>
+    <string name="transaction_tab_transaction_type_debit_card">transactionConfirmationLandingCustomerSummaryTrxTypeDebitCardLabel</string>
+    <string name="transaction_tab_transaction_type_transfer_telegraphic_transfer">transactionConfirmationLandingConfirmationCustomerForeignTelegraphicTransferrabel</string>
+    <string name="transaction_tab_transaction_type_customer_data_maintenance">transactionConfirmationLandingConfirmationCustomerDataMaintenanceTabLabel</string>
+    <string name="transaction_tab_transaction_type_transfer_another_bank_rtgs">transactionConfirmationLandingConfirmationCustomerTransferTabLabel</string>
+    <string name="transaction_tab_transaction_type_transfer_another_bank_bi_national_clearing">transactionConfirmationLandingConfirmationCustomerForeignSknbiLabel</string>
+    <string name="transaction_tab_transaction_type_foreign_currency">transactionConfirmationLandingConfirmationCustomerForeignCurrencyLabel</string>
+    <string name="transaction_tab_transaction_type_payment">transactionConfirmationLandingConfirmationCustomerPaymentLabel</string>
+    <string name="transaction_tab_transaction_type_other_transaction_kliring">transactionConfirmationLandingConfirmationCustomerOthersTransactionKliringLabel</string>
+    <string name="transaction_tab_transaction_type_other_transaction_inkaso">transactionConfirmationLandingConfirmationCustomerOthersTransactionInkasoLabel</string>
+    <string name="transaction_tab_service_category_summary_change_card">transactionConfirmationLandingSummaryDebitCardDetailChangeCardLabel</string>
+    <string name="transaction_tab_service_category_summary_un_block_card">transactionConfirmationLandingSummaryDebitCardDetailUnblockedCardLabel</string>
+    <string name="transaction_tab_service_category_summary_change_pin">transactionConfirmationLandingSummaryDebitCardDetailChangePinLabel</string>
+    <string name="transaction_tab_service_category_summary_register_visa">transactionConfirmationLandingSummaryDebitCardRegisterVisaLabel</string>
+    <string name="transaction_tab_service_category_summary_card_retrieval">transactionConfirmationLandingSummaryDebitCardRetrievalLabel</string>
+    <string name="transaction_tab_service_category_personal_data">transactionConfirmationLandingCustomerDataMaintenancePersonalDataLabel</string>
+    <string name="transaction_tab_service_category_electronic_address">transactionConfirmationLandingCustomerDataMaintenanceElectronicAddressLabel</string>
+    <string name="transaction_tab_service_category_personal_address">transactionConfirmationLandingCustomerDataMaintenancePersonalAddressLabel</string>
+    <string name="transaction_tab_service_category_occupation_data">transactionConfirmationLandingCustomerDataMaintenanceOccupationDataLabel</string>
+    <string name="transaction_tab_service_category_occupation_address">transactionConfirmationLandingCustomerDataMaintenanceOccupationAddressLabel</string>
+    <string name="transaction_tab_service_category_additional">transactionConfirmationLandingCustomerDataMaintenanceOtherLabel</string>
+    <string name="transaction_tab_service_category_list_change_card">transactionConfirmationLandingCustDebitCardDetailChangeCardLabel</string>
+    <string name="transaction_tab_service_category_list_un_block_card">transactionConfirmationLandingCustDebitCardDetailUnblockedCardLabel</string>
+    <string name="transaction_tab_service_category_list_change_pin">transactionConfirmationLandingCustDebitCardDetailChangePinLabel</string>
+    <string name="transaction_tab_service_category_list_register_visa">transactionConfirmationLandingCustDebitCardRegisterVisaLabel</string>
+    <string name="transaction_tab_service_category_list_card_retrieval">transactionConfirmationLandingCustDebitCardRetrievalLabel</string>
+    <string name="transaction_tab_other_transaction_kliring">transactionConfirmationLandingConfirmationCustomerForeignKliringLabel</string>
+    <string name="transaction_tab_other_transaction_inkaso">transactionConfirmationLandingConfirmationCustomerForeignInkasoLabel</string>
+    <string name="transaction_tab_service_category_summary_account_activate">Aktivasi Rekening</string>
+    <string name="transaction_tab_service_category_summary_account_complaint">Pengaduan Rekening Nasabah</string>
+
+    <!--endregion-->
+
+    <!--Region content big nominal confirmation-->
+    <string name="content_big_nominal_confirmation_transaction_information">generalBankerApprovalScreenTransactionInformationTitle</string>
+    <string name="content_big_nominal_confirmation_source_detail">generalBankerApprovalScreenSourceDetailTitle</string>
+    <string name="content_big_nominal_date_title">generalBankerApprovalScreenDateTitle</string>
+    <string name="content_big_nominal_transaction_method">generalBankerApprovalScreenTransactionMethodTitle</string>
+    <string name="content_big_nominal_note_transaction">generalBankerApprovalScreenTransactionNoteTitle</string>
+    <string name="content_big_nominal_choose_other_spv">generalBankerApprovalScreenChooseOtherSpvTitle</string>
+    <string name="content_big_nominal_cancel_transaction">generalBankerApprovalScreenCancelTransactionTitle</string>
+    <string name="content_big_nominal_verification">generalBankerApprovalScreenVerificationTransactionTitle</string>
+    <string name="content_big_nominal_dialog_supervisor_confirmation_title">generalBankerApprovalScreenHeaderTitleLabel</string>
+    <string name="content_big_nominal_dialog_supervisor_confirmation_content">supervisorApprovalOverlayConfirmTransactionDetailLabel</string>
+    <string name="content_big_nominal_dialog_supervisor_confirmation_button_retry">supervisorConfirmationDialogTitleRetry</string>
+    <string name="content_big_nominal_dialog_supervisor_confirmation_button_back">supervisorConfirmationDialogErrorBackTitle</string>
+    <string name="spv_big_nominal_nav_label">Konfirmasi Transaksi</string>
+    <string name="content_dialog_spv_confirmation_title">transactionConfirmationLandingSupervisorConfirmationTitleLabel</string>
+    <string name="content_dialog_spv_confirmation_description_label">transactionConfirmationLandingSupervisorConfirmationDescriptionLabel</string>
+    <!--endregion-->
+
+    <!--Region transaction script confirmation -->
+    <string name="content_information_detials_confirmation_status_header_title">transactionConfirmationLandingToastSweepSupervisorTransactionLabel</string>
+    <string name="content_information_detials_confirmation_transaction_method_title">transactionConfirmationLandingTransactionMethodTitleLabel</string>
+    <string name="content_information_detials_confirmation_script_type_title">transactionConfirmationLandingWarkatTypeTitleLabel</string>
+    <string name="content_information_detials_confirmation_script_number_title">transactionConfirmationLandingWarkatNumberTitleLabel</string>
+    <string name="content_information_detials_confirmation_script_date_title">transactionConfirmationLandingWarkatNumberDateLabel</string>
+    <string name="content_information_detials_confirmation_script_effective_date_title">transactionConfirmationLandingWarkatEffectiveDateLabel</string>
+    <string name="content_information_detials_confirmation_source_of_fund_title">transactionConfirmationLandingSourceFundLabel</string>
+    <string name="content_information_detials_confirmation_account_source_title">transactionConfirmationLandingAccountSourceTitleLabel</string>
+    <string name="content_information_detials_confirmation_account_name_title">transactionConfirmationLandingAccountSourceNameTitleLabel</string>
+    <string name="content_information_detials_confirmation_transaction_purpose_title">transactionConfirmationLandingTransactionPurposeLabel</string>
+    <string name="content_information_detials_confirmation_transaction_news_title">transactionConfirmationLandingTransactionNoteLabel</string>
+    <string name="content_information_detials_confirmation_give_script_button">transactionConfirmationHandoverWarkatButtonLabel</string>
+    <string name="content_information_detials_confirmation_cancel_script_button">generalBankerRecaptureConfirmationCancelTransactionButtonLabel </string>
+    <string name="content_information_details_confirmation_verified_script_title">transactionConfirmationLandingOverbookingCheckingWarkatPhotoTitleLabel</string>
+    <string name="content_information_details_confirmation_verified_script_body">transactionConfirmationLandingOverbookingCheckingWarkatPhotoDescLabel</string>
+    <string name="content_information_details_confirmation_verified_script_button">transactionConfirmationLandingOverbookingCheckingWarkatPhotoButtonLabel</string>
+    <string name="content_information_details_confirmation_status_transaction_label">transactionConfirmationLandingOverbookingCheckingWarkatPhotoToastLabel</string>
+    <string name="content_information_details_confirmation_summary_amount_title">transactionConfirmationLandingAmountLabel</string>
+    <string name="content_information_details_confirmation_summary_total_amount_title">transactionConfirmationLandingTotalLabel</string>
+
+    <string name="content_information_details_confirmation_view_script_button">transactionConfirmationLandingPreviewWarkatButton</string>
+    <string name="content_information_details_confirmation_tv_title_receiver_title">transactionConfirmationLandingOverbookingBeneficiaryDetailTitleLabel</string>
+    <string name="content_information_details_confirmation_tv_title_receiver_name_title">transactionConfirmationLandingOverbookingBeneficiaryNameTitleLabel</string>
+    <string name="content_information_details_confirmation_tv_title_sender_name_title">transactionConfirmationLandingTransferAccountNameTitleLabel</string>
+    <string name="content_information_details_confirmation_tv_title_sender_title">transactionConfirmationLandingDepositSenderTitleLabel</string>
+    <string name="content_information_details_confirmation_st_status_warkat_preview_customer">transactionConfirmationOverbookingCheckingWarkatCustomerToastLabel</string>
+    <string name="content_information_details_confirmation_st_status_warkat_preview_gb">transactionConfirmationOverbookingCheckingWarkatGBToastLabel</string>
+
+    <string name="content_information_details_confirmation_warkat_photo_empty_title_label">Foto Warkat tidak tersedia</string>
+    <string name="content_information_details_confirmation_warkat_photo_empty_message_label">Data Foto Warkat kosong</string>
+    <!--endregion-->
+
+    <!--region numeric authorization dialog fail-->
+    <string name="transaction_cs_confirmation_failed_transaction_title_label">cashWithdrawalOtpFailedTransactionTitleLabel</string>
+    <string name="transaction_cs_confirmation_failed_transaction_desc_label">cashWithdrawalOtpFailedTransactionDescLabel</string>
+    <string name="transaction_cs_confirmation_failed_button_reload">cashWithdrawalOtpFailedTransactionRetryButton</string>
+    <!--endregion-->
+
+
+    <!-- region script preview-->
+    <string name="script_preview_title_front_label">Foto Tampak Depan Warkat</string>
+    <string name="script_preview_title_back_label">Foto Tampak Belakang Warkat</string>
+    <string name="script_preview_first_number_label">1</string>
+    <string name="script_preview_second_number_label">2</string>
+    <string name="script_preview_slash_label">/</string>
+    <string name="script_preview_title_button_next">transactionConfirmationOverbookingCheckingWarkatPhotoAppropriateLabel</string>
+    <string name="script_preview_title_button_retake">transactionConfirmationOverbookingCheckingWarkatPhotoRetakeLabel</string>
+    <string name="script_preview_title_back_recapture">Kembali</string>
+    <!--endregion-->
+
+    <!--Customer Data Maintenance Preview-->
+    <string name="transaction_current_account_refusal_btn_next_label">Lanjutkan</string>
+    <!--    -->
+    <!-- Wait Confluence    -->
+    <string name="transaction_customer_data_maintenance_title_label">Informasi Transaksi</string>
+    <string name="transaction_customer_data_maintenance_see_document_label">nonFinancialTransactionConfirmationLandingCustomerPreviewDocumentButton</string>
+    <string name="transaction_customer_data_maintenance_confirmation_label">nonFinancialTransactionConfirmationLandingCustomerDataMaintenanceConfirmButtonLabel</string>
+    <string name="transaction_customer_data_maintenance_addition_title">nonFinancialTransactionConfirmationLandingCustomerDataMaintenanceAdditionTitleLabel</string>
+    <string name="transaction_customer_data_maintenance_addition_details">nonFinancialTransactionConfirmationLandingCustomerDataMaintenanceAdditionDetailsTitleLabel</string>
+    <string name="transaction_customer_data_maintenance_addition_data">nonFinancialTransactionConfirmationLandingCustomerDataMaintenanceAdditionDataTitleLabel</string>
+    <string name="transaction_customer_data_maintenance_delete_title">nonFinancialTransactionConfirmationLandingCustomerDataMaintenanceDeletionTitleLabel</string>
+    <string name="transaction_customer_data_maintenance_delete_details">nonFinancialTransactionConfirmationLandingCustomerDataMaintenanceDeletionDetailsTitleLabel</string>
+    <string name="transaction_customer_data_maintenance_delete_data">nonFinancialTransactionConfirmationLandingCustomerDataMaintenanceDeletionDataTitleLabel</string>
+    <string name="transaction_customer_data_maintenance_change_title">nonFinancialTransactionConfirmationLandingCustomerDataMaintenanceChangeTitleLabel</string>
+    <string name="transaction_customer_data_maintenance_change_details">nonFinancialTransactionConfirmationLandingCustomerDataMaintenanceChangeDetailsTitleLabel</string>
+    <string name="transaction_customer_data_maintenance_old_data_title">nonFinancialTransactionConfirmationLandingCustomerDataMaintenanceOldDataChangeTitleLabel</string>
+    <string name="transaction_customer_data_maintenance_new_data_title">nonFinancialTransactionConfirmationLandingCustomerDataMaintenanceNewDataChangeTitleLabel</string>
+    <string name="transaction_customer_data_maintenance_personal_data">nonFinancialTransactionConfirmationLandingCustomerDataMaintenancePersonalDataFieldLabel</string>
+    <string name="transaction_customer_data_maintenance_electronic_address">nonFinancialTransactionConfirmationLandingCustomerDataMaintenanceElectronicAddressFieldLabel</string>
+    <string name="transaction_customer_data_maintenance_id_address">nonFinancialTransactionConfirmationLandingCustomerDataMaintenanceIdAddressFieldLabel</string>
+    <string name="transaction_customer_data_maintenance_domicile_address">nonFinancialTransactionConfirmationLandingCustomerDataMaintenanceDomicileAddressFieldLabel</string>
+    <string name="transaction_customer_data_maintenance_occupation_data">nonFinancialTransactionConfirmationLandingCustomerDataMaintenanceOccupationDataFieldLabel</string>
+    <string name="transaction_customer_data_maintenance_occupation_address">nonFinancialTransactionConfirmationLandingCustomerDataMaintenanceOccupationAddressFieldLabel</string>
+    <string name="transaction_customer_data_maintenance_beneficiary_owner">nonFinancialTransactionConfirmationLandingCustomerDataMaintenanceBeneficiaryOwnerFieldLabel</string>
+    <string name="transaction_customer_data_maintenance_type_phone_number_label">nonFinancialTransactionConfirmationLandingCustomerDataMaintenanceMobilePhoneNumberLabel</string>
+    <string name="transaction_customer_data_maintenance_type_email_label">nonFinancialTransactionConfirmationLandingCustomerDataMaintenanceEmailLabel</string>
+    <string name="transaction_customer_data_maintenance_type_office_phone_number_label">nonFinancialTransactionConfirmationLandingCustomerDataMaintenanceOccupationPhoneNumberLabel</string>
+    <string name="transaction_customer_data_maintenance_type_home_phone_number_label">nonFinancialTransactionConfirmationLandingCustomerDataMaintenanceHomePhoneNumberLabel</string>
+    <string name="transaction_customer_data_maintenance_type_channel_ics">nonFinancialTransactionConfirmationLandingCustomerDataMaintenanceChannelTagIcsLabel</string>
+    <string name="transaction_customer_data_maintenance_type_channel_mandol">nonFinancialTransactionConfirmationLandingCustomerDataMaintenanceChannelTagMandolLabel</string>
+    <string name="transaction_customer_data_maintenance_type_channel_livin">nonFinancialTransactionConfirmationLandingCustomerDataMaintenanceChannelTagLivinLabel</string>
+    <!--endregion-->
+    <!--endregion-->
+
+    <!-- region transfer cash confirmation-->
+    <string name="confirmation_cash_transfer_detail">Detail Transaksi</string>
+    <string name="confirmation_cash_transfer_id_title">ID BI Fast</string>
+    <string name="confirmation_cash_transfer_method_title">METODE TRANSFER</string>
+    <string name="confirmation_cash_transfer_source_title">SUMBER DANA</string>
+    <string name="confirmation_cash_transfer_purpose_title">TUJUAN TRANSAKSI</string>
+    <string name="confirmation_cash_transfer_notes_title">BERITA TRANSAKSI</string>
+    <!--endregion-->
+
+    <!-- region script verification -->
+    <string name="script_verification_title_status_transaction">generalBankerWarkatVerificationPageWarkatStatusTitleLabel</string>
+    <string name="script_verification_description_status_transaction">Periode Pengajuan Valid, Proses Warkat Dapat Dilanjutkan</string>
+    <string name="script_verification_account_name_title">generalBankerWarkatVerificationPageWarkatAccountNameTitleLabel</string>
+    <string name="script_verification_account_source_title">generalBankerWarkatVerificationPageWarkatAccTypeTitleLabel</string>
+    <string name="script_verification_account_number_title">generalBankerWarkatVerificationPageWarkatAccountNumberTitleLabel</string>
+    <string name="script_verification_transaction_amount_title">generalBankerWarkatVerificationPageWarkatAmountTitleLabel</string>
+    <string name="script_verification_warkat_type_title">generalBankerWarkatVerificationPageWarkatTypeTitleLabel</string>
+    <string name="script_verification_warkat_prefix_title">generalBankerWarkatVerificationPageWarkatCodeTitleLabel</string>
+    <string name="script_verification_warkat_number_title">generalBankerWarkatVerificationPageWarkatNumberTitleLabel</string>
+    <string name="script_verification_appointment_date_title">generalBankerWarkatVerificationPageWarkatAppointmentTitleLabel</string>
+    <string name="script_verification_warkat_date_title">generalBankerWarkatVerificationPageWarkatDatePlaceholderTitleLabel</string>
+    <string name="script_verification_effective_date_title">generalBankerWarkatVerificationPageWarkatEffectivePlaceholderTitleLabel</string>
+    <string name="script_verification_effective_date_description_dash">-</string>
+    <string name="script_verification_button_cancel_transaction_label">generalBankerWarkatVerificationPageWarkatSpecimenWarkatFundCancelTransactionLabel</string>
+    <string name="script_verification_button_continue_transaction_label">generalBankerWarkatVerificationPageWarkatSpecimenWarkatFundButtonTransactionLabel</string>
+    <string name="script_verification_text_sign_not_available">generalBankerWarkatVerificationPageSignatureUnavailableLabel</string>
+    <string name="script_verification_text_mandiri_tnc_agreement">generalBankerWarkatVerificationPageWarkatSpecimenWarkatFundLabel</string>
+    <string name="script_verification_text_mandiri_tnc_agreement_link">generalBankerWarkatVerificationPageWarkatSpecimenWarkatFundLabel_link</string>
+    <string name="script_verification_nav_title">Verifikasi Warkat</string>
+    <string name="script_verification_general_error_title">generalBankerWarkatVerificationPageSignatureErrorTitleLabel</string>
+    <string name="script_verification_general_error_message">generalBankerWarkatVerificationPageSignatureErrorDescLabel</string>
+    <string name="script_verification_dialog_cancel_title">generalBankerWarkatVerificationPageCancelTitle</string>
+    <string name="script_verification_dialog_cancel_description">generalBankerWarkatVerificationPageCancelDescription</string>
+    <string name="script_verification_dialog_cancel_button_primary_text">generalBankerWarkatVerificationCancelContinueButton</string>
+    <string name="script_verification_dialog_cancel_button_secondary_text">generalBankerWarkatVerificationCancelBackButton</string>
+    <string name="script_verification_account_type_giro">generalBankerWarkatVerificationPageCurrentAccountLabel</string>
+    <!-- endregion -->
+
+    <!-- region content check warkat -->
+    <string name="content_check_warkat_description_text">generalBankerWarkatVerificationPageInstructionLabel</string>
+    <string name="content_check_warkat_button_check_text">generalBankerWarkatVerificationPageWarkatDateCheckButtonLabel</string>
+    <!-- endregion -->
+
+    <!-- region transfer cash confirmation-->
+    <string name="text_receiver_bi_fast_dialog_details">transactionOverviewTransactionFinancialDetailBeneficairyDetailSectionTitleLabel</string>
+    <!--endregion-->
+
+    <!-- region content transfer transaction dialog -->
+    <string name="content_receipt_transaction_tv_detail_receiver_name_title">NAMA PENERIMA</string>
+    <string name="content_receipt_transaction_tv_detail_transaction_title">Detail Transaksi</string>
+    <string name="content_receipt_transaction_tv_id_bi_fast_title">transactionResultTransferPopupTrackingIdTitleLabel</string>
+    <string name="content_receipt_transaction_tv_transaction_method_title">Metode Transaksi</string>
+    <string name="content_receipt_transaction_tv_source_of_fund_title">Sumber Dana</string>
+    <string name="content_receipt_transaction_tv_transaction_purpose_title">Tujuan Transaksi</string>
+    <string name="content_receipt_transaction_tv_transaction_notes_title">Berita Transaksi</string>
+    <string name="content_transaction_overview_finance_old_bds_detail_title_kliring">transactionOverviewTransactionFinancialInterbankKliringTransferLabel</string>
+    <string name="content_transaction_overview_finance_old_bds_detail_title_inkaso">transactionOverviewTransactionFinancialInterbankInkasoTransferLabel</string>
+    <string name="content_transaction_overview_finance_old_bds_date_title">transactionOverviewTransactionFinancialDetailTransactionDateTitleLabel</string>
+    <string name="content_transaction_overview_finance_old_bds_detail_title">transactionOverviewTransactionFinancialPaymentLabel</string>
+    <string name="content_transaction_overview_transfer_another_bank_old_bds_detail_title">transactionConfirmationLandingConfirmationCustomerInterbankTransferLabel</string>
+    <string name="content_transaction_overview_others_transaction_old_bds_detail_title">transactionConfirmationLandingConfirmationCustomerOthersTransactionLabel</string>
+    <string name="content_transaction_overview_others_inkaso_old_bds_detail_title">transactionOverviewTransactionFinancialInterbankInkasoTransferLabel</string>
+    <string name="content_transaction_overview_others_kliring_old_bds_detail_title">transactionOverviewTransactionFinancialInterbankKliringTransferLabel</string>
+    <string name="content_transaction_overview_payment_old_bds_detail_title">transactionConfirmationLandingConfirmationCustomerPaymentLabel</string>
+    <string name="content_transaction_overview_foreign_currency_old_bds_detail_title">transactionOverviewTransactionFinancialForeignCurrencyLabel</string>
+    <string name="content_transaction_overview_other_finance_old_bds_detail_title">transactionOverviewTransactionFinancialOthersTransactionLabel</string>
+    <string name="content_transaction_overview_other_finance_old_bds_detail_overview_title">transactionOverviewTransactionFinancialDetailOtherTransactionCategoryTitleLabel</string>
+    <string name="content_transaction_overview_non_finance_old_bds_detail_overview_title">transactionOverviewTransactionNonFinancialDetailTransactionCategoryTitleLabel</string>
+    <string name="content_transaction_overview_financial_old_bds_detail_title">transactionOverviewTransferFinanciaDetailLabel</string>
+    <string name="content_transaction_overview_financial_method_title">transactionOverviewTransferFinanciaDetailTransferMethodLabel</string>
+    <string name="content_transaction_overview_bi_fast_date_title">transactionOverviewTransactionFinancialDetailTransactionDateLabel</string>
+    <string name="content_transaction_overview_bi_fast_detail_title">transactionOverviewTransferAnotherBankDetailBiFastLabel</string>
+    <string name="content_transaction_overview_rtgs_detail_title">transactionOverviewTransferAnotherBankDetailRtgsLabel</string>
+    <string name="content_transaction_overview_overbooking_detail_title">transactionOverviewTransferOverbookingLabel</string>
+    <string name="content_transaction_overview_bi_fast_total_amount_title">transactionOverviewTransactionFinancialDetailTransactionTotalAmountTitleLabel</string>
+    <string name="content_transaction_overview_bi_fast_beneficiary_detail_title">transactionOverviewTransactionFinancialDetailBeneficiaryDetailSectionTitleLabel</string>
+    <string name="content_transaction_overview_bi_fast_beneficiary_name_title">transactionOverviewTransferAnotherBankBeneficiaryNameTitleLabel</string>
+    <string name="content_transaction_overview_detail_title">transactionOverviewTransactionDetailLabel</string>
+    <string name="content_transaction_overview_transfer_method_title">transactionOverviewOverbookingDetailTransferMethodLabel</string>
+    <string name="content_transaction_overview_transfer_note_title">transactionOverviewTransactionFinancialTransactionNoteTitle</string>
+    <string name="content_transaction_overview_transfer_purpose_title">transactionOverviewTransactionFinancialTransactionPurposeTitleLabel</string>
+    <string name="content_transaction_overview_transfer_amount_title">transactionOverviewTransferAnotherBankAmountTitle</string>
+    <string name="content_transaction_overview_transfer_fee_title">transactionOverviewTransactionFeeTitleLabel</string>
+    <string name="content_transaction_overview_transfer_total_amount_title">transactionOverviewTransferAnotherBankTotalAmountTitleLabel</string>
+    <string name="content_transaction_result_transfer_transaction_type_title">transactionResultTransferAnotherBankPopupTransactionTypeLabel</string>
+    <string name="content_transaction_result_transfer_transaction_amount_title">transactionResultTransferAnotherBankPopupTransactionAmountTitleLabel</string>
+    <string name="content_transaction_result_transfer_transaction_status_title">transactionResultTransferAnotherBankPopupTransactionStatusTitleLabel</string>
+    <string name="content_transaction_result_transfer_transaction_success_status">transactionResultTransferAnotherBankPopupTransactionStatusSuccessLabel</string>
+    <string name="content_transaction_result_transfer_transaction_failed_status">transactionResultTransferAnotherBankPopupTransactionStatusFailedLabel</string>
+    <string name="content_transaction_result_transfer_transaction_cancel_customer_status">transactionResultTransferAnotherBankPopupTransactionStatusCancelCustomerLabel</string>
+    <string name="content_transaction_result_transfer_transaction_cancel_bank_status">transactionResultTransferAnotherBankPopupTransactionStatusCancelBankLabel</string>
+    <string name="content_transaction_result_transfer_transaction_receipt_number_title">transactionResultTransferAnotherBankPopupReceiptNumberTitleLabel</string>
+    <string name="content_transaction_result_transfer_transaction_date_title">transactionResultTransferAnotherBankPopupTransactionDateTitleLabel</string>
+    <string name="content_transaction_overview_transfer_sender_title">transactionOverviewTransactionFinancialDetailTransferAnotherBankSenderTitleLabel</string>
+    <string name="content_transaction_overview_transfer_old_sender_title">transactionOverviewTransferFinancialSenderInformationSectionTitleLabel</string>
+    <string name="content_transaction_overview_transfer_sender_name_title">transactionOverviewTransactionFinancialDetailTransferAnotherBankSenderNameTitleLabel</string>
+    <string name="content_transaction_overview_transfer_source_account_title">transactionOverviewTransactionFinancialDetailTransferAnotherBankSourceAccountTitleLabel</string>
+    <string name="content_transaction_result_transfer_transaction_beneficiary_detail_title">transactionResultTransferAnotherBankPopupBeneficiaryDetailSectionTitleLabel</string>
+    <string name="content_transaction_result_transfer_transaction_beneficiary_acount_name_title">transactionResultTransferAnotherBankPopupBeneficiaryAccountNameTitleLabel</string>
+    <string name="content_transaction_result_transfer_transaction_transaction_method_title">transactionResultTransferAnotherBankPopupTransactionMethodTitleLabel</string>
+    <string name="content_transaction_result_transfer_transaction_transaction_note_title">transactionResultTransferAnotherBankPopupTransactionNoteTitleLabel</string>
+    <string name="content_transaction_result_transfer_transaction_transaction_purpose_title">transactionResultTransferAnotherBankPopupTransactionPurposeTitleLabel</string>
+    <string name="content_transaction_result_transfer_transaction_transaction_sender_detail_title">transactionResultTransferAnotherBankPopupSenderDetailSectionTitleLabel</string>
+    <string name="content_transaction_result_transfer_transaction_transaction_sender_account_name_title">transactionResultTransferAnotherBankPopupSenderAccountNameTitleLabel</string>
+    <string name="content_transaction_result_transfer_transaction_transaction_sender_source_of_fund_title">transactionResultTransferAnotherBankPopupSenderSourceOfFundTitleLabel</string>
+    <string name="content_transaction_result_transfer_transaction_transaction_total_amount_title">transactionResultOverbookingPopupTotalAmountTitleLabel</string>
+    <string name="content_transaction_result_transfer_transaction_transaction_fee_title">transactionResultTransferAnotherBankPopupTransactionFeeLabel</string>
+    <string name="content_transaction_overview_transfer_transaction_transaction_close_label">transactionOverviewTransactionFinancialTransactionCloseButton</string>
+    <string name="content_transaction_result_transfer_transaction_transaction_close_label">transactionResultCashDepositDetailsClosePopUpLabel</string>
+    <string name="content_transaction_dialog_overbooking_script_type_label">transactionOverviewOverbookingDetailWarkatTypeTitle</string>
+    <string name="content_transaction_dialog_overbooking_script_number_label">transactionOverviewOverbookingDetailWarkatNumberTitle</string>
+    <string name="content_transaction_dialog_overbooking_script_date_label">transactionOverviewOverbookingDetailWarkatDateTitle</string>
+    <string name="content_transaction_dialog_overbooking_source_owner_name_label">transactionOverviewOverbookingDetailAccountSourceOwnerPersonalNameTitle</string>
+    <string name="content_transaction_dialog_overbooking_effective_date_label">transactionOverviewOverbookingDetailEffectiveDateTitle</string>
+    <string name="content_transaction_overview_transfer_remittance_number_title">transactionOverviewRemittanceNumberLabel</string>
+    <string name="content_transaction_overview_financial_source_income_title">transactionOverviewTransactionFinancialSourceIncomeTitleLabel</string>
+    <string name="content_transaction_result_transfer_transaction_status_delivered_title">transactionResultTransferPopupTransactionStatusDeliveredLabel</string>
+    <string name="content_transaction_overview_error_print_old_form_button_label">transactionOverviewPopUpFormDownloadContinueButton</string>
+    <string name="content_transaction_overview_status_sent_label">transactionResultTransactionStatusSentLabel</string>
+    <string name="content_transaction_overview_tv_detail_executor_title">transactionOverviewWithdrawalDetailCustomerDetailsTitleLabel</string>
+    <string name="content_transaction_overview_tv_detail_executor_name">transactionOverviewWithdrawalDetailCustomerNameTitleLabel</string>
+    <string name="content_transaction_overview_tv_detail_source_title">transactionOverviewWithdrawalSourceFundDetailsTitleLabel</string>
+    <string name="content_transaction_overview_tv_detail_source_sub_title">transactionOverviewWithdrawalSourceFundDetailsSubTitleLabel</string>
+    <string name="content_transaction_overview_tv_transaction_warkat_type">transactionOverviewOverbookingDetailWarkatTypeTitle</string>
+    <string name="content_transaction_overview_tv_transaction_warkat_number">transactionOverviewOverbookingDetailWarkatNumberTitle</string>
+    <string name="content_transaction_overview_tv_transaction_warkat_date">transactionOverviewOverbookingDetailWarkatDateTitle</string>
+    <string name="content_transaction_overview_tv_transaction_account_owner_name">transactionOverviewOverbookingDetailAccountSourceOwnerNameTitle</string>
+    <string name="content_transaction_overview_cash_withdrawal_detail_title">transactionResultCashWithdrawalDetailsTrasactionTypeLabel</string>
+    <string name="content_transaction_overview_tv_transaction_account_source">transactionOverviewWithdrawalDetailSourceAccountTitle</string>
+    <string name="content_transaction_overview_tv_transaction_account_warkat_source">transactionOverviewWithdrawalDetailSourceWarkatAccountTitle</string>
+    <string name="content_transaction_overview_tv_transaction_warkat_owner_name">transactionOverviewOverbookingDetailAccountSourceOwnerWarkatNameTitle</string>
+    <string name="content_transaction_overview_company_information_label">transactionOverviewWithdrawalDetailCompanyDetailsTitleLabel</string>
+    <string name="content_transaction_overview_company_information_title">transactionOverviewWithdrawalDetailCompanyDetailsSubTitleLabel</string>
+    <!-- endregion -->
+
+    <!-- region content transfer transaction overview -->
+    <string name="content_transaction_result_transfer_overview_purpose_label">transactionOverviewTransactionPurposeTransferLabel</string>
+    <string name="content_transaction_result_other_summary_inkaso_label">transactionOverviewTransactionFinancialSummaryOthersTransactionInkasoLabel</string>
+    <string name="content_transaction_result_other_summary_kliring_label">transactionOverviewTransactionFinancialSummaryOthersTransactionKliringLabel</string>
+    <!-- endregion -->
+
+    <!-- region overview summary -->
+    <string name="content_transaction_result_transfer_another_bank_summary_label">transactionOverviewTotalTransferAnotherBankTitleLabel</string>
+    <string name="content_transaction_result_transfer_summary_label">transactionOverviewTotalTransferTitleLabel</string>
+    <string name="content_transaction_result_foreign_currency_summary_label">transactionOverviewTransactionFinancialTotalForeignCurrencyLabel</string>
+    <string name="content_transaction_result_payment_summary_label">transactionOverviewTransactionFinancialTotalPaymentLabel</string>
+    <string name="content_transaction_result_other_transaction_summary_label">transactionOverviewTransactionFinancialSummaryOthersTransactionLabel</string>
+    <!-- endregion -->
+
+    <!-- region TRANSFER-->
+    <string name="transaction_transfer_account_source_label">transactionConfirmationLandingAccountSourceTitleLabel</string>
+    <string name="transaction_transfer_fee_amount_title_label">transactionConfirmationLandingFeeAmountTitleLabel</string>
+    <string name="transaction_transfer_remittance_number_label">transactionConfirmationLandingRemittanceNumberTitleLabel</string>
+    <string name="transaction_transfer_transaction_method_label">transactionConfirmationLandingTransactionMethodTitleLabel</string>
+    <string name="transaction_transfer_transaction_note_label">transactionConfirmationLandingTransactionNoteLabel</string>
+    <string name="transaction_transfer_transaction_source_funds_label">transactionConfirmationLandingSourceFundLabel</string>
+    <string name="transaction_transfer_transaction_purpose_label">transactionConfirmationLandingTransactionPurposeLabel</string>
+    <string name="transaction_transfer_transaction_fee_label">transactionConfirmationLandingFeeLabel</string>
+    <string name="transaction_transfer_transaction_nominal_label">transactionConfirmationLandingAmountLabel</string>
+    <string name="transaction_transfer_transaction_account_source_label">transactionConfirmationLandingAccountSourceTitleLabel</string>
+    <string name="transaction_transfer_transaction_beneficiary_name_label">transactionConfirmationLandingBeneficiaryNameTitleLabel</string>
+    <string name="transaction_transfer_transaction_transfer_name_label">transactionConfirmationLandingTransferAccountNameTitleLabel</string>
+    <string name="transaction_transfer_transaction_beneficiary_detail_label">transactionConfirmationLandingBeneficiaryDetailTitleLabel</string>
+    <string name="transaction_transfer_transaction_deposit_sender_label">transactionConfirmationLandingDepositSenderTitleLabel</string>
+    <string name="transaction_transfer_transaction_detail_transaction_label">transactionConfirmationLandingTransactionDetailTitleLabel</string>
+    <string name="transaction_transfer_transaction_total_amount_label">transactionConfirmationLandingTotalLabel</string>
+    <string name="transaction_transfer_transaction_cancel_label">transactionConfirmationLandingCancelButton</string>
+    <string name="transaction_transfer_transaction_confirmation_label">transactionConfirmationLandingConfirmationLabel</string>
+    <string name="transaction_transfer_bank_not_available_title_label">transactionConfirmationLandingBankNotAvailableTitleLabel</string>
+    <string name="transaction_transfer_bank_not_available_description_label">transactionConfirmationLandingBankNotAvailableDescriptionLabel</string>
+    <string name="transaction_transfer_bank_not_available_cancel_label">transactionConfirmationLandingBankNotAvailableCancelButtonLabel</string>
+    <string name="transaction_transfer_bank_not_available_edit_label">transactionConfirmationLandingBankNotAvailableEditButtonLabel</string>
+    <string name="transaction_transfer_transaction_financial_beneficiary_name_label">transactionOverviewTransactionFinancialBeneficiaryNameTitleLabel</string>
+    <string name="transaction_transfer_transaction_financial_detail_transaction_method_label">transactionOverviewTransactionFinancialDetailTransactionMethodLabel</string>
+    <string name="transaction_transfer_transaction_financial_detail_source_account_label">transactionOverviewTransactionFinancialDetailSourceAccountLabel</string>
+    <string name="transaction_transfer_transaction_financial_detail_transaction_amount_summary_label">transactionOverviewTransactionFinancialDetailTransactionAmountSummaryLabel</string>
+    <string name="transaction_transfer_transaction_financial_detail_transaction_fee_summary_label">transactionOverviewTransactionFinancialDetailTransactionFeeSummaryLabel</string>
+    <string name="transaction_transfer_transaction_financial_detail_transaction_total_summary_label">transactionOverviewTransactionFinancialDetailTransactionTotalAmountSummaryLabel</string>
+    <string name="transaction_transfer_transaction_financial_detail_transaction_account_number_title_label">transactionOverviewTransactionFinancialDetailAccountNumberTitleLabel</string>
+    <string name="transaction_transfer_transaction_overview_overbooking_detail_title_label">transactionOverviewOverbookingDetailTitle</string>
+    <string name="transaction_transfer_transaction_overview_transaction_financial_detail_sender_detail_section_title_label">transactionOverviewTransactionFinancialDetailSenderDetailSectionTitleLabel</string>
+    <string name="transaction_transfer_transaction_overview_transaction_financial_detail_sender_name_title_label">transactionOverviewTransactionFinancialDetailSenderNameTitleLabel</string>
+    <!-- endregion -->
+
+    <!-- region customer warkat verification -->
+    <string name="transaction_customer_warkat_verification_title">customerWarkatAuthenticationHeaderTitleLabel</string>
+    <string name="transaction_customer_warkat_verification_detail_warkat_title">customerWarkatAuthenticationInformationTitleLabel</string>
+    <string name="transaction_customer_warkat_verification_account_name_title">customerWarkatAuthenticationAccountNameTitleLabel</string>
+    <string name="transaction_customer_warkat_verification_company_account_name_title">PEMILIK WARKAT</string>
+    <string name="transaction_customer_warkat_verification_account_source_title">customerWarkatAuthenticationSourceAccountTitleLabel</string>
+    <string name="transaction_customer_warkat_verification_company_account_source_title">REKENING WARKAT</string>
+    <string name="transaction_customer_warkat_verification_sender_name_title">customerWarkatAuthenticationSenderInformationNameTitleLabel</string>
+    <string name="transaction_customer_warkat_verification_sender_name_cash_withdrawal_title">customerWarkatAuthenticationSenderWithdrawalNameTitleLabel</string>
+    <string name="transaction_customer_warkat_verification_status_warkat_title">customerWarkatAuthenticationWarkatStatusTitleLabel</string>
+    <string name="transaction_customer_warkat_verification_status_warkat_active">customerWarkatAuthenticationWarkatStatusLabel</string>
+    <string name="transaction_customer_warkat_verification_warkat_type_label">customerWarkatAuthenticationWarkatTypeTitleLabel</string>
+    <string name="transaction_customer_warkat_verification_warkat_number_label">customerWarkatAuthenticationWarkatNumberTitleLabel</string>
+    <string name="transaction_customer_warkat_verification_warkat_date_label">customerWarkatAuthenticationWarkatDateTitleLabel</string>
+    <string name="transaction_customer_warkat_verification_warkat_submission_date_label">customerWarkatAuthenticationWarkatSubmissionDateTitleLabel</string>
+    <string name="transaction_customer_warkat_verification_total_amount_label">customerWarkatAuthenticationTotalAmountTitleLabel</string>
+    <string name="transaction_customer_warkat_verification_button_confirmation_label">customerWarkatAuthenticationConfirmationButton</string>
+    <string name="transaction_customer_warkat_dialog_success_title">customerWarkatAuthenticationVerificationSuccessTitleLabel</string>
+    <string name="transaction_customer_warkat_dialog_success_description">customerWarkatAuthenticationVerificationSuccessDescLabel</string>
+    <string name="transaction_customer_warkat_dialog_progress_title">customerWarkatAuthenticationVerificationInProgressTitleLabel</string>
+    <string name="transaction_customer_warkat_dialog_progress_description">customerWarkatAuthenticationVerificationInProgressDescLabel</string>
+    <string name="transaction_customer_warkat_dialog_error_title">generalBankerWarkatVerificationErrorDescButton</string>
+    <string name="transaction_customer_warkat_dialog_progress_type_loading">Loading</string>
+    <string name="transaction_customer_warkat_dialog_button_reload_label">transactionConfirmationLandingCustFailedTransactionRetryButton</string>
+    <string name="transaction_customer_warkat_type_giro_label">customerWarkatAuthenticationPageWarkatTypeBilyetGiroLabel</string>
+    <string name="transaction_customer_warkat_type_cek_label">customerWarkatAuthenticationPageWarkatTypeCekLabel</string>
+    <string name="transaction_customer_warkat_type_loa_label">customerWarkatAuthenticationPageWarkatTypeLoaLabel</string>
+    <!-- endregion -->
+
+    <!--Account Maintenance Preview-->
+    <string name="transaction_account_maintenance_confirmation_account_name_label">nonFinancialTransactionConfirmationLandingCustomerBlockActivationStatementFullNameTitleLabel</string>
+    <string name="transaction_account_maintenance_confirmation_account_number_label">transactionConfirmationLandingAccountSourceTitleLabel</string>
+    <string name="transaction_account_maintenance_confirmation_id_label">transactionConfirmationLandingIdentityNumberTitleLabel</string>
+    <string name="transaction_account_maintenance_confirmation_ktp_label">KTP</string>
+    <string name="transaction_account_maintenance_activation_purpose_label">transactionConfirmationLandingCustPurposeActivationAccountLabel</string>
+    <string name="transaction_account_maintenance_confirmation_rk_statement_purpose_label">transactionConfirmationLandingCustPurposeRkStatementLabel</string>
+    <string name="transaction_account_maintenance_account_status_label">transactionConfirmationLandingAccountMaintenanceStatusTitleLabel</string>
+    <string name="transaction_account_maintenance_block_date_label">transactionConfirmationLandingBlockedDateTitleLabel</string>
+    <string name="transaction_account_maintenance_block_information_label">transactionConfirmationLandingBlockedDateTitleLabel</string>
+    <string name="transaction_account_maintenance_confirmation_agreement_label">Data di atas adalah benar dan menyetujui serta tunduk pada ketentuan yang berlaku di PT BANK MANDIRI (Persero) Tbk yang merupakan satu kesatuan dengan formulir ini.</string>
+    <string name="transaction_account_maintenance_confirmation_tnc_label">Lihat syarat &amp; ketentuan</string>
+    <string name="transaction_account_maintenance_supervisor_agreement_label">Saya sebagai Penyelia menyatakan bahwa aktivasi rekening dapat dijalankan sesuai permintaan nasabah pemilik rekening</string>
+    <string name="transaction_account_maintenance_confirmation_cancel_label">transactionConfirmationLandingCancelButton</string>
+    <string name="transaction_account_maintenance_activation_type_label">transactionConfirmationLandingCustomerSummaryTrxTypeActivationAccountLabel</string>
+    <string name="transaction_account_maintenance_block_type_label">transactionConfirmationLandingCustomerSummaryTrxTypeBlockAccountLabel</string>
+    <string name="transaction_account_maintenance_denunciation_type_label">transactionConfirmationLandingCustomerSummaryTrxTypeDenunciationAccountLabel</string>
+    <string name="transaction_account_maintenance_update_denunciation_type_label">transactionConfirmationLandingCustomerSummaryTrxTypeUpdateDenunciationAccountLabel</string>
+    <string name="transaction_account_maintenance_rk_statement_type_label">transactionConfirmationLandingCustomerSummaryTrxTypeRkAccountLabel</string>
+    <string name="transaction_account_maintenance_activation_detail_label">transactionConfirmationLandingDebitCardDetailActivationAccountLabel</string>
+    <string name="transaction_account_maintenance_block_detail_label">transactionConfirmationLandingDebitCardDetailBlockAccountLabel</string>
+    <string name="transaction_account_maintenance_denunciation_detail_label">transactionConfirmationLandingDebitCardDetailDenunciationAccountLabel</string>
+    <string name="transaction_account_maintenance_update_denunciation_detail_label">transactionConfirmationLandingDebitCardDetailUpdateDenunciationAccountLabel</string>
+    <string name="transaction_account_maintenance_rk_statement_detail_label">transactionConfirmationLandingDebitCardDetailRKStatementLabel</string>
+    <string name="transaction_account_maintenance_summary_activation_detail_label">transactionConfirmationLandingSummaryActivationAccountLabel</string>
+    <string name="transaction_account_maintenance_summary_block_detail_label">transactionConfirmationLandingSummaryBlockAccountLabel</string>
+    <string name="transaction_account_maintenance_summary_denunciation_detail_label">transactionConfirmationLandingSummaryDenunciationAccountLabel</string>
+    <string name="transaction_account_maintenance_summary_update_denunciation_detail_label">transactionConfirmationLandingSummaryUpdateDenunciationAccountLabel</string>
+    <string name="transaction_account_maintenance_summary_rk_statement_detail_label">transactionConfirmationLandingSummarytRkStatementLabel</string>
+    <string name="transaction_account_maintenance_complaint_category_label">Pengaduan Rekening Nasabah</string>
+    <string name="transaction_account_maintenance_confirmation_status_label">transactionConfirmationLandingConfirmationStatusWaitingApprovalDetailedLabel</string>
+    <string name="transaction_account_maintenance_supervisor_status_label">transactionConfirmationLandingConfirmationStatusWaitGbConfirmationDetailedLabel</string>
+    <string name="transaction_account_maintenance_complaint_title_label">transactionConfirmationLandingTransactionInformationTitleLabel</string>
+    <string name="transaction_account_maintenance_button_edit_label">nonFinancialTransactionConfirmationLandingCustomerEditTransactionButton</string>
+    <string name="transaction_account_maintenance_complaint_upload_button_label">nonFinancialTransactionConfirmationLandingCustomerUnderlyingDocumentPreviewButton</string>
+    <string name="transaction_account_maintenance_complaint_reported_name_label">transactionConfirmationLandingReportedNameTitleLabel</string>
+    <string name="transaction_account_maintenance_complaint_denunciation_number_label">transactionConfirmationLandingDenunciationNumberTitleLabel</string>
+    <string name="transaction_account_maintenance_complaint_reported_number_label">transactionOverviewAccountMaintenanceDenunciationNumberTitleLabel</string>
+    <string name="transaction_account_maintenance_complaint_reported_account_number_label">transactionConfirmationLandingAccountNumberTitleLabel</string>
+    <string name="transaction_account_maintenance_complaint_desc_label">transactionConfirmationLandingTransactionPurposeTitleLabel</string>
+    <string name="transaction_account_maintenance_transaction_category_label">transactionConfirmationLandingTransactionCategoryTitleLabel</string>
+    <string name="transaction_account_maintenance_complaint_transaction_category_transfer">transactionResultAccountMaintenanceDetailDenunciationTrxTransferLabel</string>
+    <string name="transaction_account_maintenance_complaint_transaction_category_transfer_qr">transactionResultAccountMaintenanceDetailDenunciationTrxTransferQrLabel</string>
+    <string name="transaction_account_maintenance_complaint_transaction_category_autodebit">transactionResultAccountMaintenanceDetailDenunciationTrxAutodebitLabel</string>
+    <string name="transaction_account_maintenance_complaint_transaction_category_cash_deposit">transactionResultAccountMaintenanceDetailDenunciationTrxCashDepositLabel</string>
+    <string name="transaction_account_maintenance_complaint_transaction_status_success">transactionResultAccountMaintenanceDetailDenunciationTransactionStatusSuccessTitleLabel</string>
+    <string name="transaction_account_maintenance_complaint_transaction_status_failed">transactionResultAccountMaintenanceDetailDenunciationTransactionStatusFailedTitleLabel</string>
+    <string name="transaction_account_maintenance_complaint_transaction_status_cancel_customer">transactionResultAccountMaintenanceDetailDenunciationTransactionStatusCancelByCustomerTitleLabel</string>
+    <string name="transaction_account_maintenance_complaint_transaction_status_cancel_bank">transactionResultAccountMaintenanceDetailDenunciationTransactionStatusCancelByBankTitleLabel</string>
+    <string name="transaction_account_maintenance_complaint_reporter_detail_label">transactionConfirmationLandingInformerDetailTitleLabel</string>
+    <string name="transaction_account_maintenance_complaint_reporter_name_label">transactionConfirmationLandingInformerNameTitleLabel</string>
+    <string name="transaction_account_maintenance_complaint_total_label">transactionConfirmationLandingNominalTotalDenunciationTitleLabel</string>
+    <string name="transaction_account_maintenance_complaint_transaction_label"> Transaksi</string>
+    <string name="transaction_account_maintenance_complaint_reporter_account_number_label">transactionConfirmationLandingAccountNumberTitleLabel</string>
+    <string name="transaction_account_maintenance_complaint_transaction_period_label">transactionConfirmationLandingTransactionPeriodTitleLabel</string>
+    <string name="transaction_account_maintenance_complaint_total_amount_label">transactionConfirmationLandingNominalDenunciationTitleLabel</string>
+    <string name="transaction_account_maintenance_complaint_detail_label">nonFinancialTransactionConfirmationLandingCustomerDetailActivityDenunciationAccountTitleLabel</string>
+    <string name="transaction_account_maintenance_complaint_result_reported_name_label">transactionResultAccountMaintenanceFullNameTitleLabel</string>
+    <string name="transaction_account_maintenance_complaint_result_reported_account_number_label">transactionResultAccountMaintenanceDetailAccountNumberTitleLabel</string>
+    <string name="transaction_account_maintenance_complaint_result_desc_label">transactionResultAccountMaintenancePurposeDenunciationTitle</string>
+    <string name="transaction_account_maintenance_complaint_fraud_purpose">transactionResultAccountMaintenanceDetailTrxFraudIndicationLabel</string>
+    <string name="transaction_account_maintenance_complaint_done_institute_purpose">transactionResultAccountMaintenanceDetailTrxDoneInstituteActionLabel</string>
+    <string name="transaction_account_maintenance_complaint_denunciation_others_purpose">transactionResultAccountMaintenanceDetailTrxDenunciationOthersLabel</string>
+    <string name="transaction_account_maintenance_complaint_denunciation_number">transactionResultAccountMaintenanceDenunciationNumberTitleLabel</string>
+    <string name="transaction_account_maintenance_complaint_result_reporter_detail_label">transactionResultAccountMaintenanceDenunciationReporterDetailTitleLabel</string>
+    <string name="transaction_account_maintenance_complaint_result_reporter_name_label">transactionResultAccountMaintenanceReporterFullNameTitleLabel</string>
+    <string name="transaction_account_maintenance_complaint_result_total_label">transactionResultAccountMaintenanceDetailTotalDenunciationTitleLabel</string>
+    <string name="transaction_account_maintenance_complaint_result_reporter_account_number_label">transactionResultAccountMaintenanceDenunciationDetailAccountNumberTitleLabel</string>
+    <string name="transaction_account_maintenance_complaint_result_transaction_period_label">transactionResultAccountMaintenanceDetailTransactionPeriodTitleLabel</string>
+    <string name="transaction_account_maintenance_complaint_result_total_amount_label">transactionResultAccountMaintenanceDetailNominalDenunciationTitleLabel</string>
+    <string name="transaction_account_maintenance_complaint_agreement_label">Dengan ini saya General Banker menyatakan bahwa laporan pengaduan rekening Nasabah telah diterima dan akan ditindaklanjuti sesuai ketentuan yang berlaku di Bank Mandiri</string>
+    <string name="transaction_account_maintenance_complaint_button_confirmation_label">Konfirmasi</string>
+    <string name="transaction_account_maintenance_complaint_cancel_transaction_label">transactionConfirmationLandingCancelButton</string>
+    <string name="transaction_account_maintenance_rk_statement_name_label">transactionOverviewAccountMaintenanceRkStatementFullNameTitleLabel</string>
+    <string name="transaction_account_maintenance_rk_statement_transaction_detail_label">transactionOverviewAccountMaintenanceRkStatementDetailTitleLabel</string>
+    <string name="transaction_account_maintenance_rk_statement_account_number_label">transactionOverviewAccountMaintenanceRkStatementAccountNumberTitleLabel</string>
+    <string name="transaction_account_maintenance_rk_statement_period_label">transactionOverviewAccountMaintenanceRkStatementPeriodTransactionTitleLabel</string>
+    <string name="transaction_account_maintenance_rk_statement_purpose_label">transactionOverviewAccountMaintenanceRkStatementPurposedOfAccountTitleLabel</string>
+    <string name="transaction_account_maintenance_rk_statement_confirmation_content_sender_information">nonFinancialTransactionConfirmationLandingCustomerPDetailCustomerTitleLabel</string>
+    <string name="transaction_account_maintenance_rk_statement_confirmation_success_message">Transaksi Berhasil Diproses</string>
+    <string name="transaction_account_maintenance_rk_statement_confirmation_content_name_label">nonFinancialTransactionConfirmationLandingCustomerBlockActivationStatementFullNameTitleLabel</string>
+    <string name="transaction_account_maintenance_rk_statement_confirmation_content_account_name_label">nonFinancialTransactionConfirmationLandingCustomerAccountNumberTitleLabel</string>
+    <string name="transaction_account_maintenance_rk_statement_confirmation_content_period_label">PERIODE PENERBITAN</string>
+    <string name="transaction_account_maintenance_rk_statement_confirmation_content_transaction_purpose">transactionConfirmationLandingCustPurposeRkStatementLabel</string>
+    <string name="transaction_account_maintenance_denunciation_transaction_type_label">transactionConfirmationLandingTransactionCategoryTitleLabel</string>
+    <string name="transaction_account_maintenance_status_active">transactionConfirmationLandingAccountMaintenanceStatusActiveLabel</string>
+    <string name="transaction_account_maintenance_status_restricted">transactionConfirmationLandingAccountMaintenanceStatusRestrictedLabel</string>
+    <string name="transaction_account_maintenance_status_frozen">transactionConfirmationLandingAccountMaintenanceStatusFrozenLabel</string>
+    <!--wait for lockey-->
+    <string name="transaction_account_maintenance_rk_statement_print_label">Cetak Formulir</string>
+    <!--endregion-->
+
+    <!--region account maintenance edit account denunciation-->
+    <string name="transaction_account_maintenance_edit_account_denunciation_header_text">editBranchTransactionBeneficiaryInformationHeaderTitleLabel</string>
+    <string name="transaction_account_maintenance_edit_account_denunciation_title">editBranchTransactionBeneficiaryInformationInstructionTitleLabel</string>
+    <string name="transaction_account_maintenance_edit_account_denunciation_text_field_hint">editBranchTransactionBeneficiaryTypeLabel</string>
+    <string name="transaction_account_maintenance_edit_account_denunciation_text_field_error_hint">editBranchTransactionAccountNumberNotFoundDescription</string>
+    <string name="transaction_account_maintenance_edit_account_denunciation_text_field_max_length_error_hint">editBranchTransactionAccountNumberNotFoundDescription</string>
+    <!--region preview skp-->
+    <string name="transaction_preview_skp_title_text">generalBankerTransactionRefusalPreviewTitleLabel</string>
+    <string name="transaction_preview_skp_sub_title_text">generalBankerTransactionRefusalTitleDescriptionLabel</string>
+    <string name="transaction_preview_skp_customer_sub_title_text">generalBankerCustomerTransactionRefusalTitleDescriptionLabel</string>
+    <string name="transaction_preview_skp_header_text">generalBankerCustomerTransactionRefusalPreviewTitleLabel</string>
+    <string name="transaction_preview_skp_next_button_text">generalBankerTransactionRefusalContinueButton</string>
+    <string name="transaction_preview_skp_print_button_text">generalBankerTransactionRefusalPrintButton</string>
+    <string name="transaction_preview_skp_action_bar_title">generalBankerTransactionRefusalPreviewHeaderTitleLabel</string>
+    <string name="transaction_preview_skp_dialog_success_title">customerTransactionRefusalConfirmationTitle</string>
+    <string name="transaction_preview_skp_dialog_success_content">customerTransactionRefusalConfirmationDescription</string>
+    <!--endregion-->
+
+    <!--region preview skp supervisor-->
+    <string name="transaction_preview_skp_supervisor_action_bar_title">supervisorTransactionRefusalHeaderPreviewTitleLabel</string>
+    <string name="transaction_preview_skp_supervisor_agreement_text">supervisorTransactionRefusalSpvAgreementLabel</string>
+    <string name="transaction_preview_skp_supervisor_confirm_button_text">supervisorTransactionRefusalVerificationButton</string>
+    <string name="transaction_preview_skp_supervisor_cancel_button_text">supervisorTransactionRefusalCancelButton</string>
+    <string name="transaction_preview_skp_supervisor_other_spv_button_text">supervisorTransactionRefusalSelectOtherSpvButton</string>
+    <string name="transaction_preview_skp_supervisor_cancel_dialog_title">supervisorTransactionRefusalCancelConfirmationTitle</string>
+    <string name="transaction_preview_skp_supervisor_cancel_dialog_content">supervisorTransactionRefusalCancelConfirmationDescriptionLabel</string>
+    <string name="transaction_preview_skp_supervisor_cancel_dialog_cancel_button">supervisorTransactionRefusalCancelConfirmationContinueButtonLabel</string>
+    <string name="transaction_preview_skp_supervisor_cancel_dialog_back_button">supervisorTransactionRefusalCancelConfirmationBackButtonLabel</string>
+    <string name="transaction_preview_skp_supervisor_verification_dialog_title">supervisorTransactionRefusalConfirmationTitle</string>
+    <string name="transaction_preview_skp_supervisor_verification_dialog_content">supervisorTransactionRefusalConfirmationDescription</string>
+    <string name="transaction_preview_skp_supervisor_verification_dialog_button_next">supervisorTransactionRefusalConfirmationContinueButton</string>
+    <string name="transaction_preview_skp_supervisor_verification_dialog_button_back">supervisorTransactionRefusalConfirmationBackButton</string>
+    <string name="transaction_preview_skp_supervisor_verification_failed_transaction_title_text">supervisorTransactionRefusalTransactionFailedHeaderLabel</string>
+    <string name="transaction_preview_skp_title_dialog_cancelation">customerConfirmationInstructionNextStepInstructionTitleSkpCancelVarificationHeader</string>
+    <string name="transaction_preview_skp_desc_dialog_cancelation">customerConfirmationInstructionDetailDescOverviewBankerContinueTransactionLabel</string>
+    <!--endregion-->
+
+    <!--region refusal skp-->
+    <string name="transaction_refusal_skp_dialog_title_label">generalBankerTransactionRefusalWarningTitle</string>
+    <string name="transaction_refusal_skp_dialog_desc_label">generalBankerTransactionRefusalWarningDescription</string>
+    <string name="transaction_refusal_skp_dialog_button_label">generalBankerTransactionRefusalSkpWarningContinueButton</string>
+    <string name="transaction_refusal_skp_confirm_title_label">generalBankerTransactionRefusalConfirmTitleLabel</string>
+    <string name="transaction_refusal_skp_description_label">generalBankerTransactionRefusalConfirmDescription</string>
+    <string name="transaction_refusal_skp_button_delete_label">generalBankerTransactionRefusalDeleteLabel</string>
+    <string name="transaction_refusal_skp_reason_cancel_label">generalBankerTransactionRefusalCancellationReasonTitleLabel</string>
+    <string name="transaction_refusal_skp_reason_label">generalBankerTransactionRefusalReasonLabel</string>
+    <string name="transaction_refusal_skp_reason_not_found_title">generalBankerTransactionRefusalReasonNotFoundHeaderLabel</string>
+    <string name="transaction_refusal_skp_reason_not_found_description">generalBankerTransactionRefusalReasonNotFoundDescriptionLabel</string>
+    <!--endregion-->
+
+    <!-- region dialog inquiry detail -->
+    <string name="dialog_inquiry_text_title">transactionConfirmationLandingCustLatestTransactionTitle</string>
+    <string name="dialog_inquiry_text_subtitle">transactionConfirmationLandingCustLatestTransactionDescription</string>
+    <string name="dialog_inquiry_text_footer">transactionConfirmationLandingCustLatestTransactionInstruction</string>
+    <string name="dialog_inquiry_text_btn_continue">transactionConfirmationLandingCustLatestTransactionContinueButtonLabel</string>
+    <string name="dialog_inquiry_transaction_type_transfer_another_bank">transactionConfirmationLandingCustLatestTransactionTypeTransferAnotherBank</string>
+    <string name="dialog_inquiry_transaction_text_transfer_bi_fast">transactionConfirmationLandingCustLatestTransactionTransferMethodBIFastLabel</string>
+    <string name="dialog_inquiry_transaction_text_transfer_rtgs">transactionConfirmationLandingCustLatestTransactionTransferMethodRtgsLabel</string>
+    <string name="dialog_inquiry_transaction_text_transfer_overbooking">transactionConfirmationLandingCustLatestTransactionTransferMethodOverbookingLabel</string>
+    <string name="dialog_inquiry_transaction_text_to">ke</string>
+    <!-- endregion -->
+
+    <!-- region transaction hybrid verification -->
+    <string name="transaction_hybrid_confirmation_title_label">transactionConfirmationLandingTransactionInformationLabel</string>
+    <string name="transaction_hybrid_confirmation_title_description_label">transactionConfirmationPrintOldBdsInstructionLabel</string>
+    <string name="transaction_hybrid_confirmation_receiver_title_label">transactionConfirmationLandingOldBdsNonFinancialSenderCustomerTitleLabel</string>
+    <string name="transaction_hybrid_confirmation_financial_sender_title_label">transactionConfirmationLandingOldBdsFinancialSenderCustomerTitleLabel</string>
+    <string name="transaction_hybrid_confirmation_financial_sender_old_title_label">transactionConfirmationCustomerCompanyOldInformationTitleLabel</string>
+    <string name="transaction_hybrid_confirmation_financial_sender_name_label">transactionConfirmationReceipientInformationLabel</string>
+    <string name="transaction_hybrid_confirmation_financial_source_account_label">transactionConfirmationLandingRecepientAccountSourceTitleLabel</string>
+    <string name="transaction_hybrid_confirmation_financial_source_account_old_label">transactionConfirmationCompanyAccountNumberTitleLabel</string>
+    <string name="transaction_hybrid_confirmation_financial_receiver_title_label">transactionConfirmationLandingOldBdsFinancialReceiverCustomerTitleLabel</string>
+    <string name="transaction_hybrid_confirmation_financial_title_method">transactionConfirmationLandingTransactionMethodCustomerTitleLabel</string>
+    <string name="transaction_hybrid_confirmation_financial_title_source_fund">transactionConfirmationLandingSourceFundLabel</string>
+    <string name="transaction_hybrid_confirmation_financial_title_transaction_purpose">transactionConfirmationLandingTransactionPurposeLabel</string>
+    <string name="transaction_hybrid_confirmation_financial_title_transaction_note">transactionConfirmationLandingTransactionNoteLabel</string>
+    <string name="transaction_hybrid_confirmation_financial_table_amount_title">transactionConfirmationLandingCustomerAmountLabel</string>
+    <string name="transaction_hybrid_confirmation_financial_table_total_amout_label">transactionConfirmationLandingCustomerTotalLabel</string>
+    <string name="transaction_hybrid_confirmation_non_financial_account_number_label">transactionConfirmationLandingFromAccountNonFinancialLabel</string>
+    <string name="transaction_hybrid_confirmation_non_financial_phone_number_label">transactionConfirmationLandingCustomerPhoneNumberTitlelabel</string>
+    <string name="transaction_hybrid_confirmation_non_financial_button_confirm">transactionConfirmationTransactionConfirmationButtonLabel</string>
+    <string name="transaction_hybrid_confirmation_non_financial_tnc_label">transactionConfirmationLandingTnCNonFinOldLabel</string>
+    <string name="transaction_hybrid_confirmation_financial_button_confirm">transactionConfirmationLandingFinishTransactionButton</string>
+    <string name="transaction_hybrid_confirmation_cs_financial_button_confirm">transactionConfirmationTransactionConfirmationButtonLabel</string>
+    <string name="transaction_hybrid_confirmation_cs_other_transaction_button_confirm">transactionConfirmationTransactionConfirmationButtonLabel</string>
+    <string name="transaction_hybrid_confirmation_non_financial_button_cancel">transactionConfirmationLandingCancelButton</string>
+    <string name="transaction_hybrid_confirmation_financial_button_cancel">transactionConfirmationLandingCancelButton</string>
+    <string name="transaction_hybrid_confirmation_non_financial_button_proceed">Proses Transaksi</string>
+    <string name="transaction_hybrid_confirmation_other_transaction_transaction_note">transactionConfirmationLandingTransactionNoteLabel</string>
+    <string name="transaction_hybrid_confirmation_non_financial_address_label">transactionConfirmationLandingCustomerAddressTitlelabel</string>
+    <string name="transaction_hybrid_confirmation_non_financial_bank_service">transactionConfirmationLandingCustomerOldBdsServiceOtherLabel</string>
+    <string name="transaction_hybrid_confirmation_receiver_name_label">transactionConfirmationLandingOldBdsNonFinancialCustomerFullNameTitleLabel</string>
+    <string name="transaction_hybrid_confirmation_financial_receiver_name_label">transactionConfirmationLandingOldBdsFinancialCustomerFullNameTitleLabel</string>
+    <string name="transaction_hybrid_confirmation_button_print">transactionConfirmationPrintOldBdsFormButtonLabel</string>
+    <string name="transaction_hybrid_confirmation_other_transaction_phone_number_label">transactionConfirmationLandingCustomerPhoneNumberTitlelabel</string>
+    <string name="transaction_hybrid_term_condition_gb_text">transactionConfirmationLandingGeneralBankerVerificationOldBdsDeclaration</string>
+    <string name="transaction_hybrid_term_condition_cs_text">transactionConfirmationLandingTnCLabel_before</string>
+    <string name="transaction_hybrid_term_condition_cs_link_text">transactionConfirmationLandingTnCLabel_link</string>
+    <!-- endregion -->
+
+    <!-- region skp -->
+    <string name="transaction_refusal_preview_title_label">generalBankerTransactionRefusalTopbarTitleLabel</string>
+    <!-- endregion -->
+
+    <string name="label_dialog_content_overbooking_non_individual">Detail Penerima</string>
+
+    <!-- region confirmation cash withdrawal -->
+    <string name="confirmation_cash_withdrawal_transaction_information_label">Informasi Transaksi</string>
+    <string name="confirmation_cash_withdrawal_administrator_detail_label">transactionConfirmationLandingWithdrawalSenderCustomerTitleLabel</string>
+    <string name="confirmation_cash_withdrawal_administrator_name_label">transactionConfirmationLandingWithdrawalFromAccountLabel</string>
+    <string name="confirmation_cash_withdrawal_transaction_detail_label">transactionConfirmationLandingDetailScreenTitleLabel</string>
+    <string name="confirmation_cash_withdrawal_transaction_method_label">transactionConfirmationLandingTransactionMethodCustomerTitleLabel</string>
+    <string name="confirmation_cash_withdrawal_transaction_notes_label">transactionConfirmationLandingTransactionNoteLabel</string>
+    <string name="confirmation_cash_withdrawal_account_source_label">transactionConfirmationLandingAccountSourceTitleLabel</string>
+    <string name="confirmation_cash_withdrawal_warkat_owner_name_label">transactionConfirmationCustomerCompanyTransactionCompanySourceFundLabel</string>
+    <string name="confirmation_cash_withdrawal_warkat_source_label">transactionConfirmationCustomerCompanyTransactionSourceWarkatIncomeLabel</string>
+    <string name="confirmation_cash_withdrawal_btn_see_warkat_label">transactionConfirmationLandingPreviewWarkatButton</string>
+    <string name="confirmation_cash_withdrawal_warkat_type_label">transactionConfirmationLandingWarkatTypeTitle</string>
+    <string name="confirmation_cash_withdrawal_warkat_number_label">transactionConfirmationLandingWarkatNumberTitle</string>
+    <string name="confirmation_cash_withdrawal_warkat_date_label">transactionConfirmationLandingWarkatDateTitle</string>
+    <string name="confirmation_cash_withdrawal_account_source_name_label">transactionConfirmationLandingAccountSourceNameTitleLabel</string>
+    <string name="confirmation_cash_withdrawal_dialog_amount_confirmation_gb_title">transactionConfirmationLandingGBCashAcceptanceTitleLabel</string>
+    <string name="confirmation_cash_withdrawal_dialog_amount_confirmation_gb_message">transactionConfirmationLandingGBCashAcceptanceSubTitleLabel</string>
+    <string name="confirmation_cash_withdrawal_banner_status_isrepresentative">transactionConfirmationLandingCheckingWarkatPhotoRepresentativeToastLabel</string>
+    <!-- endregion confirmation cash withdrawal -->
+
+    <!-- region confirmation cash withdrawal cs warkat -->
+    <string name="confirmation_cash_withdrawal_cs_warkat_btn_cancel_label">Batalkan Transaksi</string>
+    <string name="confirmation_cash_withdrawal_cs_warkat_btn_handover_warkat_label">transactionConfirmationHandoverWarkatButtonLabel</string>
+    <string name="confirmation_cash_withdrawal_cs_warkat_btn_submit_warkat_label">transactionConfirmationTransactionConfirmationButtonLabel</string>
+    <!-- endregion confirmation cash withdrawal gb debet -->
+
+    <!--region numeric authorization insufficient balance-->
+    <string name="transaction_cs_confirmation_dialog_insufficient_balance_title">cashWithdrawalConfirmationOTPInsufficientBalanceTransactionTitleLabel</string>
+    <string name="transaction_cs_confirmation_dialog_insufficient_balance_desc">cashWithdrawalConfirmationOTPInsufficientBalanceTransactionDescriptionLabel</string>
+    <string name="transaction_cs_confirmation_dialog_insufficient_balance_button_edit_transaction">cashWithdrawalConfirmationOTPInsufficientBalanceTransactionChangeTransactionButtonLabel</string>
+    <string name="transaction_cs_confirmation_dialog_insufficient_balance_cancel">cashWithdrawalConfirmationOTPInsufficientBalanceTransactionCancelButtonLabel</string>
+    <!--endregion-->
+
+
+    <!-- region cash deposit overview non individu -->
+    <string name="content_dialog_cash_deposit_non_individu_header_status">transactionOverviewTransactionFinancialDetailTransactionTypeLabel</string>
+    <string name="content_dialog_cash_deposit_non_individu_representative_title">transactionOverviewTransactionFinancialDetailRepresentativeDetailSectionTitleLabel</string>
+    <string name="content_dialog_cash_deposit_non_individu_representative_sub_title">transactionOverviewTransactionFinancialDetailRepresentativeDetailSectionSubTitleLabel</string>
+    <string name="content_dialog_cash_deposit_non_individu_account_source_title">transactionOverviewTransactionFinancialDetailAccountSourceDetailSectionTitleLabel</string>
+    <string name="content_dialog_cash_deposit_non_individu_account_source_sub_title">transactionOverviewTransactionFinancialDetailAccountSourceDetailSectionSubTitleLabel</string>
+    <!-- endregion cash deposit overview non individu -->
+
+    <!--    Region Overbooking Confirmation-->
+    <string name="confirmation_overbooking_transaction_method_label">transactionConfirmationCustomerCompanyTransactionMethodLabel</string>
+    <string name="confirmation_overbooking_script_type_label">transactionConfirmationCustomerCompanyTransactionWarkatTypeLabel</string>
+    <string name="confirmation_overbooking_script_number_label">transactionConfirmationCustomerCompanyTransactionWarkatNumberLabel</string>
+    <string name="confirmation_overbooking_script_date_label">transactionConfirmationCustomerCompanyTransactionWarkatDateLabel</string>
+    <string name="confirmation_overbooking_script_effective_date_label">transactionConfirmationCustomerCompanyTransactionWarkatEffectiveDateLabel</string>
+    <string name="confirmation_overbooking_source_income_label">transactionConfirmationCustomerCompanyTransactionSourceIncomeLabel</string>
+    <string name="confirmation_overbooking_purpose_label">transactionConfirmationCustomerCompanyTransactionPurposeLabel</string>
+    <string name="confirmation_overbooking_note_label">transactionConfirmationCustomerCompanyTransactionCustomerNotesLabel</string>
+    <string name="confirmation_overbooking_script_account_label">transactionConfirmationCustomerCompanyTransactionAccountLabel</string>
+    <string name="confirmation_overbooking_script_own_name_label">transactionConfirmationCustomerCompanyTransactionCompanySourceFundLabel</string>
+    <string name="confirmation_overbooking_source_account_label">transactionConfirmationCustomerCompanyTransactionTransferSourceIncomeLabel</string>
+    <string name="confirmation_overbooking_source_name_label">transactionConfirmationCustomerCompanyTransactionCompanyTransferSourceFundLabel</string>
+    <string name="confirmation_overbooking_beneficiary_name_label">transactionConfirmationCustomerBeneficiaryInformationSubTitleLabel</string>
+    <string name="confirmation_overbooking_beneficiary_detail_label">transactionConfirmationCustomerBeneficiaryInformationTitleLabel</string>
+    <string name="confirmation_overbooking_sender_detail_label">transactionConfirmationCustomerSenderInformationTitleLabel</string>
+    <string name="confirmation_overbooking_sender_name_label">transactionOverviewTransactionFinancialDetailSenderNameTitleLabel</string>
+    <string name="confirmation_overbooking_representative_information_label">transactionConfirmationCustomerRepresentativenformationTitleLabel</string>
+    <string name="confirmation_overbooking_representative_information_sub_title_label">transactionConfirmationCustomerRepresentativenformationSubTitleLabel</string>
+    <string name="dialog_non_individual_overview_source_detail_title">transactionOverviewTransactionFinancialDetailSourceAccountLabel</string>
+
+    <string name="dialog_overview_overbooking_gb_receiver_detail_label">transactionOverviewTransactionFinancialDetailBeneficairyDetailSectionTitleLabel</string>
+    <string name="dialog_overview_overbooking_gb_receiver_detail_name_label">transactionOverviewTransactionFinancialBeneficiaryNameTitleLabel</string>
+    <string name="dialog_overview_overbooking_gb_initialization_detail_label">transactionOverviewTransactionFinancialDetailCompanyDetailSectionTitleLabel</string>
+    <string name="dialog_overview_overbooking_gb_initialization_detail_name_label">transactionOverviewTransactionFinancialDetailAccountSourceDetailSectionSubTitleLabel</string>
+    <string name="dialog_overview_overbooking_gb_sender_detail_label">transactionOverviewTransactionFinancialDetailRepresentativeDetailSectionTitleLabel</string>
+    <string name="dialog_overview_overbooking_gb_sender_detail_name_label">transactionOverviewTransactionFinancialDetailRepresentativeNameTitleLabel</string>
+    <string name="dialog_overview_overbooking_gb_script_owner_label">transactionOverviewOverbookingDetailAccountSourceOwnerNameTitle</string>
+
+    <string name="dialog_overview_bilyet_giro_sender_title">transactionOverviewTransactionFinancialDetailCompanyDetailSectionTitleLabel</string>
+    <string name="card_overview_customer_information_label">transactionConfirmationLandingSummaryDebitCardCustomerInfoLabel</string>
+    <string name="card_overview_customer_information_label_old">transactionConfirmationLandingSummaryOldBdsRepresentativeLabel</string>
+    <string name="dialog_transaction_summary_title">transactionConfirmationLandingSkpConfirmationTitleLabel</string>
+    <string name="dialog_transaction_summary_content_label">transactionConfirmationLandingSkpConfirmationDescriptionLabel</string>
+    <string name="dialog_transaction_summary_btn_label">transactionConfirmationLandingFinishConfirmationBackButton</string>
+
+    <!-- region dialog warkat detention -->
+    <string name="content_dialog_warkat_detention_button_label">generalBankerTransactionRefusalRiskCloseButtonLabel</string>
+    <string name="content_dialog_warkat_detention_title_label">generalBankerTransactionRefusalRiskHeaderTitleLabel</string>
+    <string name="content_dialog_warkat_detention_message">generalBankerTransactionRefusalRiskDescriptionLabel</string>
+    <!-- endregion dialog warkat detention -->
+
+    <!--  region transaction confirmation old   -->
+    <string name="transaction_confirmation_customer_company_information_title_sub_label">transactionConfirmationCustomerCompanyInformationOldTitleSubLabel</string>
+    <!--    end -->
+
+    <string name="dialog_receipt_old_bds_transfer_overbooking_title_value">transactionOverviewTransactionFinancialIntrabankOverbookingTransferLabel</string>
+    <string name="dialog_receipt_old_bds_transfer_telegraphic_transfer_title_value">transactionOverviewTransactionFinancialIntrabankTelegrhapicTransferransferLabel</string>
+    <string name="dialog_receipt_old_bds_cash_deposit_title_value">transactionOverviewTransactionFinancialCashDepositLabel</string>
+    <string name="dialog_receipt_old_bds_cash_withdrawal_title_value">transactionOverviewTransactionFinancialCashWithdrawalLabel</string>
+    <string name="dialog_receipt_old_bds_rtgs_title_value">transactionOverviewTransactionFinancialInterbankRtgsTransferLabel</string>
+    <string name="dialog_receipt_old_bds_bi_national_clearing_title_value">transactionOverviewTransactionFinancialInterbankSknbiTransferLabel</string>
+    <string name="dialog_receipt_old_bds_bank_draft_title_value">transactionOverviewTransactionFinancialInterbankIBankDraftTransferLabel</string>
+    <string name="dialog_old_bds_representative_section_title">transactionOverviewTransactionFinancialDetailRepresentativeSectionLabel</string>
+    <string name="dialog_old_bds_representative_section_label">transactionOverviewTransactionFinancialDetailRepresentativeSectionTitleLabel</string>
+    <string name="dialog_old_bds_company_label">transactionOverviewTransactionFinancialDetailRepresentativeCompanySectionLabel</string>
+    <string name="dialog_old_bds_company_title">transactionOverviewTransactionFinancialDetailRepresentativeCompanySectionSubLabel</string>
+
 </resources>

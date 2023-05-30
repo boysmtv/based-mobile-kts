@@ -7,6 +7,7 @@
 #include <fcntl.h>
 
 static inline bool is_mountpaths_detected();
+
 static inline bool is_supath_detected();
 
 static const char *TAG = "DetectMagiskNative";
@@ -49,7 +50,7 @@ Java_com_darvin_security_IsolatedService_isMagiskPresentNative(
             break;
     } while (false);
 
-    if(bRet)
+    if (bRet)
         return JNI_TRUE;
     else
         return JNI_FALSE;

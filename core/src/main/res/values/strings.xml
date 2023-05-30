@@ -1,3 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+* Copyright © 2022 PT Bank Mandiri (Persero) Tbk.
+*
+* Unauthorized copying, publishing of this file, via any medium is strictly prohibited
+* Proprietary and confidential
+*
+-->
 <resources>
-    <string name="app_name">core</string>
+    <!--region Session Timeout-->
+    <string name="dialog_general_error_title_under_maintenance">commonGeneralErrorTitleLabel</string>
+    <string name="dialog_general_error_desc_under_maintenance">commonGeneralErrorDescriptionLabel</string>
+    <!--endregion-->
+
+    <!--region Session Timeout-->
+    <string name="session_timeout_error_title">sessionTimeOutLabel</string>
+    <string name="session_timeout_error_message">sessionTimeOutDescriptionLabel</string>
+    <string name="session_timeout_error_button">sessionTimeOutButton</string>
+    <!--endregion-->
+
+    <!--region Session Timeout-->
+    <!--endregion-->
+
+    <!--region numeric-->
+    <!--endregion-->
+
+    <!--region Session Currency-->
+    <!--endregion-->
+
+    <!-- region content transfer transaction overview -->
+    <!--endregion-->
+
+    <!-- region content transfer transaction result -->
+    <!--endregion-->
+
+    <!-- region content transfer transaction overview -->
+    <!--endregion-->
+
+    <!-- region transaction overview non fin oldBds -->
+
+    <!-- endregion -->
+
+    <!-- region transfer -->
+    <!-- endregion -->
+
+    <!--region camera document-->
+    <!--endregion-->
+
+    <!-- region transaction base -->
+    <!-- endregion -->
+
+    <!-- region dialog tnc -->
+    <!-- endregion -->
 </resources>
